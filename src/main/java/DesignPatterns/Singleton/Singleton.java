@@ -14,9 +14,12 @@ public class Singleton {
 
     public static Singleton getInstance() {
 
-        if (instance == null) {//双重检测
-            synchronized (Singleton.class) {//同步锁
-                //if (instance == null) {//双重检测
+        //双重检测
+        if (instance == null) {
+            //同步锁
+            synchronized (Singleton.class) {
+                //双重检测
+                //if (instance == null) {
                     instance = new Singleton();
                 //}
             }
