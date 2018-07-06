@@ -3,7 +3,7 @@ package spring.transaction;
 /**
  * @author: lingjun.jlj
  * @Date: 2018/7/5 19:39
- * @Description: Isolation是事务自带事务隔离级别
+ * @Description: Isolation是事务自带事务隔离级别, 隔离级别是指若干个并发的事务之间的隔离程度.
  * 官方文档解释：https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/transaction/annotation/Isolation.html
  */
 public enum Isolation {
