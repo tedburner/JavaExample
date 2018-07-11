@@ -1,4 +1,4 @@
-package acm.LeetCode;
+package algorithm.acm.LeetCode;
 
 /**
  * @author lingjun.jlj
