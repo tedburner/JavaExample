@@ -3,7 +3,7 @@ package DesignPatterns.composite;
 /**
  * @author: lingjun.jlj
  * @Date: 2018/7/19 15:08
- * @Description:
+ * @Description: 组合模式
  */
 public class CompositePatternDemo {
 
