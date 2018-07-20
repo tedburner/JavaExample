@@ -3,7 +3,7 @@ package DesignPatterns.strateg;
 /**
  * @Auther: lingjun, hkh
  * @Date: 2018/7/4 23:24
- * @Description:
+ * @Description: 策略模式
  */
 public class StrategyPatternDemo{
 
