@@ -11,4 +11,6 @@ import com.project.model.DO.UserDO;
 public interface TestService {
 
     CityDO findCityById(Long id);
+
+    void addAddress();
 }
