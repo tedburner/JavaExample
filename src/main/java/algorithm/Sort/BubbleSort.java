@@ -3,7 +3,7 @@ package algorithm.Sort;
 /**
  * @author lingjun.jlj
  * @date 2017-12-24
- * 冒泡排序
+ * @description: 冒泡排序
  **/
 public class BubbleSort {
 
@@ -19,8 +19,8 @@ public class BubbleSort {
         for (i = 0; i < n-1 ; i ++){
 
             for (j = 0 ; j < n-1-i ; j++){
-
-                if (arr[j] > arr[j+1]){//左边比右边大
+                //左边比右边大
+                if (arr[j] > arr[j+1]){
                     target = arr[j];
                     arr[j] = arr[j+1];
                     arr[j+1] = target;

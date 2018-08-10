@@ -1,13 +1,15 @@
 package algorithm.Sort;
 
+import java.util.Arrays;
+
 /**
  * @author lingjun.jlj
  * @date 2017-12-24
- * 插入排序
+ * @description: 插入排序
  **/
 public class InsertSort {
 
-    public static void  InsertSort(int[] arr){
+    public static void InsertSort(int[] arr) {
         int i, j;
         int n = arr.length;
         int target;
@@ -26,5 +28,11 @@ public class InsertSort {
             arr[j] = target;
         }
 
+    }
+
+    public static void main(String[] args) {
+        int[] arry = {1, 3, 3, 2, 8, 5, 10, 22, 18, 12, 77, 47};
+        InsertSort.InsertSort(arry);
+        System.out.println(Arrays.toString(arry));
     }
 }
