@@ -6,7 +6,7 @@
     <!-- 加载配置文件 -->
     <context:property-placeholder location="classpath:application.properties"/>
 
-    <context:component-scan base-package="com.project"/>
+    <context:component-scan base-package="com.example.project"/>
 
 
     <!-- 数据库连接池，druid -->
@@ -54,12 +54,12 @@
         <!-- 加载mybatis的全局配置文件 -->
         <!--<property name="configLocation" value="classpath:mybatis-config.xml" />-->
 
-        <property name="mapperLocations" value="classpath:com/project/persist/*.xml"/>
+        <property name="mapperLocations" value="classpath:com/example/project/persist/*.xml"/>
     </bean>
 
     <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.project.persist" />
+        <property name="basePackage" value="com.example.project.persist" />
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
     </bean>
 

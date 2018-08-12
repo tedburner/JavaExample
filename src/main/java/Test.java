@@ -1,12 +1,3 @@
-import basejava.Java8.BeanData;
-import basejava.Java8.bean.SimpleDTO;
-import utils.ByteUtils;
-
-import java.io.*;
-import java.net.URL;
-import java.time.Clock;
-import java.util.*;
-
 /**
  * @author lingjun.jlj
  * @data 2018/5/8

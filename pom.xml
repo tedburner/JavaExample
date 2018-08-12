@@ -92,10 +92,10 @@
             <artifactId>spring-webmvc</artifactId>
             <version>4.1.7.RELEASE</version>
         </dependency>
-        <!-- 4)Spring test -->
+        <!-- 4)Spring com.example.test -->
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
+            <artifactId>spring-com.example.test</artifactId>
             <version>4.1.7.RELEASE</version>
         </dependency>
 

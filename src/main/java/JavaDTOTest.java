@@ -1,4 +1,4 @@
-import basejava.Java8.bean.SimpleDTO;
+import com.example.basejava.Java8.bean.SimpleDTO;
 
 /**
  * @author: lingjun.jlj
