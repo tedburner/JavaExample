@@ -92,12 +92,6 @@
             <artifactId>spring-webmvc</artifactId>
             <version>4.1.7.RELEASE</version>
         </dependency>
-        <!-- 4)Spring com.example.test -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-com.example.test</artifactId>
-            <version>4.1.7.RELEASE</version>
-        </dependency>
 
         <!-- Map工具类 -->
         <dependency>
@@ -180,6 +174,7 @@
             <artifactId>protobuf-java</artifactId>
             <version>2.6.0</version>
         </dependency>
+
     </dependencies>
 
 
