@@ -5,14 +5,21 @@
  */
 public class Test {
 
-    private static String[] array = {""};
-
-    static int test() {
-        System.out.println("evaluated");
-        return 0;
-    }
-
     public static void main(String[] args) {
-        array[test()] += "a";
+        int hash = "hash".hashCode();
+        System.out.println(hash);
+        System.out.println(toBinary(hash));
+
+
     }
+
+    static String toBinary(int num) {
+        String str = "";
+        while (num != 0) {
+            str = num % 2 + str;
+            num = num / 2;
+        }
+        return str;
+    }
+
 }
