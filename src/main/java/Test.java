@@ -6,20 +6,13 @@
 public class Test {
 
     public static void main(String[] args) {
-        int hash = "hash".hashCode();
-        System.out.println(hash);
-        System.out.println(toBinary(hash));
+        String pdf = "测试PDF截取.pdf";
+        int number = pdf.lastIndexOf(".");
+        System.out.println(number);
+        String fileType = pdf.substring(0, number);
+        System.out.println(fileType);
 
 
-    }
-
-    static String toBinary(int num) {
-        String str = "";
-        while (num != 0) {
-            str = num % 2 + str;
-            num = num / 2;
-        }
-        return str;
     }
 
 }
