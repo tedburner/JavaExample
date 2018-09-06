@@ -1,4 +1,4 @@
-package com.example.test;
+package com.example.jmh;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Threads;
@@ -10,8 +10,8 @@ import java.util.Calendar;
 
 /**
  * @author: lingjun.jlj
- * @Date: 2018/6/27 14:16
- * @Description: JMH是一个Java工具，用于构建、运行和分析基于JVM的（纳秒/微秒/毫秒/宏）基准测试。
+ * @date: 2018/6/27 14:16
+ * @description: JMH是一个Java工具，用于构建、运行和分析基于JVM的（纳秒/微秒/毫秒/宏）基准测试。
  * 基准测试可以用Java或其他语言编写。
  */
 public class OpenJdkJMH {
