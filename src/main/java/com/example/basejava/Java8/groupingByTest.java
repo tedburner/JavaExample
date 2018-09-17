@@ -27,7 +27,7 @@ public class groupingByTest {
 
         //排序
         Map<String, Long> finalMap = new LinkedHashMap<>();
-        //Sort a map and add to finalMap
+        //sort a map and add to finalMap
         result.entrySet().stream()
                 .sorted(Map.Entry.<String, Long>comparingByValue()
                         .reversed()).forEachOrdered(e -> finalMap.put(e.getKey(), e.getValue()));

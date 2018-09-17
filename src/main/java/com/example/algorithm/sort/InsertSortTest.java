@@ -1,4 +1,4 @@
-package com.example.algorithm.Sort;
+package com.example.algorithm.sort;
 
 import java.util.Arrays;
 
@@ -7,13 +7,13 @@ import java.util.Arrays;
  * @date 2017-12-24
  * @description: 插入排序
  **/
-public class InsertSort {
+public class InsertSortTest {
 
 
     public static void main(String[] args) {
-        int[] arry = {3, 2, 1, 8, 5, 10, 22, 18, 12, 77, 47};
-        InsertSort(arry);
-        System.out.println(Arrays.toString(arry));
+        int[] array = {3, 2, 1, 8, 5, 10, 22, 18, 12, 77, 47};
+        InsertSort(array);
+        System.out.println(Arrays.toString(array));
     }
 
     public static void InsertSort(int[] array) {
