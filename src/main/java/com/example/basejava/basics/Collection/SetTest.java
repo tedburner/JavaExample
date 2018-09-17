@@ -2,6 +2,7 @@ package com.example.basejava.basics.Collection;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * @author lingjun.jlj
@@ -17,5 +18,7 @@ public class SetTest {
         set.add("b");
         set.add("a");
         System.out.println(set);
+
+        Set<String> treeSet = new TreeSet<>();
     }
 }
