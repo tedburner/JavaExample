@@ -11,6 +11,8 @@ public class VectorTest {
 
     public static void main(String[] args) {
         vector.add("a");
+        vector.add("b");
+        vector.add("c");
         System.out.println(vector);
 
     }

@@ -1,4 +1,4 @@
-package com.example.algorithm.acm.LeetCode;
+package com.example.algorithm.LeetCode;
 
 /**
  * @author lingjun.jlj
