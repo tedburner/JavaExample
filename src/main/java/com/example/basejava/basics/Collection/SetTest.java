@@ -19,6 +19,6 @@ public class SetTest {
         set.add("a");
         System.out.println(set);
 
-        Set<String> strings = new TreeSet<>();
+        Set<String> treeSet = new TreeSet<>();
     }
 }

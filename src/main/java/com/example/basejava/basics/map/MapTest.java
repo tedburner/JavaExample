@@ -14,44 +14,44 @@ import java.util.stream.Collectors;
  */
 public class MapTest {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        Map<Integer,String> map = new HashMap<>();
-        map.put(1,"孙博");
+        Map<Integer, String> map = new HashMap<>();
+        map.put(1, "孙博");
         List<SimpleDTO> list = new ArrayList<>();
-        for (int i=0;i<10;i++){
+        for (int i = 0; i < 10; i++) {
             SimpleDTO dto = new SimpleDTO();
-            map.put(i,"孙"+i);
+            map.put(i, "孙" + i);
             dto.setId(i);
-            dto.setName("name"+i);
+            dto.setName("name" + i);
             list.add(dto);
 
         }
         //两种map遍历
-        for (Integer key:map.keySet()){
+        for (Integer key : map.keySet()) {
             String value = map.get(key);
             System.out.println(value);
         }
 
-        for (Map.Entry<Integer, String> entry : map.entrySet()){
-            String str = entry.getKey() +" "+entry.getValue();
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+            String str = entry.getKey() + " " + entry.getValue();
             System.out.println(str);
         }
         //Java8使用流操作生成map
-        Map<Integer,String> listMaps = list
+        Map<Integer, String> listMaps = list
                 .stream()
-                .collect(Collectors.toMap(x->x.getId(),x->x.getName()));
-        for (Map.Entry<Integer, String> entry : listMaps.entrySet()){
-            String str = entry.getKey() +" "+entry.getValue();
+                .collect(Collectors.toMap(x -> x.getId(), x -> x.getName()));
+        for (Map.Entry<Integer, String> entry : listMaps.entrySet()) {
+            String str = entry.getKey() + " " + entry.getValue();
             System.out.println(str);
         }
-        Map<Integer,SimpleDTO> Maps = list
+        Map<Integer, SimpleDTO> Maps = list
                 .stream()
-                .collect(Collectors.toMap(x->x.getId(),x->x));
-        for (Map.Entry<Integer, SimpleDTO> entry : Maps.entrySet()){
-            String str = entry.getKey() +" "+entry.getValue().toString();
+                .collect(Collectors.toMap(x -> x.getId(), x -> x));
+        for (Map.Entry<Integer, SimpleDTO> entry : Maps.entrySet()) {
+            String str = entry.getKey() + " " + entry.getValue().toString();
             System.out.println(str);
         }
-        Map<Long,Object> curMap = new ConcurrentHashMap<>();
+        Map<Long, Object> curMap = new ConcurrentHashMap<>();
     }
 }
