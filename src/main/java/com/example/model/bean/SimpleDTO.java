@@ -1,4 +1,4 @@
-package com.example.basejava.Java8.bean;
+package com.example.model.bean;
 
 /**
  * @author lingjun.jlj

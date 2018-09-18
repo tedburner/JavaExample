@@ -1,6 +1,6 @@
 package com.example.basejava.basics.map;
 
-import com.example.basejava.Java8.bean.SimpleDTO;
+import com.example.model.bean.SimpleDTO;
 
 import java.util.ArrayList;
 import java.util.HashMap;
