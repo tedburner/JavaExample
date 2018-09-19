@@ -13,9 +13,10 @@ public class HashtableTest {
     public static void main(String[] args) {
         Map<Integer, String> map = new Hashtable<>();
         map.put(1, "a");
+        map.get(1);
 
         for (Map.Entry<Integer, String> entry : map.entrySet()) {
-            System.out.println(entry.getKey() + entry.getValue());
+            System.out.println(entry.getKey() + "::" + entry.getValue());
         }
     }
 }
