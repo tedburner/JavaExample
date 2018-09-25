@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 /**
  * @author lingjun.jlj
  * @data 2018/5/8
@@ -17,6 +19,10 @@ public class Test {
 
         int newCapacity = (8 << 1) + 1;
         System.out.println(newCapacity);
+
+        if (Objects.equals("1","1")){
+            System.out.println("Hello World");
+        }
 
 
     }
