@@ -3,8 +3,10 @@ package com.example.basejava.basics;
 /**
  * @author lingjun.jlj
  * @data 2018/3/12
+ * @description: String、StringBuilder、StringBuffer 性能比较
  */
 public class StringTest {
+
     public static void main(String[] args) {
         int num = 100000;
         String a = "abc";
