@@ -17,7 +17,6 @@ public class TreeMapTest {
         public int compare(Object o1, Object o2) {
             return Integer.parseInt(o2.toString()) - Integer.parseInt(o1.toString());
         }
-
         @Override
         public boolean equals(Object obj) {
             return false;

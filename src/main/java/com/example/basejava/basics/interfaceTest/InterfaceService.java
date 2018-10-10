@@ -1,4 +1,4 @@
-package com.example.basejava.basics.service;
+package com.example.basejava.basics.interfaceTest;
 
 /**
  * @author lingjun.jlj

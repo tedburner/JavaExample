@@ -13,8 +13,8 @@ import java.util.List;
 public class ListTest {
 
     public static void main(String[] args) {
-        List<Integer> array = new ArrayList<Integer>();
-        List<Integer> linked = new LinkedList<Integer>();
+        List<Integer> array = new ArrayList<>();
+        List<Integer> linked = new LinkedList<>();
         //首先分别给两者插入10000条数据
         for (int i = 0; i < 10000; i++) {
             array.add(i);

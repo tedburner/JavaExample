@@ -1,4 +1,4 @@
-package com.example.basejava.basics.service;
+package com.example.basejava.basics.interfaceTest;
 
 /**
  * @author lingjun.jlj
@@ -7,6 +7,7 @@ package com.example.basejava.basics.service;
 public interface interfaceTest {
 
     int a = 3;
+
     final static int b = 4;
 
     default int sum() {

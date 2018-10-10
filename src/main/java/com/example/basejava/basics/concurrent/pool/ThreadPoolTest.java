@@ -54,7 +54,7 @@ public class ThreadPoolTest {
         //threadFactory = new NamedThreadFactory("Parallel-Processor", null, true);
         handler = new ThreadPoolExecutor.CallerRunsPolicy();
         threadPoolExecutor = new ThreadPoolExecutor(corePoolSize, maximumPoolSize, keepAliveTime, TimeUnit.SECONDS, workQueue, threadFactory, handler);
-        //service = MoreExecutors.listeningDecorator(threadPoolExecutor);
+        //interfaceTest = MoreExecutors.listeningDecorator(threadPoolExecutor);
     }
 
     /**
