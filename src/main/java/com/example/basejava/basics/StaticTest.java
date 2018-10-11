@@ -9,16 +9,17 @@ import java.util.Map;
  **/
 public class StaticTest {
 
-    private  static final Map<Integer,String> recordTypeMap = new HashMap<>();
+    private static final Map<Integer, String> recordTypeMap = new HashMap<>();
+
     static {
-        recordTypeMap.put(1,"到院就诊");
-        recordTypeMap.put(2,"随访建议");
-        recordTypeMap.put(3,"服务小结");
-        recordTypeMap.put(4,"病历列表");
-        recordTypeMap.put(5,"IM咨询");
+        recordTypeMap.put(1, "A");
+        recordTypeMap.put(2, "B");
+        recordTypeMap.put(3, "C");
+        recordTypeMap.put(4, "D");
+        recordTypeMap.put(5, "E");
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println(recordTypeMap.get(1));
     }
 }
