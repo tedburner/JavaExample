@@ -2,14 +2,13 @@ package com.example.DesignPatterns.ProxyPattern;
 
 import com.example.DesignPatterns.ProxyPattern.image.Image;
 import com.example.DesignPatterns.ProxyPattern.image.ProxyImage;
-import com.example.DesignPatterns.ProxyPattern.image.RealImage;
 
 /**
  * @author: lingjun.jlj
  * @Date: 2018/7/19 15:31
  * @Description: 在代理模式（Proxy Pattern）中，一个类代表另一个类的功能。这种类型的设计模式属于结构型模式。
- *               在代理模式中，我们创建具有现有对象的对象，以便向外界提供功能接口。
- *               使用的是静态代理
+ *              在代理模式中，我们创建具有现有对象的对象，以便向外界提供功能接口。
+ *              使用的是静态代理
  */
 public class ProxyPatternDemo {
 

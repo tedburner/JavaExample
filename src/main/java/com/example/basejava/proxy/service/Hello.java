@@ -1,4 +1,4 @@
-package com.example.basejava.proxy.test;
+package com.example.basejava.proxy.service;
 
 /**
  * @author: lingjun.jlj
@@ -10,4 +10,10 @@ public interface Hello {
      * say hello
      * */
     void sayHello();
+
+    /**
+     * say java
+     * */
+    void sayJava();
+
 }

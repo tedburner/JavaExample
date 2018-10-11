@@ -1,5 +1,9 @@
 package com.example.basejava.proxy.test;
 
+import com.example.basejava.proxy.service.Hello;
+import com.example.basejava.proxy.service.impl.HelloImpl;
+import com.example.basejava.proxy.test.invoke.MyInvocationHandler;
+
 import java.lang.reflect.Proxy;
 
 /**
@@ -19,5 +23,6 @@ public class MyDynamicProxy {
                 handler);
         //调用代理
         proxyHello.sayHello();
+        proxyHello.sayJava();
     }
 }
