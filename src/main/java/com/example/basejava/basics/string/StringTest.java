@@ -1,4 +1,4 @@
-package com.example.basejava.basics;
+package com.example.basejava.basics.string;
 
 /**
  * @author lingjun.jlj

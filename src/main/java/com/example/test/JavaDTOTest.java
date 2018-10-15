@@ -1,3 +1,5 @@
+package com.example.test;
+
 import com.example.domain.bean.SimpleDTO;
 
 /**
