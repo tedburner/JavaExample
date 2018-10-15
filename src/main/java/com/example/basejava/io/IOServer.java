@@ -1,4 +1,4 @@
-package com.example.basejava.IO;
+package com.example.basejava.io;
 
 import java.io.InputStream;
 import java.net.ServerSocket;

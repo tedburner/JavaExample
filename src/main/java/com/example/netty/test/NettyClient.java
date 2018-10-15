@@ -27,9 +27,9 @@ public class NettyClient {
         bootstrap
                 //指定线程模型
                 .group(group)
-                //指定 IO 类型为 NIO
+                //指定 io 类型为 NIO
                 .channel(NioSocketChannel.class)
-                // IO 处理逻辑
+                // io 处理逻辑
                 .handler(new ChannelInitializer<Channel>() {
                     @Override
                     protected void initChannel(Channel channel) throws Exception {

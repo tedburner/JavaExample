@@ -1,4 +1,4 @@
-package com.example.basejava.IO;
+package com.example.basejava.io;
 
 import java.net.Socket;
 import java.text.SimpleDateFormat;

@@ -9,7 +9,7 @@ public class RedisTest {
 
 
     public static void main(String[] args) {
-        RedisUtils.set("jedis", "test");
+        RedisUtils.set("jedis", "jdkproxy");
 
         System.out.println(RedisUtils.get("jedis"));
     }

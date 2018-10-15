@@ -16,6 +16,11 @@ public class HelloImpl implements Hello {
 
     @Override
     public void sayJava() {
-        System.out.println("Hello Java");
+        System.out.println("Hello Java!");
+    }
+
+    @Override
+    public void sayGo() {
+        System.out.println("Hello Go!");
     }
 }

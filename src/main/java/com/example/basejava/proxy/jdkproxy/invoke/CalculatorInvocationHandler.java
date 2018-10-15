@@ -1,4 +1,4 @@
-package com.example.basejava.proxy.test.invoke;
+package com.example.basejava.proxy.jdkproxy.invoke;
 
 import com.example.basejava.proxy.service.CalculatorService;
 
@@ -9,20 +9,19 @@ import java.lang.reflect.Proxy;
 /**
  * @author: lingjun.jlj
  * @date: 2018/10/11 14:25
- * @description:
+ * @description: 计算类 jdk 动态代理
  */
-public class CalculatorLoggingProxy {
+public class CalculatorInvocationHandler {
 
     private CalculatorService target;
 
-    public CalculatorLoggingProxy(CalculatorService calculatorService) {
+    public CalculatorInvocationHandler(CalculatorService calculatorService) {
         this.target = calculatorService;
     }
 
     public CalculatorService getProxy() {
         CalculatorService proxy = null;
 
-        //
         ClassLoader loader = target.getClass().getClassLoader();
 
         Class[] interfaces = new Class[]{CalculatorService.class};
@@ -40,4 +39,5 @@ public class CalculatorLoggingProxy {
         proxy = (CalculatorService) Proxy.newProxyInstance(loader, interfaces, handle);
         return proxy;
     }
+
 }

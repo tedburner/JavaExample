@@ -16,4 +16,10 @@ public interface Hello {
      * */
     void sayJava();
 
+    /**
+     * say Go
+     * */
+
+    void sayGo();
+
 }

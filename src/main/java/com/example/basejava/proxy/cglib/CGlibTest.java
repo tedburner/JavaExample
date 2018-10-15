@@ -8,7 +8,7 @@ import org.springframework.cglib.proxy.Enhancer;
 /**
  * @author: lingjun.jlj
  * @date: 2018/10/11 14:59
- * @description:
+ * @description: CGlib 动态代理测试类
  */
 public class CGlibTest {
 

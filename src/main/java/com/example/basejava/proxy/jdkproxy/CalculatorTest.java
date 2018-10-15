@@ -1,8 +1,8 @@
-package com.example.basejava.proxy.test;
+package com.example.basejava.proxy.jdkproxy;
 
 import com.example.basejava.proxy.service.CalculatorService;
 import com.example.basejava.proxy.service.impl.CalculatorServiceImpl;
-import com.example.basejava.proxy.test.invoke.CalculatorLoggingProxy;
+import com.example.basejava.proxy.jdkproxy.invoke.CalculatorInvocationHandler;
 
 /**
  * @author: lingjun.jlj
@@ -14,7 +14,7 @@ public class CalculatorTest {
     public static void main(String[] args) {
         CalculatorService target = new CalculatorServiceImpl();
 
-        CalculatorService proxy = new CalculatorLoggingProxy(target).getProxy();
+        CalculatorService proxy = new CalculatorInvocationHandler(target).getProxy();
 
         System.out.println(proxy.add("1", "2"));
 

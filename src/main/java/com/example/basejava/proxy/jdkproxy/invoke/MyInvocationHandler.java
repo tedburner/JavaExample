@@ -1,4 +1,4 @@
-package com.example.basejava.proxy.test.invoke;
+package com.example.basejava.proxy.jdkproxy.invoke;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
