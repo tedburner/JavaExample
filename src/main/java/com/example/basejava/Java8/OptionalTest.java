@@ -1,6 +1,6 @@
 package com.example.basejava.Java8;
 
-import com.example.model.bean.SimpleDTO;
+import com.example.domain.bean.SimpleDTO;
 
 import java.util.List;
 import java.util.Optional;

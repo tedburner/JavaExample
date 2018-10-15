@@ -1,4 +1,4 @@
-package com.example.model.bean;
+package com.example.domain.bean;
 
 /**
  * @author lingjun.jlj

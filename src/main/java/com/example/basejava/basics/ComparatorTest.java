@@ -1,9 +1,8 @@
 package com.example.basejava.basics;
 
-import com.example.model.UserDTO;
+import com.example.domain.dto.UserDTO;
 import com.google.common.collect.Lists;
 
-import java.util.Comparator;
 import java.util.List;
 
 /**

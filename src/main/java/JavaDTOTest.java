@@ -1,4 +1,4 @@
-import com.example.model.bean.SimpleDTO;
+import com.example.domain.bean.SimpleDTO;
 
 /**
  * @author: lingjun.jlj
