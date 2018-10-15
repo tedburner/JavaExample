@@ -198,7 +198,6 @@
             <artifactId>javassist</artifactId>
             <version>3.22.0-GA</version>
         </dependency>
-
     </dependencies>
 
 
