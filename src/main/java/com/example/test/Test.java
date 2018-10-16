@@ -20,5 +20,7 @@ public class Test {
         elementData[3] = obj;
         System.arraycopy(elementData, index, elementData, index + 1, elementCount - index);
         System.out.print(elementData.toString());
+
+
     }
 }

@@ -68,7 +68,8 @@ public class StampedLockTest {
                 @Override
                 public void run() {
                     for (int i = 0; i < 100; i++) {
-                        move(x, y);
+                        move(i, i);
+                        System.out.println(x + " " + y);
                         distanceFromOrigin();
                         moveIfAtOrigin(x, y);
                     }
