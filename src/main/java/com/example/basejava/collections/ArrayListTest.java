@@ -1,4 +1,4 @@
-package com.example.basejava.Collection;
+package com.example.basejava.collections;
 
 import java.util.Iterator;
 import java.util.List;

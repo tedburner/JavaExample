@@ -1,15 +1,17 @@
 package com.example.basejava.concurrent.lock.spin;
 
-import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicReference;
 
 /**
  * @author: lingjun.jlj
  * @date: 2018/10/17 11:16
- * @description: 自旋锁
+ * @description: 自旋锁 非公平锁，CAS，非可重入锁
+ * @benfit:相应速度更快，因为不切换线程状态
+ * @bad: 线程数量达到一定量时，性能下降
  */
 public class SpinLock {
 
-    private AtomicBoolean atomicBoolean = new AtomicBoolean(false);
+    private AtomicReference<Thread> atomicReference = new AtomicReference<Thread>();
 
     /**
      * <pre>
@@ -18,7 +20,8 @@ public class SpinLock {
      * </pre>
      */
     public void lock() {
-        while (atomicBoolean.getAndSet(true)) {
+        Thread thread = Thread.currentThread();
+        while (atomicReference.compareAndSet(null, thread)) {
         }
     }
 
@@ -26,7 +29,8 @@ public class SpinLock {
      * 释放锁
      */
     public void unlock() {
-        atomicBoolean.set(false);
+        Thread thread = Thread.currentThread();
+        atomicReference.compareAndSet(thread, null);
     }
 
 }
