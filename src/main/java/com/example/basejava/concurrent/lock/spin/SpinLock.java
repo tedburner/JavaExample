@@ -19,7 +19,6 @@ public class SpinLock {
      */
     public void lock() {
         while (atomicBoolean.getAndSet(true)) {
-
         }
     }
 
