@@ -10,7 +10,7 @@ import java.util.TreeSet;
  **/
 public class SetTest {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         //Set是无序的，不是按照插入的顺序排列的，不允许重复
         Set<String> set = new HashSet<>();
         set.add("a");

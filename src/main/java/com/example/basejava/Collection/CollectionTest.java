@@ -16,14 +16,13 @@ public class CollectionTest {
         set.add("cde");
         set.add("abc");//自动去重
 
-        for (Iterator it = set.iterator();it.hasNext();){
+        for (Iterator it = set.iterator(); it.hasNext(); ) {
             System.out.println(it.next().toString());
         }
         //System.out.println(set.hashCode());
         List<String> list = new ArrayList<>();
 
         List<String> list1 = new LinkedList<>();
-
 
 
     }
