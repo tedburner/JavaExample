@@ -17,12 +17,12 @@ public class AdminOnlyAop {
     /**
      * 当有这个注解的时候，执行切面
      */
-    @Pointcut("@annotation(AdminOnly)")
+    //@Pointcut("@annotation(AdminOnly)")
     public void adminOnly() {
 
     }
 
-    @Before("adminOnly()")
+    //@Before("adminOnly()")
     public void before() {
 
     }

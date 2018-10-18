@@ -1,6 +1,7 @@
 package com.example.programme.persist;
 
 import com.example.programme.domain.DO.CityDO;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -9,7 +10,6 @@ import java.util.List;
  * @author lingjun.jlj
  * @create 2017-09-22
  **/
-
 public interface CityMapper {
 
     Long addCity(CityDO cityDO);
@@ -28,5 +28,10 @@ public interface CityMapper {
      */
     CityDO selectById(@Param("id") Long id);
 
+    /**
+     * 根据省份ID查询城市信息
+     *
+     * @param provinceId 省份信息
+     */
     List<CityDO> selectCityByProvinceId(Long provinceId);
 }

@@ -34,7 +34,6 @@ public class CityDO implements Serializable {
      */
     private String description;
 
-
     public static final class CityBuilder {
         private Long id;
         private Long provinceId;

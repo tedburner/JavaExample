@@ -13,9 +13,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * @date: 2018/10/15 14:25
  * @description:
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("classpath:applicationContext.xml")
-public class ApplicationTest {
+public class ApplicationTest extends BaseTest{
 
     @Autowired
     private ProductService productService;
@@ -23,6 +21,6 @@ public class ApplicationTest {
     @Test
     public void AopTest() {
         Product product = new Product();
-        productService.insert(product);
+        productService.save(product);
     }
 }

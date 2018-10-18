@@ -15,7 +15,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     @AdminOnly
-    public void insert(Product product) {
+    public void save(Product product) {
         System.out.println("insert a product");
     }
 
