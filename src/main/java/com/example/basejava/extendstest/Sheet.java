@@ -1,4 +1,4 @@
-package com.example.basejava.extendsTest;
+package com.example.basejava.extendstest;
 
 /**
  * Created by jlj on 2017/9/5.

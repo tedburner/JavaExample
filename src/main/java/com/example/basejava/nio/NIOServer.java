@@ -1,4 +1,4 @@
-package com.example.basejava.NIO;
+package com.example.basejava.nio;
 
 
 import java.net.InetSocketAddress;

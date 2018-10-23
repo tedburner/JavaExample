@@ -1,4 +1,4 @@
-package com.example.basejava.ThinkingInJava;
+package com.example.basejava.thinkinjava;
 
 /**
  * @author lingjun.jlj
