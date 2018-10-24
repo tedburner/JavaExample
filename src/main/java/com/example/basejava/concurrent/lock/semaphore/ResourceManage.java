@@ -1,6 +1,5 @@
 package com.example.basejava.concurrent.lock.semaphore;
 
-import java.util.Objects;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.locks.ReentrantLock;
 
