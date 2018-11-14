@@ -3,7 +3,7 @@ package com.example.DesignPatterns.Singleton;
 /**
  * @author lingjun.jlj
  * @data 2018/5/18
- * @Description:
+ * @Description: 枚举单例
  */
 public enum SingletonEnum {
     INSTANCE;

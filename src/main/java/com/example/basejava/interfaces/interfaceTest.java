@@ -1,4 +1,4 @@
-package com.example.basejava.interfacetest;
+package com.example.basejava.interfaces;
 
 /**
  * @author lingjun.jlj
