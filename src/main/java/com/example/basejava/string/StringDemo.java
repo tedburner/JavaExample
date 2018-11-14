@@ -11,6 +11,7 @@ package com.example.basejava.string;
 public class StringDemo {
 
     public static void main(String[] args) {
-        String s = new String("abc");
+        //String s = new String("abc");
+        String s1 = "abc";
     }
 }
