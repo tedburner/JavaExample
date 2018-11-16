@@ -38,7 +38,7 @@ public class ListTest {
         int index = 700; //表示从哪个位置插入
         long time = System.currentTimeMillis();
         for (int i = 1; i < num; i++) {
-            list.add(i);
+            list.add(index, i);
         }
         return System.currentTimeMillis() - time;
 
