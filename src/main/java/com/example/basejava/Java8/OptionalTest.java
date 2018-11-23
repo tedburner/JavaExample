@@ -5,6 +5,7 @@ import com.example.domain.bean.SimpleDTO;
 import java.util.List;
 import java.util.Optional;
 
+
 /**
  * @author: lingjun.jlj
  * @Date: 2018/7/13 11:21
@@ -13,8 +14,8 @@ import java.util.Optional;
 public class OptionalTest {
 
     public static void main(String[] args) {
-        java.util.Optional<List<SimpleDTO>> optionalInteger = java.util.Optional.of(BeanData.getBeanDataList());
-        java.util.Optional<Integer> optional = java.util.Optional.ofNullable(null);
+        Optional<List<SimpleDTO>> optionalInteger = java.util.Optional.of(BeanData.getBeanDataList());
+        Optional<Integer> optional = Optional.ofNullable(null);
         //获取值
         System.out.println(optionalInteger.get());
         //isPresent判断该值是否为null
