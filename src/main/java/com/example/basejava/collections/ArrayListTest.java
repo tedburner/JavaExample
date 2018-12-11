@@ -1,5 +1,6 @@
 package com.example.basejava.collections;
 
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -14,7 +15,7 @@ public class ArrayListTest {
 
     public static void main(String[] args) {
 
-        List<String> list = Stream.of("aa", "aa", "bb", "bb", "cc", "cc", "dd", "dd").collect(Collectors.toList());
+        List<String> list = Arrays.asList("aa", "aa", "bb", "bb", "cc", "cc", "dd", "dd");
 
         for (int i = 0; i < list.size(); i++) {
             if ("aa".equals(list.get(i))) {
