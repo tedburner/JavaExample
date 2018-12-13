@@ -3,7 +3,7 @@
 代码。
 
 - [LeetCode](/src/main/java/com/example/algorithm/LeetCode)
-- [设计模式](/src/main/java/com/example/DesignPatterns)
+- [设计模式](/com/example/designpattern)
 - [Spring](src/main/java/com/example/spring)
 - [Netty](src/main/java/com/example/netty)
 - [JMH](src/main/java/com/example/jmh)
