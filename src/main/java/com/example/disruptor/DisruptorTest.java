@@ -1,13 +1,11 @@
 package com.example.disruptor;
 
-import com.lmax.disruptor.BlockingWaitStrategy;
-import com.lmax.disruptor.EventFactory;
-import com.lmax.disruptor.EventHandler;
-import com.lmax.disruptor.RingBuffer;
+import com.lmax.disruptor.*;
 import com.lmax.disruptor.dsl.Disruptor;
 import com.lmax.disruptor.dsl.ProducerType;
 
 import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author: Lucifer
@@ -54,8 +52,18 @@ public class DisruptorTest {
             }
         };
 
-        //阻塞策略
+        //阻塞策略，加锁，使用场景：CPU资源紧缺，吞吐量和延迟并不重要
         BlockingWaitStrategy strategy = new BlockingWaitStrategy();
+        //自旋锁,通过不断重试，减少切换线程导致的系统调用，而降低延迟。推荐在线程绑定到固定的CPU的场景下使用
+        //BusySpinWaitStrategy strategy =  new BusySpinWaitStrategy();
+        //自旋 + yield + 自定义策略，CPU资源紧缺，吞吐量和延迟并不重要的场景
+        //PhasedBackoffWaitStrategy strategy = new PhasedBackoffWaitStrategy(1L, 1L, TimeUnit.SECONDS, new WaitStrategy());
+        //自旋 + yield + sleep,性能和CPU资源之间有很好的折中。延迟不均匀
+        //SleepingWaitStrategy strategy =  new SleepingWaitStrategy();
+        //加锁，有超时限制	CPU资源紧缺，吞吐量和延迟并不重要的场景
+        //TimeoutBlockingWaitStrategy strategy = new TimeoutBlockingWaitStrategy(1L, TimeUnit.SECONDS);
+        //自旋 + yield + 自旋,性能和CPU资源之间有很好的折中。延迟比较均匀
+        //YieldingWaitStrategy strategy = new YieldingWaitStrategy();
 
         //指定 RingBuffer
         int bufferSize = 16;
