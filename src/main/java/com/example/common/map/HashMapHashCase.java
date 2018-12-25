@@ -1,5 +1,7 @@
 package com.example.common.map;
 
+import com.example.utils.BinaryUtils;
+
 import java.util.Objects;
 
 /**
@@ -18,7 +20,11 @@ public class HashMapHashCase {
     }
 
     public static void main(String[] args) {
+        int n = 1;
         System.out.println(hash("abc"));
+        System.out.println(BinaryUtils.toBinary(hash("abc")));
+        System.out.println(BinaryUtils.toBinary(n));
+        System.out.println((n - 1) & hash("abc"));
     }
 
     static final int hash(Object key) {
