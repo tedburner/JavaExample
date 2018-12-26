@@ -7,6 +7,7 @@ import java.util.TreeSet;
 /**
  * @author lingjun.jlj
  * @create 2017-09-18
+ * @description: HashSet 底层使用的是HashMap;TreeSet底层使用的是 TreeMap
  **/
 public class SetTest {
 
