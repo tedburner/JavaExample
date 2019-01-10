@@ -1,7 +1,5 @@
-package com.example.netty.study.part6.server;
+package com.example.netty.juejin_study.part6.server;
 
-import com.example.netty.study.part6.client.FirstClientHandler;
-import com.sun.org.apache.xerces.internal.dom.PSVIAttrNSImpl;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOption;

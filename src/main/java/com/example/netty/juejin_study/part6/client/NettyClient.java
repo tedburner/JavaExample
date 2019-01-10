@@ -1,4 +1,4 @@
-package com.example.netty.study.part6.client;
+package com.example.netty.juejin_study.part6.client;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelInitializer;
@@ -7,7 +7,6 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
-import javax.naming.ldap.PagedResultsControl;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 

@@ -1,4 +1,4 @@
-package com.example.netty.study.part6.server;
+package com.example.netty.juejin_study.part6.server;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;

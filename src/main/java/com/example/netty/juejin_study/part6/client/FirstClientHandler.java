@@ -1,6 +1,5 @@
-package com.example.netty.study.part6.client;
+package com.example.netty.juejin_study.part6.client;
 
-import afu.org.checkerframework.checker.oigj.qual.O;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;

@@ -1,4 +1,4 @@
-package com.example.netty.study.part7;
+package com.example.netty.juejin_study.part7;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufAllocator;

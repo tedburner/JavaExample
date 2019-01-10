@@ -26,6 +26,5 @@ public class InstantTest {
 
         System.out.println(instant);
 
-
     }
 }
