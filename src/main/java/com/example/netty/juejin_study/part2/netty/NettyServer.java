@@ -17,6 +17,7 @@ import io.netty.handler.codec.string.StringDecoder;
 public class NettyServer {
 
     public static void main(String[] args) {
+        //引导类，引导我们进行服务端的启动工作
         ServerBootstrap serverBootstrap = new ServerBootstrap();
         //boss 对应 IOServer 中接收连接线程，主要负责创建新的连接
         NioEventLoopGroup boss = new NioEventLoopGroup();
@@ -25,7 +26,7 @@ public class NettyServer {
 
         serverBootstrap
                 .group(boss, worker)
-                .channel(NioServerSocketChannel.class)
+                .channel(NioServerSocketChannel.class) //IO模型选择 NIO
                 .childHandler(new ChannelInitializer<NioSocketChannel>() {
                     protected void initChannel(NioSocketChannel channel) {
                         channel.pipeline().addLast(new StringDecoder());

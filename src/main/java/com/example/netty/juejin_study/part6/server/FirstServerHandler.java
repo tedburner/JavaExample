@@ -14,6 +14,9 @@ import java.util.Date;
  */
 public class FirstServerHandler extends ChannelInboundHandlerAdapter {
 
+    /**
+     * 服务端读取数据
+     */
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) {
         ByteBuf byteBuf = (ByteBuf) msg;
