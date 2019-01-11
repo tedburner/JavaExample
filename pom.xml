@@ -173,7 +173,6 @@
             <artifactId>jmh-core</artifactId>
             <version>1.21</version>
         </dependency>
-
         <dependency>
             <groupId>org.openjdk.jmh</groupId>
             <artifactId>jmh-generator-annprocess</artifactId>
@@ -182,11 +181,6 @@
         </dependency>
 
         <!--google-->
-        <dependency>
-            <groupId>com.google.zxing</groupId>
-            <artifactId>core</artifactId>
-            <version>3.2.1</version>
-        </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
@@ -206,7 +200,7 @@
         <dependency>
             <groupId>org.javassist</groupId>
             <artifactId>javassist</artifactId>
-            <version>3.22.0-GA</version>
+            <version>3.23.1-GA</version>
         </dependency>
 
         <!--RJava https://github.com/ReactiveX/RxJava -->
