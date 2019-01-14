@@ -222,6 +222,18 @@
             <artifactId>disruptor</artifactId>
             <version>3.4.2</version>
         </dependency>
+
+        <!--序列化工具-->
+        <dependency>
+            <groupId>com.caucho</groupId>
+            <artifactId>hessian</artifactId>
+            <version>4.0.38</version>
+        </dependency>
+        <dependency>
+            <groupId>com.esotericsoftware</groupId>
+            <artifactId>kryo</artifactId>
+            <version>4.0.1</version>
+        </dependency>
     </dependencies>
 
 
