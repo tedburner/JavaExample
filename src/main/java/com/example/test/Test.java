@@ -24,19 +24,33 @@ public class Test {
         System.out.println(System.currentTimeMillis());
 
 
-        int n = 9 - 1;
-        n |= n >>> 1;
-        n |= n >>> 2;
-        n |= n >>> 4;
-        n |= n >>> 8;
-        n |= n >>> 16;
+//        int n = 9 - 1;
+//        n |= n >>> 1;
+//        n |= n >>> 2;
+//        n |= n >>> 4;
+//        n |= n >>> 8;
+//        n |= n >>> 16;
+//
+//        System.out.println(n);
+//
+//        String a = "123";
+//        String b = "123";
+//        System.out.println(a == b);
 
-        System.out.println(n);
 
-        String a = "123";
-        String b = "123";
-        System.out.println(a == b);
+        String a = new String("100");
+        String b = new String("100");
+        Integer c = new Integer(100);
+        Long d = new Long(100);
+        System.out.println(a.equals(b));
+        System.out.println(a.equals(c));
+        System.out.println(a.equals(d));
 
 
+        char[] charArray = {'a', 'b', 'c'};
+        char[] charArray1 = charArray;
+        charArray1[1] = 'x';
+        System.out.println(charArray);
+        
     }
 }
