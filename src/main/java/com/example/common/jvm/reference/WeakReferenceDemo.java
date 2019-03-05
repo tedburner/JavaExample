@@ -10,7 +10,7 @@ import java.lang.ref.WeakReference;
 public class WeakReferenceDemo {
 
     public static void main(String[] args) {
-        WeakReference<String> reference = new WeakReference<String>(new String("WeakReference"));
+        WeakReference<String> reference = new WeakReference<>(new String("WeakReference"));
         System.out.println(reference.get());
         System.gc();//通知GVM回收资源
         System.out.println("After GC: ");

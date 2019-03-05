@@ -21,24 +21,44 @@ public class ListTest {
             linked.add(i);
         }
         //获得两者随机访问的时间
-        System.out.println("array time:" + getTime(array));
-        System.out.println("linked time:" + getTime(linked));
-        //获得两者插入数据的时间
-        System.out.println("array insert time:" + insertTime(array));
-        System.out.println("linked insert time:" + insertTime(linked));
+        System.out.println("array get cost time:" + getTime(array));
+        System.out.println("linked get cost time:" + getTime(linked));
+        //获得在中间插入数据的时间
+        System.out.println("array insert in middle cost time:" + insertInMiddleTime(array));
+        System.out.println("linked insert cost in middle time:" + insertInMiddleTime(linked));
+
+        //获得尾部插入数据的时间
+        System.out.println("array insert at last cost time:" + insertAtLastTime(array));
+        System.out.println("linked insert cost at last time:" + insertAtLastTime(linked));
     }
 
     //插入数据
-    public static long insertTime(List<Integer> list) {
+    public static long insertInMiddleTime(List<Integer> list) {
         /*
          * 插入的数据量和插入的位置是决定两者性能的主要方面，
          * 我们可以通过修改这两个数据，来测试两者的性能
          */
-        long num = 10000; //表示要插入的数据量
+        long num = 1000000; //表示要插入的数据量
         int index = 700; //表示从哪个位置插入
         long time = System.currentTimeMillis();
         for (int i = 1; i < num; i++) {
             list.add(index, i);
+        }
+        return System.currentTimeMillis() - time;
+
+    }
+
+    //插入数据
+    public static long insertAtLastTime(List<Integer> list) {
+        /*
+         * 插入的数据量和插入的位置是决定两者性能的主要方面，
+         * 我们可以通过修改这两个数据，来测试两者的性能
+         */
+        long num = 1000000; //表示要插入的数据量
+        int index = 700; //表示从哪个位置插入
+        long time = System.currentTimeMillis();
+        for (int i = 1; i < num; i++) {
+            list.add(i);
         }
         return System.currentTimeMillis() - time;
 

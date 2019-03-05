@@ -6,11 +6,12 @@ import java.util.Arrays;
  * @author lingjun.jlj
  * @date 2017-12-24
  * @description: 快排
+ * 算法详解参考：https://blog.csdn.net/MoreWindows/article/details/6684558
  **/
 public class QuickSortTest {
 
     public static void main(String[] args) {
-        int[] array = {3, 2, 1, 8, 5, 10, 22, 18, 12, 77, 47};
+        int[] array = {3, 2, 100, 8, 5, 10, 22, 18, 12, 77, 1, 47};
         QuickSort(array);
         System.out.println(Arrays.toString(array));
     }
@@ -33,14 +34,16 @@ public class QuickSortTest {
             }
             // 用比基准小的记录替换低位记录
             if (i < j) {
-                a[i++] = a[j];
+                a[i] = a[j];
+                i++;
             }
             while (i < j && a[i] < target) {
                 i++;
             }
             // 用比基准大的记录替换高位记录
             if (i < j) {
-                a[j--] = a[i];
+                a[j] = a[i];
+                j--;
             }
         }
         // 将基准数值替换回 a[i]
