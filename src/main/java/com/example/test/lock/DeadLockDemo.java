@@ -16,31 +16,25 @@ public class DeadLockDemo {
     }
 
     private void deadLock() {
-        Thread thread1 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                synchronized (A) {
-                    System.out.println("threadA ");
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    synchronized (B) {
-                        System.out.println("1");
-                    }
+        Thread thread1 = new Thread(() -> {
+            synchronized (A) {
+                System.out.println("thread1 " + A);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                synchronized (B) {
+                    System.out.println("获取资源" + B);
                 }
             }
         });
 
-        Thread thread2 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                synchronized (B) {
-                    System.out.println("threadB ");
-                    synchronized (A) {
-                        System.out.println("2");
-                    }
+        Thread thread2 = new Thread(() -> {
+            synchronized (B) {
+                System.out.println("thread2 " + B);
+                synchronized (A) {
+                    System.out.println("获取资源" + A);
                 }
             }
         });

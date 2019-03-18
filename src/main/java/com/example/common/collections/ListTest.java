@@ -16,7 +16,7 @@ public class ListTest {
         List<Integer> array = new ArrayList<>();
         List<Integer> linked = new LinkedList<>();
         //首先分别给两者插入10000条数据
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 100000; i++) {
             array.add(i);
             linked.add(i);
         }
@@ -38,7 +38,7 @@ public class ListTest {
          * 插入的数据量和插入的位置是决定两者性能的主要方面，
          * 我们可以通过修改这两个数据，来测试两者的性能
          */
-        long num = 1000000; //表示要插入的数据量
+        long num = 100000; //表示要插入的数据量
         int index = 700; //表示从哪个位置插入
         long time = System.currentTimeMillis();
         for (int i = 1; i < num; i++) {

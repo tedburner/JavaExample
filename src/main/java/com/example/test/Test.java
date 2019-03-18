@@ -38,19 +38,33 @@ public class Test {
 //        System.out.println(a == b);
 
 
-        String a = new String("100");
-        String b = new String("100");
-        Integer c = new Integer(100);
-        Long d = new Long(100);
-        System.out.println(a.equals(b));
-        System.out.println(a.equals(c));
-        System.out.println(a.equals(d));
+//        String a = new String("100");
+//        String b = new String("100");
+//        Integer c = new Integer(100);
+//        Long d = new Long(100);
+//        System.out.println(a.equals(b));
+//        System.out.println(a.equals(c));
+//        System.out.println(a.equals(d));
+//
+//
+//        char[] charArray = {'a', 'b', 'c'};
+//        char[] charArray1 = charArray;
+//        charArray1[1] = 'x';
+//        System.out.println(charArray);
+
+        double source = 0.52;
+        double d1 = Math.round(source * 100) / 100;
+
+        double d2 = source * 100;
+        double d3 = Math.round(d2);
+        double d4 = d3 / 100;
+
+        System.out.println(d1);
+        System.out.println(d4);
 
 
-        char[] charArray = {'a', 'b', 'c'};
-        char[] charArray1 = charArray;
-        charArray1[1] = 'x';
-        System.out.println(charArray);
-        
+        System.out.println(52 / 100);
+
+
     }
 }
