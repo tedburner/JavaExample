@@ -1,4 +1,4 @@
-package com.example.spring.IOC;
+package com.example.spring.ioc;
 
 /**
  * @author lingjun.jlj
