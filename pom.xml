@@ -243,7 +243,7 @@
         </dependency>
 
         <dependency>
-            <groupId> com.101tec</groupId>
+            <groupId>com.101tec</groupId>
             <artifactId>zkclient</artifactId>
         </dependency>
         <dependency>
@@ -251,6 +251,39 @@
             <artifactId>zookeeper</artifactId>
             <version>3.4.13</version>
         </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>org.apache.poi</groupId>-->
+        <!--            <artifactId>poi-scratchpad</artifactId>-->
+        <!--            <version>3.17</version>-->
+        <!--        </dependency>-->
+
+        <!-- excel -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+
+        <!-- word -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-scratchpad</artifactId>
+            <version>3.17</version>
+        </dependency>
+
+        <!-- xlsx -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+        <!-- xlsx  依赖这个包 -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml-schemas</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+
     </dependencies>
 
 

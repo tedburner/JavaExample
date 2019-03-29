@@ -70,5 +70,9 @@ public class Test {
         int j = 1;
         System.out.println(i++ + j);
 
+
+        Double duration = 472.0;
+        System.out.println(String.format("%.2f", duration / 60));
+
     }
 }

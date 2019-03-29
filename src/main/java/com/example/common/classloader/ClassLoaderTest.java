@@ -1,7 +1,6 @@
 package com.example.common.classloader;
 
 
-import com.sun.nio.zipfs.ZipFileAttributes;
 
 /**
  * @author: Lucifer
@@ -22,8 +21,8 @@ public class ClassLoaderTest {
         // ZipFileAttributes 类在 <java_home>/jre/lib/ext/zipfs.jar 中，
         // 由 Extension ClassLoader 加载，
         // 输出为  sun.misc.Launcher$ExtClassLoader@4b67cf4d
-        ZipFileAttributes[] attributes = new ZipFileAttributes[5];
-        System.out.println(attributes.getClass().getClassLoader());
+        //ZipFileAttributes[] attributes = new ZipFileAttributes[5];
+        //System.out.println(attributes.getClass().getClassLoader());
 
         //ClassLoaderTest 类是自定义的类，
         // 默认由 System ClassLoader 加载，
