@@ -9,7 +9,7 @@ import java.nio.channels.FileChannel;
 /**
  * @author: Arthas
  * @date: 2019-01-18 16:47
- * @description: mmap 测试类
+ * @description: 零拷贝 mmap 测试类
  */
 public class MMapTest {
 

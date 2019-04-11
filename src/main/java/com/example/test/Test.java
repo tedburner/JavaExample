@@ -8,6 +8,13 @@ package com.example.test;
 public class Test {
 
     public static void main(String[] args) {
+
+        String time = "199509082330";
+        System.out.println(time.substring(0, 4));
+        System.out.println(time.substring(4, 6));
+        System.out.println(time.substring(6, 8));
+
+        System.out.println(String.format("%02d", Integer.valueOf("07")));
 //        Object[] elementData  =new Object[10];
 //        int elementCount = 2;
 //        int index = 1;
