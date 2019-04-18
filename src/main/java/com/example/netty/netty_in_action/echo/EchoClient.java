@@ -1,4 +1,4 @@
-package com.example.netty.echo;
+package com.example.netty.netty_in_action.echo;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
