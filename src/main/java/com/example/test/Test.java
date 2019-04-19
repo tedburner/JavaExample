@@ -9,12 +9,22 @@ public class Test {
 
     public static void main(String[] args) {
 
-        String time = "199509082330";
-        System.out.println(time.substring(0, 4));
-        System.out.println(time.substring(4, 6));
-        System.out.println(time.substring(6, 8));
+        String idNo = "330781199509082330";
+        for (int i = 0; i < idNo.length(); i++) {
+            System.out.println(idNo.charAt(i));
+        }
 
-        System.out.println(String.format("%02d", Integer.valueOf("07")));
+//        String str = "邓丽梅|360732199310062621";
+//        String[] identity = str.split("\\|");
+//        System.out.println(identity[0] + " " + identity[1]);
+//
+//
+//        String time = "199509082330";
+//        System.out.println(time.substring(0, 4));
+//        System.out.println(time.substring(4, 6));
+//        System.out.println(time.substring(6, 8));
+//
+//        System.out.println(String.format("%02d", Integer.valueOf("07")));
 //        Object[] elementData  =new Object[10];
 //        int elementCount = 2;
 //        int index = 1;
@@ -28,7 +38,7 @@ public class Test {
 //        System.arraycopy(elementData, index, elementData, index + 1, elementCount - index);
 //        System.out.print(elementData.toString());
 
-        System.out.println(System.currentTimeMillis());
+//        System.out.println(System.currentTimeMillis());
 
 
 //        int n = 9 - 1;
@@ -59,27 +69,27 @@ public class Test {
 //        charArray1[1] = 'x';
 //        System.out.println(charArray);
 
-        double source = 0.52;
-        double d1 = Math.round(source * 100) / 100;
-
-        double d2 = source * 100;
-        double d3 = Math.round(d2);
-        double d4 = d3 / 100;
-
-        System.out.println(d1);
-        System.out.println(d4);
-
-
-        System.out.println(52 / 100);
-
-
-        int i = 1;
-        int j = 1;
-        System.out.println(i++ + j);
-
-
-        Double duration = 472.0;
-        System.out.println(String.format("%.2f", duration / 60));
+//        double source = 0.52;
+//        double d1 = Math.round(source * 100) / 100;
+//
+//        double d2 = source * 100;
+//        double d3 = Math.round(d2);
+//        double d4 = d3 / 100;
+//
+//        System.out.println(d1);
+//        System.out.println(d4);
+//
+//
+//        System.out.println(52 / 100);
+//
+//
+//        int i = 1;
+//        int j = 1;
+//        System.out.println(i++ + j);
+//
+//
+//        Double duration = 472.0;
+//        System.out.println(String.format("%.2f", duration / 60));
 
     }
 }

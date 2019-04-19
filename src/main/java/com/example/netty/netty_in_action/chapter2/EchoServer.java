@@ -1,19 +1,12 @@
-package com.example.netty.netty_in_action.echo;
+package com.example.netty.netty_in_action.chapter2;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
-import io.netty.channel.ChannelOption;
-import io.netty.channel.ChannelPipeline;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.handler.logging.LogLevel;
-import io.netty.handler.logging.LoggingHandler;
-import io.netty.handler.ssl.SslContext;
-import io.netty.handler.ssl.SslContextBuilder;
-import io.netty.handler.ssl.util.SelfSignedCertificate;
 
 import java.net.InetSocketAddress;
 
@@ -32,14 +25,9 @@ public class EchoServer {
 
 
     public static void main(String[] args) throws Exception {
-        if (args.length != 1) {
-            System.out.println("Usage: " + EchoServer.class.getSimpleName() + " <port>");
-            return;
-        }
-        int port = Integer.parseInt(args[0]);
+
+        int port = 8080;
         new EchoServer(port).start();
-        EventLoopGroup bossGroup = new NioEventLoopGroup(1);
-        EventLoopGroup workerGroup = new NioEventLoopGroup();
     }
 
     public void start() throws Exception {
@@ -48,7 +36,8 @@ public class EchoServer {
         EventLoopGroup group = new NioEventLoopGroup();
         try {
             ServerBootstrap bootstrap = new ServerBootstrap();
-            bootstrap.channel(NioServerSocketChannel.class)
+            bootstrap.group(group)
+                    .channel(NioServerSocketChannel.class)
                     .localAddress(new InetSocketAddress(port))
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override

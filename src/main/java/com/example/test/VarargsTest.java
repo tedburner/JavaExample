@@ -13,10 +13,12 @@ public class VarargsTest {
     public static void fillFields(String... values) {
         List<String> list = Arrays.asList(values);
         list.forEach(System.out::println);
+        String[] arr = new String[10];
     }
 
 
     public static void main(String[] args) {
-        fillFields("1", "2", "3", "4");
+        fillFields("1", "2", "3", "4", "5");
     }
+
 }
