@@ -31,7 +31,6 @@ public class EchoServer {
     }
 
     public void start() throws Exception {
-        final EchoServerHandler serverHandler = new EchoServerHandler();
         //创建 EventLoopGroup
         EventLoopGroup group = new NioEventLoopGroup();
         try {
@@ -42,7 +41,8 @@ public class EchoServer {
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel channel) throws Exception {
-                            channel.pipeline().addLast(serverHandler);
+                            //绑定服务端 server handler
+                            channel.pipeline().addLast(new EchoServerHandler());
                         }
                     });
             //异步的绑定服务器；调用sync()方法阻塞等待知道绑定完成
