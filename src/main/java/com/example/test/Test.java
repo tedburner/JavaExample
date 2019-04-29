@@ -1,5 +1,7 @@
 package com.example.test;
 
+import org.apache.commons.lang3.StringUtils;
+
 /**
  * @author: lingjun.jlj
  * @date: 2018/9/15 21:25
@@ -9,11 +11,11 @@ public class Test {
 
     public static void main(String[] args) {
 
-        String idNo = "330781199509082330";
-        for (int i = 0; i < idNo.length(); i++) {
-            System.out.println(idNo.charAt(i));
-        }
+        int index = StringUtils.lastIndexOf("1313.MP4", ".");
+        String suffix = StringUtils.substring("1313.MP4", index);
+        System.out.println(suffix);
 
+//
 //        String str = "邓丽梅|360732199310062621";
 //        String[] identity = str.split("\\|");
 //        System.out.println(identity[0] + " " + identity[1]);
