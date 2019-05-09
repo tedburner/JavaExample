@@ -1,6 +1,7 @@
 package com.example.test;
 
 import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * @author: Arthas
@@ -25,9 +26,16 @@ public class RandomTest {
         return x;
     }
 
+    /**
+     * 为每个线程生成一个随机数
+     */
+    public static int threadLocalRandom() {
+        return ThreadLocalRandom.current().nextInt(1000000);
+    }
+
     public static void main(String[] args) {
-        for (int i = 0; i < 10000; i++) {
-            System.out.println(getRandom());
-        }
+        System.out.println(getRandom());
+
+        System.out.println(threadLocalRandom() + 100000);
     }
 }

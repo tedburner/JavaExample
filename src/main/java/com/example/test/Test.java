@@ -11,6 +11,10 @@ public class Test {
 
     public static void main(String[] args) {
 
+        Integer a = null;
+        System.out.println(String.valueOf(a));
+        System.out.println(a.toString());
+
         int index = StringUtils.lastIndexOf("1313.MP4", ".");
         String suffix = StringUtils.substring("1313.MP4", index);
         System.out.println(suffix);
