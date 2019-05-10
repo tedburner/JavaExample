@@ -64,7 +64,6 @@ public class RoundRobinLoadBalance {
         long now = System.currentTimeMillis();
         Invoker selectedInvoker = null;
         WeightedRoundRobin selectedWRR = null;
-
         for (Invoker invoker : invokers) {
             String identifyString = invoker.getUrlKey();
             WeightedRoundRobin weightedRoundRobin = map.get(identifyString);
