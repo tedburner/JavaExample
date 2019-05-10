@@ -1,4 +1,4 @@
-package com.example.test.loadbalance;
+package com.example.loadbalance;
 
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
@@ -10,7 +10,7 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 public class RandomLoadBalance {
 
-    public static Invoker doSelect(List<Invoker> invokers) {
+    public Invoker doSelect(List<Invoker> invokers) {
         int length = invokers.size();
         int firstWeight = invokers.get(0).getWeight();
         int totalWeight = firstWeight;
