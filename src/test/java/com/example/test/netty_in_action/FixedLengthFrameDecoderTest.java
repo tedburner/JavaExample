@@ -44,4 +44,38 @@ public class FixedLengthFrameDecoderTest {
         buf.release();
 
     }
+
+    @Test
+    public void testFramesDecoded2() {
+        ByteBuf buf = Unpooled.buffer();
+        for (int i = 0; i < 9; i++) {
+            buf.writeByte(i);
+        }
+
+        ByteBuf input = buf.duplicate();
+
+        EmbeddedChannel channel = new EmbeddedChannel(
+                new FixedLengthFrameDecoder(3)
+        );
+        //返回false，因为没有一个完整的可供读取的帧
+        Assert.assertFalse(channel.writeInbound(input.readBytes(2)));
+        Assert.assertTrue(channel.writeInbound(input.readBytes(7)));
+
+        Assert.assertTrue(channel.finish());
+        ByteBuf read = (ByteBuf) channel.readInbound();
+        Assert.assertEquals(buf.readSlice(3), read);
+        read.release();
+
+        read = (ByteBuf) channel.readInbound();
+        Assert.assertEquals(buf.readSlice(3), read);
+        read.release();
+
+        read = (ByteBuf) channel.readInbound();
+        Assert.assertEquals(buf.readSlice(3), read);
+        read.release();
+
+        Assert.assertNull(channel.readInbound());
+        buf.release();
+
+    }
 }
