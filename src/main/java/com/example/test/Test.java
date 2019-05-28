@@ -1,6 +1,11 @@
 package com.example.test;
 
 import org.apache.commons.lang3.StringUtils;
+import org.joda.time.DateTime;
+
+import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author: lingjun.jlj
@@ -11,13 +16,23 @@ public class Test {
 
     public static void main(String[] args) {
 
-        Integer a = null;
-        System.out.println(String.valueOf(a));
-        System.out.println(a.toString());
+        Map<String, String> map = new HashMap<>();
+        if (map.isEmpty()){
 
-        int index = StringUtils.lastIndexOf("1313.MP4", ".");
-        String suffix = StringUtils.substring("1313.MP4", index);
-        System.out.println(suffix);
+        }
+
+        String fileName = "/" + System.currentTimeMillis() + ".png";
+        String imagePath = new DateTime().toString("/YYYY/MM/dd");
+        String path = "C:\\Document\\card" + imagePath;
+        new File(path).mkdirs();
+
+//        Integer a = null;
+//        System.out.println(String.valueOf(a));
+//        System.out.println(a.toString());
+//
+//        int index = StringUtils.lastIndexOf("1313.MP4", ".");
+//        String suffix = StringUtils.substring("1313.MP4", index);
+//        System.out.println(suffix);
 
 //
 //        String str = "邓丽梅|360732199310062621";
