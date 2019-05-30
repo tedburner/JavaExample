@@ -16,15 +16,26 @@ public class Test {
 
     public static void main(String[] args) {
 
-        Map<String, String> map = new HashMap<>();
-        if (map.isEmpty()){
+        try {
 
+            System.out.println("1111111");
+            throw new Exception("adas");
+
+        } catch (Exception e) {
+            System.out.println("22222222");
+            return;
+        } finally {
+            System.out.println("333333333333333");
         }
 
-        String fileName = "/" + System.currentTimeMillis() + ".png";
-        String imagePath = new DateTime().toString("/YYYY/MM/dd");
-        String path = "C:\\Document\\card" + imagePath;
-        new File(path).mkdirs();
+//        Map<String, String> map = new HashMap<>();
+//        System.out.println(map == null);
+//        System.out.println(map.isEmpty());
+//
+//        String fileName = "/" + System.currentTimeMillis() + ".png";
+//        String imagePath = new DateTime().toString("/YYYY/MM/dd");
+//        String path = "C:\\Document\\card" + imagePath;
+//        new File(path).mkdirs();
 
 //        Integer a = null;
 //        System.out.println(String.valueOf(a));
