@@ -1,6 +1,11 @@
 package com.example.test;
 
 import org.apache.commons.lang3.StringUtils;
+import org.joda.time.DateTime;
+
+import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author: lingjun.jlj
@@ -11,13 +16,34 @@ public class Test {
 
     public static void main(String[] args) {
 
-        Integer a = null;
-        System.out.println(String.valueOf(a));
-        System.out.println(a.toString());
+        try {
 
-        int index = StringUtils.lastIndexOf("1313.MP4", ".");
-        String suffix = StringUtils.substring("1313.MP4", index);
-        System.out.println(suffix);
+            System.out.println("1111111");
+            throw new Exception("adas");
+
+        } catch (Exception e) {
+            System.out.println("22222222");
+            return;
+        } finally {
+            System.out.println("333333333333333");
+        }
+
+//        Map<String, String> map = new HashMap<>();
+//        System.out.println(map == null);
+//        System.out.println(map.isEmpty());
+//
+//        String fileName = "/" + System.currentTimeMillis() + ".png";
+//        String imagePath = new DateTime().toString("/YYYY/MM/dd");
+//        String path = "C:\\Document\\card" + imagePath;
+//        new File(path).mkdirs();
+
+//        Integer a = null;
+//        System.out.println(String.valueOf(a));
+//        System.out.println(a.toString());
+//
+//        int index = StringUtils.lastIndexOf("1313.MP4", ".");
+//        String suffix = StringUtils.substring("1313.MP4", index);
+//        System.out.println(suffix);
 
 //
 //        String str = "邓丽梅|360732199310062621";
