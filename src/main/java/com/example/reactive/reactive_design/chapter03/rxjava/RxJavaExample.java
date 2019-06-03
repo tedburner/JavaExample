@@ -1,4 +1,4 @@
-package com.example.reactive.chapter03.rxjava;
+package com.example.reactive.reactive_design.chapter03.rxjava;
 
 import io.reactivex.Observable;
 

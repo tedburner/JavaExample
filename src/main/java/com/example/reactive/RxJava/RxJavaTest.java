@@ -1,4 +1,4 @@
-package com.example.RxJava;
+package com.example.reactive.RxJava;
 
 /**
  * @author: lingjun.jlj

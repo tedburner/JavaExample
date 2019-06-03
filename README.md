@@ -8,7 +8,7 @@
 - [Netty](src/main/java/com/example/netty)
 - [JMH](src/main/java/com/example/jmh)
 - [Java 知识点](docs/README.md)
-- [RxJava](src/main/java/com/example/RxJava)
+- [RxJava](src/main/java/com/example/reactive/RxJava)
 - [Reactive](src/main/java/com/example/reactive)
 
 ## OOM

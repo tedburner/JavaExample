@@ -1,4 +1,4 @@
-package com.example.reactive.chapter15;
+package com.example.reactive.reactive_design.chapter15;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
@@ -6,7 +6,7 @@ import java.net.DatagramSocket;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 
-import static com.example.reactive.chapter15.Server.SERVER_PORT;
+import static com.example.reactive.reactive_design.chapter15.Server.SERVER_PORT;
 
 /**
  * @author: Arthas
