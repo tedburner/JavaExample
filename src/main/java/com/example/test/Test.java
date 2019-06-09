@@ -7,19 +7,21 @@ package com.example.test;
  */
 public class Test {
 
+    public static void fillPdfFields(Map<String, Object> params, String type, String field) {
+        if (StringUtils.isBlank(field)) {
+            params.put(type + "0", "");
+            return;
+        }
+        for (int i = 0; i < field.length(); i++) {
+            params.put(type + i, field.charAt(i));
+        }
+    }
+
     public static void main(String[] args) {
 
-        try {
-
-            System.out.println("1111111");
-            throw new Exception("adas");
-
-        } catch (Exception e) {
-            System.out.println("22222222");
-            return;
-        } finally {
-            System.out.println("333333333333333");
-        }
+        Map<String, Object> params = new HashMap<>();
+        fillPdfFields(params, "income", null);
+        System.out.println(params);
 
 //        Map<String, String> map = new HashMap<>();
 //        System.out.println(map == null);
