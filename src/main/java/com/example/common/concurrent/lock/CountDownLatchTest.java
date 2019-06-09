@@ -1,6 +1,5 @@
 package com.example.common.concurrent.lock;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
 
 import java.util.concurrent.CountDownLatch;
 
