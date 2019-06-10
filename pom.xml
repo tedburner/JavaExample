@@ -16,6 +16,7 @@
         <skipTests>true</skipTests>
         <spring.version>5.0.8.RELEASE</spring.version>
         <aspectj.version>1.8.13</aspectj.version>
+        <jave.version>2.5.0</jave.version>
     </properties>
 
     <dependencies>
@@ -340,6 +341,17 @@
             <groupId>com.typesafe.akka</groupId>
             <artifactId>akka-http-caching_2.12</artifactId>
             <version>10.1.8</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ws.schild</groupId>
+            <artifactId>jave-core</artifactId>
+            <version>${jave.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ws.schild</groupId>
+            <artifactId>jave-all-deps</artifactId>
+            <version>${jave.version}</version>
         </dependency>
 
     </dependencies>

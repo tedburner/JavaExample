@@ -13,3 +13,6 @@
 
 ## OOM
 - -XX:+HeapDumpOnOutOfMemoryError：让 JVM 遇到OOM异常时输出堆内信息。  
+
+## 计算视频时长
+使用jave，计算视频时间长度。
