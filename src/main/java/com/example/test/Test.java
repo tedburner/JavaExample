@@ -2,7 +2,6 @@ package com.example.test;
 
 import org.apache.commons.lang3.StringUtils;
 
-import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -24,9 +23,14 @@ public class Test {
 
     public static void main(String[] args) {
 
-        Map<String, Object> params = new HashMap<>();
-        fillPdfFields(params, "income", null);
-        System.out.println(params);
+        String a = "a";
+        String b = "b";
+        String c = a + "_" + b == null ? "" : b;
+        System.out.println(c);
+
+//        Map<String, Object> params = new HashMap<>();
+//        fillPdfFields(params, "income", null);
+//        System.out.println(params);
 
 //        Map<String, String> map = new HashMap<>();
 //        System.out.println(map == null);
