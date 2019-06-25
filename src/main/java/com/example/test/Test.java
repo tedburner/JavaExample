@@ -1,9 +1,13 @@
 package com.example.test;
 
+import com.alibaba.fastjson.JSON;
+import com.example.domain.bean.SimpleDTO;
 import org.apache.commons.lang3.StringUtils;
 
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -25,10 +29,33 @@ public class Test {
 
     public static void main(String[] args) {
 
-        String time = "1560756159573";
-        Date date = new Date(Long.valueOf(time));
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        System.out.println(sdf.format(date));
+        String text = "请问您是[姓名]本人吗？";
+        String[] fieldArray = StringUtils.substringsBetween(text, "[", "]");
+        System.out.println(fieldArray.toString());
+        for (String field : fieldArray) {
+            text = StringUtils.replace(text, "[" + field + "]", "蒋灵俊");
+        }
+
+        System.out.println(text);
+
+//        SimpleDTO dto = new SimpleDTO();
+//        dto.setId(1);
+//        dto.setContent("你好");
+//        dto.setName("麻辉文");
+//        String json = JSON.toJSONString(dto);
+//        System.out.println(json);
+
+//        //Arrays.asList体现的是适配器模式，只是转换接口，后台的数据仍是数组。
+//        String[] str = new String[]{"alibaba", "腾讯"};
+//        List list = Arrays.asList(str);
+//        str[0] = "网易";
+////        list.remove("腾讯");
+//
+//        System.out.println(list);
+//        String time = "1560756159573";
+//        Date date = new Date(Long.valueOf(time));
+//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//        System.out.println(sdf.format(date));
 
 //        Map<String, Object> params = new HashMap<>();
 //        fillPdfFields(params, "income", null);
