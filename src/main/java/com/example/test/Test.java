@@ -29,11 +29,10 @@ public class Test {
 
     public static void main(String[] args) {
 
-        String text = "请问您是[姓名]本人吗？";
-        String[] fieldArray = StringUtils.substringsBetween(text, "[", "]");
-        System.out.println(fieldArray.toString());
+        String text = "请问您是#姓名#本人吗#fix#？";
+        String[] fieldArray = StringUtils.substringsBetween(text, "#", "#");
         for (String field : fieldArray) {
-            text = StringUtils.replace(text, "[" + field + "]", "蒋灵俊");
+            text = StringUtils.replace(text, "#" + field + "#", "蒋灵俊");
         }
 
         System.out.println(text);
