@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -17,12 +18,12 @@ import java.util.stream.Stream;
  **/
 public class StreamTest {
 
-    public static void main(String [] args){
+    public static void main(String[] args) {
         String str = "1,2,3,4,10,11,9,66,222,12";
         //倒序
         List<Integer> list = Stream.of(str.split(","))
                 .map(Integer::valueOf)
-                .filter(x-> !Objects.equals(x,3))
+                .filter(x -> !Objects.equals(x, 3))
                 .sorted(Comparator.reverseOrder())
                 .limit(4)
                 .collect(Collectors.toList());
@@ -35,7 +36,7 @@ public class StreamTest {
         List<SimpleDTO> list1 = beans
                 .stream()
                 .sorted(Comparator.comparing(SimpleDTO::getId).reversed()
-                .thenComparing(x->x.getName()))
+                        .thenComparing(x -> x.getName()))
                 .collect(Collectors.toList());
         System.out.println(list1);
 
@@ -45,5 +46,14 @@ public class StreamTest {
         String[][] data = new String[][]{{"a", "b"}, {"c", "d"}, {"e", "f"}};
         Stream<String[]> temp = Arrays.stream(data);
         Stream<String[]> stream = temp.filter(x -> "a".equals(x.toString()));
+
+        List<Integer> values = Stream.of(str.split(","))
+                .map(Integer::valueOf)
+                .collect(Collectors.toList());
+        Optional<Integer> sum = values.stream()
+                .reduce((x, y) -> x + y);
+        if (sum.isPresent()) {
+            System.out.println("reduce 计算结果： " + sum.get());
+        }
     }
 }
