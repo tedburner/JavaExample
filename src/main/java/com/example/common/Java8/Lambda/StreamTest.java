@@ -1,6 +1,7 @@
-package com.example.common.Java8;
+package com.example.common.Java8.Lambda;
 
 
+import com.example.common.Java8.BeanData;
 import com.example.domain.bean.SimpleDTO;
 
 import java.util.Arrays;
