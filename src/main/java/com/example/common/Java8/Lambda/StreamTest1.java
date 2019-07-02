@@ -21,6 +21,7 @@ public class StreamTest1 {
             dto.setId(i);
             dto.setName("测试员" + i + "号");
             dto.setContent("Stream 测试普通和并行的效率");
+            list.add(dto);
         }
 
         List<SimpleDTO> testList = list;

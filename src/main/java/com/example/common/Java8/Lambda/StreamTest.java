@@ -41,13 +41,19 @@ public class StreamTest {
         System.out.println(list1);
 
         Long count = list.stream().count();
-        List<Integer> idList = beans.stream().map(SimpleDTO::getId).collect(Collectors.toList());
+        System.out.println("统计计数： " + count);
+
+        System.out.println("============聚合ID==============");
+        List<Integer> idList = beans.stream()
+                .map(SimpleDTO::getId)
+                .collect(Collectors.toList());
 
         String[][] data = new String[][]{{"a", "b"}, {"c", "d"}, {"e", "f"}};
         Stream<String[]> temp = Arrays.stream(data);
-        Stream<String[]> stream = temp.filter(x -> "a".equals(x.toString()));
+        Stream<String[]> tempStream = temp.filter(x -> "a".equals(x.toString()));
 
         List<Integer> values = Stream.of(str.split(","))
+                .parallel() //使用并行流
                 .map(Integer::valueOf)
                 .collect(Collectors.toList());
         Optional<Integer> sum = values.stream()
