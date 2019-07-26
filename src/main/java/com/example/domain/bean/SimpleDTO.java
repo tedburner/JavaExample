@@ -19,4 +19,10 @@ public class SimpleDTO {
         this.id = id;
         this.name = name;
     }
+
+    public SimpleDTO(Integer id, String name, String content) {
+        this.id = id;
+        this.name = name;
+        this.content = content;
+    }
 }
