@@ -5,6 +5,7 @@ import com.example.domain.bean.SimpleDTO;
 import org.apache.commons.lang3.StringUtils;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
@@ -28,14 +29,26 @@ public class Test {
     }
 
     public static void main(String[] args) {
+        String aa = "length: 10";
+        String bb = "length: " + "10";
+        String cc = "length: " + aa.length();
+        System.out.println(aa == bb);
+        System.out.println(aa == cc);
+//        List<SimpleDTO> list = new ArrayList<>();
+//        list.add(new SimpleDTO(1, "1"));
+//        list.add(new SimpleDTO(2, null));
+//        for (SimpleDTO dto : list) {
+//            Integer num = Integer.valueOf(dto.name);
+//            System.out.println(num);
+//        }
 
-        String text = "请问您是#姓名#本人吗#fix#？";
-        String[] fieldArray = StringUtils.substringsBetween(text, "#", "#");
-        for (String field : fieldArray) {
-            text = StringUtils.replace(text, "#" + field + "#", "蒋灵俊");
-        }
-
-        System.out.println(text);
+//        String text = "请问您是#姓名#本人吗#fix#？";
+//        String[] fieldArray = StringUtils.substringsBetween(text, "#", "#");
+//        for (String field : fieldArray) {
+//            text = StringUtils.replace(text, "#" + field + "#", "蒋灵俊");
+//        }
+//
+//        System.out.println(text);
 
 //        SimpleDTO dto = new SimpleDTO();
 //        dto.setId(1);

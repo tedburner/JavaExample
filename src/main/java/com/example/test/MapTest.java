@@ -13,6 +13,11 @@ import java.util.Map;
 public class MapTest {
 
     public static void main(String[] args) {
+        Map<String, Object> map = new HashMap<>(2);
+        map.put("test", 1);
+        map.put("test1", "test");
+        System.out.println(map.get("test"));
+        System.out.println(map.get("test1"));
         Map<String, SimpleDTO> map = new HashMap<>();
         SimpleDTO dto1 = new SimpleDTO(1,"131","1111");
         map.put("1",dto1);
