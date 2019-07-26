@@ -18,11 +18,12 @@ public class MapTest {
         map.put("test1", "test");
         System.out.println(map.get("test"));
         System.out.println(map.get("test1"));
-        Map<String, SimpleDTO> map = new HashMap<>();
-        SimpleDTO dto1 = new SimpleDTO(1,"131","1111");
-        map.put("1",dto1);
-        Map<String, String> strMap =new HashMap<>();
-        for (Map.Entry<String, SimpleDTO> entry: map.entrySet()){
+
+        Map<String, SimpleDTO> simpleMap = new HashMap<>();
+        SimpleDTO dto1 = new SimpleDTO(1, "131", "1111");
+        simpleMap.put("1", dto1);
+        Map<String, String> strMap = new HashMap<>();
+        for (Map.Entry<String, SimpleDTO> entry : simpleMap.entrySet()) {
             strMap.put(entry.getKey(), entry.getValue().getName());
         }
 
