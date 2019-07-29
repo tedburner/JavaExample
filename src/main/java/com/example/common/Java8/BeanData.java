@@ -5,6 +5,8 @@ import com.example.domain.bean.SimpleDTO;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * @author lingjun.jlj
@@ -12,7 +14,7 @@ import java.util.List;
  **/
 public class BeanData {
 
-    public static List<SimpleDTO> getBeanData(){
+    public static List<SimpleDTO> getBeanData() {
         List<SimpleDTO> listDTOS = new ArrayList<>();
         for (int i=0;i<20;i++){
             SimpleDTO dto = new SimpleDTO();
@@ -23,12 +25,12 @@ public class BeanData {
         return listDTOS;
     }
 
-    public static List<SimpleDTO> getBeanDataList(){
+    public static List<SimpleDTO> getBeanDataList() {
         List<SimpleDTO> listDTOS = Arrays.asList(
-                new SimpleDTO(1,"孙博"), new SimpleDTO(1,"二代"),new SimpleDTO(1,"孙博"),
-                new SimpleDTO(2,"戴硕"),new SimpleDTO(2,"戴硕"),new SimpleDTO(2,"赛克"),
-                new SimpleDTO(3,"二代"),new SimpleDTO(3,"路痴"),new SimpleDTO(3,"路痴"),
-                new SimpleDTO(4,"赛克"),new SimpleDTO(4,"二代"),new SimpleDTO(4,"路痴")
+                new SimpleDTO(1, "孙博"), new SimpleDTO(1, "二代"), new SimpleDTO(1, "孙博"),
+                new SimpleDTO(2, "戴硕"), new SimpleDTO(2, "戴硕"), new SimpleDTO(2, "赛克"),
+                new SimpleDTO(3, "二代"), new SimpleDTO(3, "路痴"), new SimpleDTO(3, "路痴"),
+                new SimpleDTO(4, "赛克"), new SimpleDTO(4, "二代"), new SimpleDTO(4, "路痴")
         );
 
         return listDTOS;
