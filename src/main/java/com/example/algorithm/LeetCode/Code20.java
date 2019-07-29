@@ -30,7 +30,7 @@ public class Code20 {
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (map.containsKey(c)) {
-                char topElement = stack.empty() ? '#' : stack.pop();
+                char topElement = stack.empty() ? '@' : stack.pop();
                 if (topElement != map.get(c)) {
                     return false;
                 }
