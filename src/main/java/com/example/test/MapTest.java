@@ -1,12 +1,13 @@
 package com.example.test;
 
+import com.example.domain.bean.SimpleDTO;
+
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author: lingjun.jlj
- * @date: 2019/7/12 17:20
- * @version：1.0.0
+ * @author: Arthas
+ * @date: 2019-07-14 16:02
  * @description:
  */
 public class MapTest {
@@ -17,5 +18,15 @@ public class MapTest {
         map.put("test1", "test");
         System.out.println(map.get("test"));
         System.out.println(map.get("test1"));
+
+        Map<String, SimpleDTO> simpleMap = new HashMap<>();
+        SimpleDTO dto1 = new SimpleDTO(1, "131", "1111");
+        simpleMap.put("1", dto1);
+        Map<String, String> strMap = new HashMap<>();
+        for (Map.Entry<String, SimpleDTO> entry : simpleMap.entrySet()) {
+            strMap.put(entry.getKey(), entry.getValue().getName());
+        }
+
+        System.out.println(strMap);
     }
 }
