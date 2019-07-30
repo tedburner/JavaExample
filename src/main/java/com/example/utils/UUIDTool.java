@@ -15,4 +15,9 @@ public class UUIDTool {
         UUID uuid = UUID.randomUUID();
         return uuid.toString().replace("-", "");
     }
+
+
+    public static void main(String[] args) {
+
+    }
 }
