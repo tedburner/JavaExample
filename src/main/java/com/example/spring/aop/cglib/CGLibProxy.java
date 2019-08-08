@@ -11,6 +11,8 @@ import java.lang.reflect.Method;
  * @Description:
  */
 public class CGLibProxy implements MethodInterceptor {
+
+    @Override
     public Object intercept(Object object, Method method, Object[] args,
                             MethodProxy proxy) throws Throwable {
         // 添加切面逻辑（advise），此处是在目标类代码执行之前，即为MethodBeforeAdviceInterceptor。
