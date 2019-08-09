@@ -14,11 +14,11 @@ public class Code53 {
 
     public static int maxSubArray(int[] nums) {
         int sum = nums[0];
-        int reslut = nums[0];
+        int result = nums[0];
         for (int i = 1; i < nums.length; i++) {
             sum = Math.max(sum + nums[i], nums[i]);
-            reslut = Math.max(sum, reslut);
+            result = Math.max(sum, result);
         }
-        return reslut;
+        return result;
     }
 }

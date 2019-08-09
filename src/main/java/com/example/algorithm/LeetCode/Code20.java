@@ -7,7 +7,7 @@ import java.util.Stack;
 /**
  * @author: Arthas
  * @date: 2019-07-27 23:18
- * @description: 有效的括号
+ * @description: 有效的括号，使用栈来计算
  */
 public class Code20 {
 
