@@ -1,4 +1,4 @@
-package com.example.common.jvm;
+package com.example.common.jvm.gc;
 
 /**
  * @author: lingjun.jlj
