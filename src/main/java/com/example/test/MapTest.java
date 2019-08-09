@@ -14,19 +14,23 @@ public class MapTest {
 
     public static void main(String[] args) {
         Map<String, Object> map = new HashMap<>(2);
-        map.put("test", 1);
-        map.put("test1", "test");
-        System.out.println(map.get("test"));
-        System.out.println(map.get("test1"));
-
-        Map<String, SimpleDTO> simpleMap = new HashMap<>();
-        SimpleDTO dto1 = new SimpleDTO(1, "131", "1111");
-        simpleMap.put("1", dto1);
-        Map<String, String> strMap = new HashMap<>();
-        for (Map.Entry<String, SimpleDTO> entry : simpleMap.entrySet()) {
-            strMap.put(entry.getKey(), entry.getValue().getName());
+//        map.put("test", 1);
+//        map.put("test1", "test");
+//        System.out.println(map.get("test"));
+//        System.out.println(map.get("test1"));
+//
+//        Map<String, SimpleDTO> simpleMap = new HashMap<>();
+//        SimpleDTO dto1 = new SimpleDTO(1, "131", "1111");
+//        simpleMap.put("1", dto1);
+//        Map<String, String> strMap = new HashMap<>();
+        Integer total =0;
+        for (Map.Entry<String, Object> entry : map.entrySet()) {
+            //strMap.put(entry.getKey(), entry.getValue().getName());
+            total++;
         }
 
-        System.out.println(strMap);
+        System.out.println(total);
+
+
     }
 }

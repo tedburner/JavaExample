@@ -8,32 +8,17 @@ package com.example.algorithm.LeetCode;
 public class Code53 {
 
     public static void main(String[] args) {
-        int[] nums = new int[]{-2, 1};
+        int[] nums = new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4};
         System.out.println(maxSubArray(nums));
     }
 
     public static int maxSubArray(int[] nums) {
-        if (nums.length == 0) {
-            return 0;
+        int sum = nums[0];
+        int reslut = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            sum = Math.max(sum + nums[i], nums[i]);
+            reslut = Math.max(sum, reslut);
         }
-        if (nums.length == 1) {
-            return nums[0];
-        }
-        int max = nums[0];
-        for (int i = 0; i < nums.length; i++) {
-            int mid = nums[i];
-            for (int k = i + 1; k < nums.length; k++) {
-                if (max < (mid + nums[k])) {
-                    max = mid + nums[k];
-                    mid = mid + nums[k];
-                    //System.out.println("1：" + mid + "+" + nums[k] + "=" + max);
-                } else {
-                    mid = mid + nums[k];
-                    //System.out.println("2：" + mid + "+" + nums[k] + "=" + mid);
-                }
-            }
-//            System.out.println(max);
-        }
-        return max;
+        return reslut;
     }
 }
