@@ -9,7 +9,7 @@ package com.example.algorithm.LeetCode;
 public class Code5 {
 
     public static void main(String[] args) {
-        System.out.println(longestPalindrome("aba"));
+        System.out.println(longestPalindrome("abacab"));
         //System.out.println(isPalindrome("abcba"));
     }
 
@@ -19,19 +19,29 @@ public class Code5 {
         }
         int len = s.length();
         boolean[][] dp = new boolean[len][len];
-        int start = 0;
-        int end = 0;
-        for (int i = len - 2; i >= 0; i--) {
-            dp[i][i] = true;
-            for (int j = i + 1; j < len; j++) {
-                dp[i][j] = s.charAt(i) == s.charAt(j) && (j - i < 3 || dp[i + 1][j - 1]);//小于3是因为aba一定是回文
-                if (dp[i][j] && start - end < j - i) {
-                    start = i;
-                    end = j;
+        int max = -1;
+        String res = "";
+        for (int k = 0; k < len; k++) {
+            for (int i = 0; k + i < len; i++) {
+                int j = i + k;
+                if (k == 0) {
+                    dp[i][j] = true;
+                } else if (k < 2) {
+                    if (s.charAt(i) == s.charAt(j)) {
+                        dp[i][j] = true;
+                    } else {
+                        dp[i][j] = false;
+                    }
+                } else {
+                    dp[i][j] = (dp[i + 1][j - 1] && s.charAt(i) == s.charAt(j)) ? true : false;
+                }
+                if (j - i > max && dp[i][j]) {
+                    max = j - i;
+                    res = s.substring(i, j + 1);
                 }
             }
         }
-        return s.substring(start, end + 1);
+        return res;
     }
 
 
