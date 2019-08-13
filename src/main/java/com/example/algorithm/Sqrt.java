@@ -8,12 +8,12 @@ package com.example.algorithm;
 public class Sqrt {
 
     public static void main(String[] args) {
-        System.out.println(sqrt(4));
-        System.out.println(sqrt(3));
+        System.out.println("二分法计算开根号：" + sqrt(4));
+        System.out.println("二分法计算开根号：" + sqrt(3));
 
         System.out.println("============牛顿法开根号==========");
 
-        System.out.println(sqrt_2(3));
+        System.out.println("牛顿法计算开根号：" +sqrt_2(3));
     }
 
     /**
