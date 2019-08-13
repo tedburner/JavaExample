@@ -22,6 +22,7 @@ public class Code6 {
 
             }
         }
+        return "";
     }
 
 }
