@@ -3,10 +3,18 @@ package com.example.algorithm;
 /**
  * @author: lingjun.jlj
  * @date: 2019/6/13 16:13
- * @description:
+ * @description: 开根号
  */
 public class Sqrt {
 
+    public static void main(String[] args) {
+        System.out.println(sqrt(4));
+        System.out.println(sqrt(3));
+
+        System.out.println("============牛顿法开根号==========");
+
+        System.out.println(sqrt_2(3));
+    }
 
     /**
      * 二分法开根号
@@ -51,14 +59,5 @@ public class Sqrt {
             x = (x + n / x) / 2;
         }
         return x;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(sqrt(4));
-        System.out.println(sqrt(3));
-
-        System.out.println("============牛顿法开根号==========");
-
-        System.out.println(sqrt_2(3));
     }
 }
