@@ -18,7 +18,6 @@ public class Code28 {
         int len = haystack.length();
         int n = needle.length();
         if (len < n) {
-            System.out.println("前者小于后者");
             return -1;
         }
         for (int i = 0; i <=(len - n); i++) {
