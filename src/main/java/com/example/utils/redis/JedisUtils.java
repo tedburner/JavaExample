@@ -22,7 +22,7 @@ public class JedisUtils {
         config.setMaxWaitMillis(10000);
         config.setMinIdle(5);
 
-        pool = new JedisPool(config, "192.168.50.99", 6379, 10000);
+        pool = new JedisPool(config, "127.0.0.1", 6379, 10000);
         return pool.getResource();
     }
 
