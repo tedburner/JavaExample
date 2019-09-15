@@ -1,4 +1,4 @@
-package com.example.algorithm.search;
+package com.example.algorithm.datastructure.search;
 
 /**
  * @author: lingjun.jlj

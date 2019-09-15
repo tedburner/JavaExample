@@ -1,4 +1,4 @@
-package com.example.algorithm.sort;
+package com.example.algorithm.datastructure.sort;
 
 /**
  * @author lingjun.jlj
