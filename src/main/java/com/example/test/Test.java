@@ -6,6 +6,8 @@ import org.apache.commons.lang3.StringUtils;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -65,14 +67,32 @@ public class Test {
     }
 
     public static void main(String[] args) throws IOException {
-        byte[] btImg = getImageFromNetByUrl("http://vodqnuhbilj.vod.126.net/vodqnuhbilj/00f39e83-b59c-4931-99ce-7b2047750df7.mp4");
+        /*byte[] btImg = getImageFromNetByUrl("http://vodqnuhbilj.vod.126.net/vodqnuhbilj/00f39e83-b59c-4931-99ce-7b2047750df7.mp4");
         String md5 = DigestUtils.md2Hex(btImg);
         System.out.println(md5 + " " + StringUtils.equals("60358b67e7ce6f31b493cbf956548909", md5));
 
         File file = new File("D:\\software\\nginx-1.16.0.zip");
         String fileMd5 = DigestUtils.md2Hex(new FileInputStream(file));
         System.out.println(fileMd5);
-        System.out.println(StringUtils.equals("78137943904752ed3c0e8138b8bfd073", md5));
+        System.out.println(StringUtils.equals("78137943904752ed3c0e8138b8bfd073", md5));*/
 
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+
+        for (Integer num : list) {
+            print(num);
+        }
+
+    }
+
+    private static void print(Integer num) {
+        if (num == 3) {
+            return;
+        }
+        System.out.println(num);
     }
 }

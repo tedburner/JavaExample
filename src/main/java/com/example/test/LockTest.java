@@ -5,7 +5,7 @@ package com.example.test;
  * @date: 2019-05-20 21:29
  * @description:
  */
-public class Test1 {
+public class LockTest {
 
     private long count = 0L;
 
@@ -18,7 +18,7 @@ public class Test1 {
 
     public static long calc() {
         try {
-            final  Test1 test = new Test1();
+            final LockTest test = new LockTest();
             Thread th1 = new Thread(()->{
                 test.add10K();
             });
