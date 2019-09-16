@@ -20,11 +20,11 @@ public class SelectionSortTest {
      * 找出最小或者最大的放在下标为0的这个位置。
      * O(N2)
      * 不稳定
+     * 比较：比较元素，把最小的元素放在应该的位置
      */
     public static void SelectionSort(int[] array) {
 
         for (int i = 0; i < array.length; i++) {
-
             for (int j = i + 1; j < array.length; j++) {
                 if (array[i] > array[j]) {
                     int target = array[i];

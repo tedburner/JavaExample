@@ -18,6 +18,7 @@ public class BubbleSortTest {
      * 原理：比较两个相邻的元素，将值大的元素交换至右端
      * 平均时间复杂度为：O(n2)
      * 稳定
+     * 比较：相邻2个元素比较大小
      */
     public static void BubbleSort(int[] array) {
 
