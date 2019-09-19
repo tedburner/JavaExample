@@ -24,7 +24,6 @@ public class Code28 {
             String str = haystack.substring(i, i + n);
             System.out.println(str);
             if (str.equals(needle)) {
-                System.out.println(i);
                 return i;
             }
         }
