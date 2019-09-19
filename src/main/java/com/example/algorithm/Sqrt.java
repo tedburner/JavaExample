@@ -8,6 +8,7 @@ package com.example.algorithm;
 public class Sqrt {
 
     public static void main(String[] args) {
+        System.out.println("二分法计算开根号：" + sqrt(1));
         System.out.println("二分法计算开根号：" + sqrt(4));
         System.out.println("二分法计算开根号：" + sqrt(3));
 
@@ -28,7 +29,6 @@ public class Sqrt {
         double p = 0.002;//设置精度
         double mid = (low + high) / 2.0;
         while (true) {
-            System.out.println("二分法中间计算值： " + mid);
             double num = mid * mid;
             if (x - num < p && num - x < p) {
                 break;

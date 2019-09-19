@@ -16,6 +16,9 @@ public class InsertSortTest {
         System.out.println(Arrays.toString(array));
     }
 
+    /**
+     * 插入排序
+     * */
     public static void InsertSort(int[] array) {
 
         for (int i = 1; i < array.length; i++) {
