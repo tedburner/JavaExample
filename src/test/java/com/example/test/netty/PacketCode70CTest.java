@@ -16,7 +16,7 @@ import java.util.UUID;
  * @date: 2019-01-11 14:40
  * @description:
  */
-public class PacketCodeCTest {
+public class PacketCode70CTest {
 
     @Test
     public void encode() {

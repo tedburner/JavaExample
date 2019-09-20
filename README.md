@@ -2,7 +2,7 @@
 普通MAVEN项目，主要用来学习和写一些DEMO代码。以及 LeetCode 上面刷题的一些
 代码。
 
-- [LeetCode](/src/main/java/com/example/algorithm/LeetCode)
+- [LeetCode](/com/example/algorithm/leetcode)
 - [设计模式](/com/example/designpattern)
 - [Spring](src/main/java/com/example/spring)
 - [Netty](src/main/java/com/example/netty)

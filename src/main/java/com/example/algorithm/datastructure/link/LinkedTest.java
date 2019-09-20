@@ -1,7 +1,5 @@
 package com.example.algorithm.datastructure.link;
 
-import com.example.algorithm.LeetCode.Code2;
-
 /**
  * @author: Arthas
  * @date: 2019/9/14 18:11
