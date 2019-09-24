@@ -16,3 +16,7 @@
 
 ## 计算视频时长
 使用jave，计算视频时间长度。
+
+## 算法
+### 数据结构
+[地址](/docs/algorithm/algorithm.md)
