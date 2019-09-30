@@ -7,9 +7,9 @@ import java.util.Queue;
 import java.util.Stack;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-03-13 15:26
- * @description:
+ * @description: 二叉树
  */
 public class BinTreeTraverse {
 
@@ -66,8 +66,9 @@ public class BinTreeTraverse {
      * @param node 遍历的节点
      */
     public static void preOrderTraverse(Node node) {
-        if (node == null)
+        if (node == null) {
             return;
+        }
         System.out.print(node.data + " ");
         preOrderTraverse(node.left);
         preOrderTraverse(node.right);
@@ -81,8 +82,9 @@ public class BinTreeTraverse {
      * @param node 遍历的节点
      */
     public static void inOrderTraverse(Node node) {
-        if (node == null)
+        if (node == null) {
             return;
+        }
         inOrderTraverse(node.left);
         System.out.print(node.data + " ");
         inOrderTraverse(node.right);
@@ -96,8 +98,9 @@ public class BinTreeTraverse {
      * @param node 遍历的节点
      */
     public static void postOrderTraverse(Node node) {
-        if (node == null)
+        if (node == null) {
             return;
+        }
         postOrderTraverse(node.left);
         postOrderTraverse(node.right);
         System.out.print(node.data + " ");

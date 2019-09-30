@@ -4,6 +4,7 @@ import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.*;
+import java.math.BigDecimal;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
@@ -76,17 +77,18 @@ public class Test {
         System.out.println(fileMd5);
         System.out.println(StringUtils.equals("78137943904752ed3c0e8138b8bfd073", md5));*/
 
-        List<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        list.add(4);
-        list.add(5);
-
-        for (Integer num : list) {
-            print(num);
-        }
-
+//        List<Integer> list = new ArrayList<>();
+//        list.add(1);
+//        list.add(2);
+//        list.add(3);
+//        list.add(4);
+//        list.add(5);
+//
+//        for (Integer num : list) {
+//            print(num);
+//        }
+        String md5 = DigestUtils.md5Hex("330781199509082330");
+        System.out.println(md5);
     }
 
     private static void print(Integer num) {
@@ -95,4 +97,7 @@ public class Test {
         }
         System.out.println(num);
     }
+
+
+
 }
