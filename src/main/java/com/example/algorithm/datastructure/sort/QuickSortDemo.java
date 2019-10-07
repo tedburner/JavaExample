@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @description: 快排
  * 算法详解参考：https://blog.csdn.net/MoreWindows/article/details/6684558
  **/
-public class QuickSortTest {
+public class QuickSortDemo {
 
     public static void main(String[] args) {
         int[] array = {3, 2, 100, 8, 5, 10, 22, 18, 12, 77, 1, 47};

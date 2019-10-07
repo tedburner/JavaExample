@@ -7,7 +7,7 @@ import java.util.Arrays;
  * @date 2017-12-24
  * @description: 插入排序
  **/
-public class InsertSortTest {
+public class InsertSortDemo {
 
 
     public static void main(String[] args) {
