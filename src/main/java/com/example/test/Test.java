@@ -89,6 +89,8 @@ public class Test {
 //        }
         String md5 = DigestUtils.md5Hex("330781199509082330");
         System.out.println(md5);
+
+        System.out.println(Runtime.getRuntime().availableProcessors());
     }
 
     private static void print(Integer num) {
