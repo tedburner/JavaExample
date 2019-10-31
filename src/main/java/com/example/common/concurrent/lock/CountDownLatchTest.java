@@ -37,7 +37,7 @@ public class CountDownLatchTest {
     public static void main(String[] args) {
         new BossThread().start();
         for (int i = 0; i < countDownLatch.getCount(); i++) {
-            System.out.println(countDownLatch.getCount());
+            //System.out.println(countDownLatch.getCount());
             new EmployeeThread().start();
         }
     }
