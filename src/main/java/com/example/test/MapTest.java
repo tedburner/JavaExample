@@ -12,6 +12,8 @@ import java.util.Map;
  */
 public class MapTest {
 
+    static final int MAXIMUM_CAPACITY = 1 << 30;
+
     public static void main(String[] args) {
         Map<String, Object> map = new HashMap<>(2);
 //        map.put("test", 1);
@@ -23,14 +25,25 @@ public class MapTest {
 //        SimpleDTO dto1 = new SimpleDTO(1, "131", "1111");
 //        simpleMap.put("1", dto1);
 //        Map<String, String> strMap = new HashMap<>();
-        Integer total =0;
-        for (Map.Entry<String, Object> entry : map.entrySet()) {
-            //strMap.put(entry.getKey(), entry.getValue().getName());
-            total++;
-        }
+//        Integer total =0;
+//        for (Map.Entry<String, Object> entry : map.entrySet()) {
+//            //strMap.put(entry.getKey(), entry.getValue().getName());
+//            total++;
+//        }
+//
+//        System.out.println(total);'
 
-        System.out.println(total);
+        System.out.println(tableSizeFor(10000));
 
+    }
 
+    static final int tableSizeFor(int cap) {
+        int n = cap - 1;
+        n |= n >>> 1;
+        n |= n >>> 2;
+        n |= n >>> 4;
+        n |= n >>> 8;
+        n |= n >>> 16;
+        return (n < 0) ? 1 : (n >= MAXIMUM_CAPACITY) ? MAXIMUM_CAPACITY : n + 1;
     }
 }
