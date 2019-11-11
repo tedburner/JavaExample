@@ -87,10 +87,13 @@ public class Test {
 //        for (Integer num : list) {
 //            print(num);
 //        }
-        String md5 = DigestUtils.md5Hex("330781199509082330");
-        System.out.println(md5);
+//        String md5 = DigestUtils.md5Hex("330781199509082330");
+//        System.out.println(md5);
+//
+//        System.out.println(Runtime.getRuntime().availableProcessors());
 
-        System.out.println(Runtime.getRuntime().availableProcessors());
+        String keyword = "anad，1131321";
+        System.out.println(keyword.replace("，",","));
     }
 
     private static void print(Integer num) {
