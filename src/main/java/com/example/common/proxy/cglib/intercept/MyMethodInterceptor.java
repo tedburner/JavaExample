@@ -13,9 +13,9 @@ import java.lang.reflect.Method;
 public class MyMethodInterceptor implements MethodInterceptor {
 
     @Override
-    public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
+    public Object intercept(Object o, Method method, Object[] objects, MethodProxy proxy) throws Throwable {
         System.out.println("执行CGLIB动态代理");
-        return methodProxy.invokeSuper(o, objects);
+        return proxy.invokeSuper(o, objects);
     }
 
 }

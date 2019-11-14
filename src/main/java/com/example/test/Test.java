@@ -94,6 +94,10 @@ public class Test {
 
         String keyword = "anad，1131321";
         System.out.println(keyword.replace("，",","));
+
+        String name = " 角色名称   ";
+        System.out.println(name.trim());
+
     }
 
     private static void print(Integer num) {
