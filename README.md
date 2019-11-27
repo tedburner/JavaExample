@@ -20,3 +20,6 @@
 ## 算法
 ### 数据结构
 [地址](/docs/algorithm/algorithm.md)
+
+## git emoji
+![](https://hexo-1252893039.cos.ap-shanghai.myqcloud.com/20191127140625.png)
