@@ -37,7 +37,7 @@ public class OptionalTest {
 //            e.printStackTrace();
 //        }
 
-        Optional<String> optional1 = optionalInteger.map((a) -> "map" + a.get(1).name);
+        Optional<String> optional1 = optionalInteger.map((a) -> "map" + a.get(1).getName());
         System.out.println(optional1);
 
     }

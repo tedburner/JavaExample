@@ -63,16 +63,14 @@ public class StampedLockTest {
 
     public static void main(String[] args) {
         List<Thread> threads = new ArrayList<>(100);
+        int threadNum = 100;
         for (int j = 0; j < 20; j++) {
-            Thread thread = new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    for (int i = 0; i < 100; i++) {
-                        move(i, i);
-                        System.out.println(x + " " + y);
-                        distanceFromOrigin();
-                        moveIfAtOrigin(x, y);
-                    }
+            Thread thread = new Thread(() -> {
+                for (int i = 0; i < threadNum; i++) {
+                    move(i, i);
+                    System.out.println(x + " " + y);
+                    distanceFromOrigin();
+                    moveIfAtOrigin(x, y);
                 }
             });
             threads.add(thread);

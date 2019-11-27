@@ -8,9 +8,9 @@ import lombok.Data;
  **/
 @Data
 public class SimpleDTO {
-    public Integer id;
-    public String name;
-    public String content;
+    private Integer id;
+    private String name;
+    private String content;
 
     public SimpleDTO() {
     }

@@ -9,6 +9,7 @@ public class Dog extends Animal {
 
     }
 
+    @Override
     public void cry() {
         super.cry();//调用父类的方法
         System.out.println("狗发出一声。。汪汪。。");

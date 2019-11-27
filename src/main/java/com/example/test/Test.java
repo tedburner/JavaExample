@@ -1,10 +1,11 @@
 package com.example.test;
 
-import org.apache.commons.codec.digest.DigestUtils;
+import com.example.domain.bean.SimpleDTO;
 import org.apache.commons.lang3.StringUtils;
 
-import java.io.*;
-import java.math.BigDecimal;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
@@ -93,11 +94,19 @@ public class Test {
 //        System.out.println(Runtime.getRuntime().availableProcessors());
 
         String keyword = "anad，1131321";
-        System.out.println(keyword.replace("，",","));
+        System.out.println(keyword.replace("，", ","));
 
         String name = " 角色名称   ";
         System.out.println(name.trim());
 
+        List<SimpleDTO> list = new ArrayList<>();
+        int index = 0;
+        for (int i = 0; i < 10; i++) {
+            SimpleDTO dto = new SimpleDTO();
+            dto.setId(index++);
+            list.add(dto);
+        }
+        System.out.println(list);
     }
 
     private static void print(Integer num) {
@@ -106,7 +115,6 @@ public class Test {
         }
         System.out.println(num);
     }
-
 
 
 }
