@@ -1,4 +1,4 @@
-package com.example.common.io;
+package com.example.common.net.io;
 
 import java.io.InputStream;
 import java.net.ServerSocket;

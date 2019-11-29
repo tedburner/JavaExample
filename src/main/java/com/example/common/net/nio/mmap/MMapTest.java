@@ -1,4 +1,4 @@
-package com.example.common.nio.mmap;
+package com.example.common.net.nio.mmap;
 
 import java.io.File;
 import java.io.IOException;

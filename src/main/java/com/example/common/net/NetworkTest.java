@@ -1,4 +1,4 @@
-package com.example.common.io.network;
+package com.example.common.net;
 
 import java.io.UnsupportedEncodingException;
 import java.net.InetAddress;

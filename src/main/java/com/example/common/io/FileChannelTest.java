@@ -1,4 +1,4 @@
-package com.example.common.nio;
+package com.example.common.io;
 
 import java.io.File;
 import java.io.IOException;
