@@ -19,8 +19,14 @@ public class CompletableFutureException {
                     }
                     return "Hello " + name;
                 }).handle((s, t) -> s != null ? s : " Hello,stranger");
-
         System.out.println(future.get());
+
+        CompletableFuture<Integer> f = CompletableFuture
+                .supplyAsync(() -> 7 / 0)
+                .thenApply(r -> r * 10)
+                .exceptionally(e -> 0);
+        System.out.println(f.join());
+
     }
 
 
