@@ -3,8 +3,10 @@ package com.example.common.java8.lambda;
 
 import com.example.common.java8.BeanData;
 import com.example.domain.bean.SimpleDTO;
+import org.junit.Assert;
 
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
@@ -31,8 +33,7 @@ public class StreamDemo {
 
 
         //对象的正序排列后，又倒序了
-        BeanData beanData = new BeanData();
-        List<SimpleDTO> beans = beanData.getBeanDataList();
+        List<SimpleDTO> beans = BeanData.getBeanDataList();
         List<SimpleDTO> list1 = beans
                 .stream()
                 .sorted(Comparator.comparing(SimpleDTO::getId).reversed()
@@ -56,10 +57,29 @@ public class StreamDemo {
                 .parallel() //使用并行流
                 .map(Integer::valueOf)
                 .collect(Collectors.toList());
+
+        System.out.println("====================== reduce ==================================");
         Optional<Integer> sum = values.stream()
                 .reduce((x, y) -> x + y);
         if (sum.isPresent()) {
             System.out.println("reduce 计算结果： " + sum.get());
         }
+
+        System.out.println("====================== flatMap 合并List ==================================");
+        List<Integer> a = Arrays.asList(1, 2);
+        List<Integer> b = Arrays.asList(3, 4);
+
+        List<Integer> together = Stream.of(a, b)
+                .flatMap(Collection::stream)
+                .collect(Collectors.toList());
+
+        Assert.assertEquals(together, Arrays.asList(1, 2, 3, 4));
+
+        System.out.println("====================== 字符串 ==================================");
+        List<String> languages = Arrays.asList("Scala", "Python", "Java", "Go", "C", "C++");
+        String result = languages.stream()
+                .collect(Collectors.joining(",", "[", "]"));
+        System.out.println("字符串拼接后结果：" + result);
+
     }
 }

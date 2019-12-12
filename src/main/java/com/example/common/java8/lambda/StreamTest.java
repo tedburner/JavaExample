@@ -15,8 +15,9 @@ import java.util.stream.Collectors;
 public class StreamTest {
 
     public static void main(String[] args) {
+        int num = 100000;
         List<SimpleDTO> list = new ArrayList<>();
-        for (int i = 1; i < 100000; i++) {
+        for (int i = 1; i < num; i++) {
             SimpleDTO dto = new SimpleDTO();
             dto.setId(i);
             dto.setName("测试员" + i + "号");
