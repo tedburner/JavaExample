@@ -1,9 +1,7 @@
-package com.example.common.Java8.date;
+package com.example.common.java8.date;
 
 import java.time.Duration;
 import java.time.Instant;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
 
 /**
  * @author lingjun.jlj

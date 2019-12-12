@@ -1,4 +1,4 @@
-package com.example.common.Java8.Lambda;
+package com.example.common.java8.lambda;
 
 import com.google.common.collect.Lists;
 
@@ -22,7 +22,7 @@ public class LambdaTest {
         Predicate<Integer> atLeast5 = x -> x > 5;
         System.out.println(atLeast5.test(6));
 
-        BinaryOperator<Long> addLongs = (x, y) -> x + y;
+        BinaryOperator<Long> addLongs = Long::sum;
         System.out.println(addLongs.apply(1L, 6L));
 
 

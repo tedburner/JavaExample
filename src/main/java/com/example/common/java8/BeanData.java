@@ -1,12 +1,10 @@
-package com.example.common.Java8;
+package com.example.common.java8;
 
 import com.example.domain.bean.SimpleDTO;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 /**
  * @author lingjun.jlj

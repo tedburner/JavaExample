@@ -1,4 +1,4 @@
-package com.example.common.Java8.date;
+package com.example.common.java8.date;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;

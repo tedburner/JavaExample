@@ -1,4 +1,4 @@
-package com.example.common.Java8;
+package com.example.common.java8;
 
 import com.example.domain.bean.SimpleDTO;
 

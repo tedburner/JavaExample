@@ -19,11 +19,9 @@ public class DisruptorTest {
         //队列中的元素
         class Element {
             private int value;
-
             public int getValue() {
                 return value;
             }
-
             public void setValue(int value) {
                 this.value = value;
             }

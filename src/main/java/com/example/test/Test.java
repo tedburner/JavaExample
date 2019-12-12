@@ -107,6 +107,10 @@ public class Test {
             list.add(dto);
         }
         System.out.println(list);
+
+        long interval = 1000_000_000;
+
+        System.out.println(interval);
     }
 
     private static void print(Integer num) {

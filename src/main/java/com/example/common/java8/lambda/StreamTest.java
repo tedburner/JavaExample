@@ -1,4 +1,4 @@
-package com.example.common.Java8.Lambda;
+package com.example.common.java8.lambda;
 
 import com.example.domain.bean.SimpleDTO;
 
