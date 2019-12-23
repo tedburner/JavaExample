@@ -111,6 +111,9 @@ public class Test {
         long interval = 1000_000_000;
 
         System.out.println(interval);
+
+        int time = Math.max(10000, Math.min(1000 * 30, 60000));
+        System.out.println(time);
     }
 
     private static void print(Integer num) {
