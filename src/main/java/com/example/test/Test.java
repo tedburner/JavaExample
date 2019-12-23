@@ -111,6 +111,12 @@ public class Test {
         long interval = 1000_000_000;
 
         System.out.println(interval);
+
+        int num = 1011;
+        System.out.println("右侧第1位:" + (num & 1));
+        System.out.println("右侧第2位" + (num >> 1 & 1));
+        System.out.println("右侧第3位" + (num >> 2 & 1));
+        System.out.println("右侧第4位:" + (num >> 3 & 1));
     }
 
     private static void print(Integer num) {
