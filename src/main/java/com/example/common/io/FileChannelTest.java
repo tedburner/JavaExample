@@ -15,7 +15,8 @@ public class FileChannelTest {
 
     public static void main(String[] args) throws IOException {
         //使用 FileChannel
-        FileChannel fileChannel = new RandomAccessFile(new File("db.data"), "rw").getChannel();
+        FileChannel fileChannel = new RandomAccessFile(new File("/Users/jianglingjun/Document/temp/db.txt"), "rw")
+                .getChannel();
 
         //写
         byte[] data = new byte[4096];
