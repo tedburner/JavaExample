@@ -89,9 +89,9 @@ public class ThreadPoolTest {
     /**
      * Java8之后添加的构建线程池方法。
      * 获取当前可用的线程数量进行创建作为并行级别
-     * 使用ForkJoinPool
-     *
-     * 创建一个拥有多个任务队列的线程池，可以减少连接数，创建当前可用cpu数量的线程来并行执行，适用于大耗时的操作，可以并行来执行
+     * 底层使用ForkJoinPool来实现
+     * <p>
+     * 创建一个拥有多个任务队列的线程池，可以减少连接数，创建当前可用cpu数量的线程来并行执行，适用于大耗时的操作，可以并行来执行，
      */
     private static Executor workStealingPool = Executors.newWorkStealingPool();
 
