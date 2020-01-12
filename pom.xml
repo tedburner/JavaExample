@@ -279,17 +279,17 @@
         </dependency>
 
         <!--文件操作-->
-        <!--excel https://github.com/alibaba/easyexcel/blob/master/quickstart.md-->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
             <version>4.0.1</version>
         </dependency>
         <!--阿里excel操作包-->
+        <!--excel https://github.com/alibaba/easyexcel/blob/master/quickstart.md-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>easyexcel</artifactId>
-            <version>2.0.0-beta1</version>
+            <version>2.1.6</version>
         </dependency>
 
         <!-- word -->
