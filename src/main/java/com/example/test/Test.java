@@ -117,6 +117,11 @@ public class Test {
         System.out.println("右侧第2位" + (num >> 1 & 1));
         System.out.println("右侧第3位" + (num >> 2 & 1));
         System.out.println("右侧第4位:" + (num >> 3 & 1));
+
+        Integer a = 100;//new Integer(100);
+        Integer b = 100;//new Integer(100);
+        System.out.println(a == b);
+
     }
 
     private static void print(Integer num) {
