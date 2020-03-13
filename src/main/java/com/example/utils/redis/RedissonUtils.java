@@ -15,8 +15,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @author: lingjun.jlj
  * @date: 2019/6/26 11:30
- * @version：1.0
- * @description:
+ * @description: Redisson 用例
  */
 public class RedissonUtils {
 
