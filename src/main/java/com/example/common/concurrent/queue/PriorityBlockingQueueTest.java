@@ -5,7 +5,7 @@ import java.util.concurrent.PriorityBlockingQueue;
 /**
  * @author: lingjun.jlj
  * @date: 2018/7/29 15:25
- * @description:
+ * @description: 支持优先级排序的无界阻塞队列
  */
 public class PriorityBlockingQueueTest {
 

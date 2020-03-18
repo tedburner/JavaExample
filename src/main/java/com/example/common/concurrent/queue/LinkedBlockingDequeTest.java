@@ -5,7 +5,7 @@ import java.util.concurrent.LinkedBlockingDeque;
 /**
  * @author: lingjun.jlj
  * @date: 2018/7/30 14:53
- * @description:
+ * @description: 由链表结构组成的双向阻塞队列
  */
 public class LinkedBlockingDequeTest {
 

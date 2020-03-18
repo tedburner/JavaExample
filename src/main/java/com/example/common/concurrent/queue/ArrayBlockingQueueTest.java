@@ -10,8 +10,8 @@ import java.util.concurrent.ArrayBlockingQueue;
 public class ArrayBlockingQueueTest {
 
     public static void main(String[] args) {
-
-        ArrayBlockingQueue queue = new ArrayBlockingQueue(100);
+        //创建一个公平的阻塞队列
+        ArrayBlockingQueue<Integer> queue = new ArrayBlockingQueue(100, true);
 
         for (int i = 0; i < 1000; i++) {
             queue.add(i);
