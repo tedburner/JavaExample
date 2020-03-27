@@ -1,10 +1,14 @@
 package com.example.common.java8;
 
 
-
 import com.example.domain.bean.SimpleDTO;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -14,15 +18,15 @@ import java.util.stream.Collectors;
  **/
 public class groupingByTest {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         List<String> items = Arrays.asList("Apple", "Apple", "orange",
-                        "Apple", "orange", "banana", "papaya");
+                "Apple", "orange", "banana", "papaya");
 
-        Map<String,Long> result = items
+        Map<String, Long> result = items
                 .stream()
                 .collect(Collectors
-                        .groupingBy(Function.identity(),Collectors.counting()));
+                        .groupingBy(Function.identity(), Collectors.counting()));
         System.out.println(result);
 
         //排序
@@ -36,21 +40,37 @@ public class groupingByTest {
         //数据统计
         BeanData beanData = new BeanData();
         List<SimpleDTO> beans = beanData.getBeanDataList();
-        Map<Integer,Long> countMap = beans
+        Map<Integer, Long> countMap = beans
                 .stream().collect(
-                        Collectors.groupingBy(SimpleDTO::getId,Collectors.counting()));
+                        Collectors.groupingBy(SimpleDTO::getId, Collectors.counting()));
         System.out.println(countMap);
 
-        Map<Integer,List<SimpleDTO>> listMap = beans.stream().collect(
+        Map<Integer, List<SimpleDTO>> listMap = beans.stream().collect(
                 Collectors.groupingBy(SimpleDTO::getId));
         System.out.println(listMap);
 
-        Map<Integer,Set<String>> setMap = beans.stream().collect(
-                Collectors.groupingBy(SimpleDTO::getId,Collectors.mapping(SimpleDTO::getName,Collectors.toSet()))
+        Map<Integer, Set<String>> setMap = beans.stream().collect(
+                Collectors.groupingBy(SimpleDTO::getId, Collectors.mapping(SimpleDTO::getName, Collectors.toSet()))
         );
 
         System.out.println(setMap);
 
+        SimpleDTO dto1 = new SimpleDTO(1, "Jack","1");
+        SimpleDTO dto2 = new SimpleDTO(2,"James","2");
+        SimpleDTO dto3 = new SimpleDTO(3, "Hangzhou","3");
+        SimpleDTO dto4 = new SimpleDTO(3, "Hangzhou","4");
+        List<SimpleDTO> list = new ArrayList<>();
+        list.add(dto1);
+        list.add(dto2);
+        list.add(dto3);
+        list.add(dto4);
 
+        Map<String, List<SimpleDTO>> collect = list.stream().collect(Collectors.groupingBy(e -> fetchGroupKey(e)));
+        System.out.println(collect);
+    }
+
+
+    private static String fetchGroupKey(SimpleDTO dto){
+        return dto.getId() +"_"+ dto.getName();
     }
 }
