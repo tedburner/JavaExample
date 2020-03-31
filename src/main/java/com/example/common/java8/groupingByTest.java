@@ -1,7 +1,9 @@
 package com.example.common.java8;
 
 
+import com.alibaba.fastjson.JSON;
 import com.example.domain.bean.SimpleDTO;
+import com.example.domain.bean.UserDTO;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -47,30 +49,46 @@ public class groupingByTest {
 
         Map<Integer, List<SimpleDTO>> listMap = beans.stream().collect(
                 Collectors.groupingBy(SimpleDTO::getId));
-        System.out.println(listMap);
+        System.out.println(JSON.toJSON(listMap));
 
+        //Map 的value值自行聚合
         Map<Integer, Set<String>> setMap = beans.stream().collect(
                 Collectors.groupingBy(SimpleDTO::getId, Collectors.mapping(SimpleDTO::getName, Collectors.toSet()))
         );
+        System.out.println(JSON.toJSON(setMap));
 
-        System.out.println(setMap);
+        //Map的value重新聚合一个新的对象
+        Map<Integer, List<UserDTO>> collectMap = beans.stream()
+                .collect(Collectors.groupingBy(SimpleDTO::getId,
+                        Collectors.collectingAndThen(Collectors.toList(), input -> input.stream()
+                                .map(m -> {
+                                    UserDTO user = new UserDTO();
+                                    user.setId(m.getId());
+                                    user.setUsername(m.getName());
+                                    return user;
+                                }).collect(Collectors.toList())
+                        )));
+        System.out.println(JSON.toJSON(collectMap));
 
-        SimpleDTO dto1 = new SimpleDTO(1, "Jack","1");
-        SimpleDTO dto2 = new SimpleDTO(2,"James","2");
-        SimpleDTO dto3 = new SimpleDTO(3, "Hangzhou","3");
-        SimpleDTO dto4 = new SimpleDTO(3, "Hangzhou","4");
+        SimpleDTO dto1 = new SimpleDTO(1, "Jack", "1");
+        SimpleDTO dto2 = new SimpleDTO(2, "James", "2");
+        SimpleDTO dto3 = new SimpleDTO(3, "Hangzhou", "3");
+        SimpleDTO dto4 = new SimpleDTO(3, "Hangzhou", "4");
         List<SimpleDTO> list = new ArrayList<>();
         list.add(dto1);
         list.add(dto2);
         list.add(dto3);
         list.add(dto4);
 
-        Map<String, List<SimpleDTO>> collect = list.stream().collect(Collectors.groupingBy(e -> fetchGroupKey(e)));
-        System.out.println(collect);
+        //自行拼接KEY
+        Map<String, List<SimpleDTO>> mapKey = list.stream()
+                .collect(Collectors.groupingBy(e -> fetchGroupKey(e)));
+        System.out.println(mapKey);
+
     }
 
 
-    private static String fetchGroupKey(SimpleDTO dto){
-        return dto.getId() +"_"+ dto.getName();
+    private static String fetchGroupKey(SimpleDTO dto) {
+        return dto.getId() + "_" + dto.getName();
     }
 }
