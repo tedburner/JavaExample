@@ -50,11 +50,7 @@ public class DistributedLock implements Lock, Watcher {
                 // 创建根节点
                 zk.create(root, new byte[0], ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
             }
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (KeeperException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
+        } catch (IOException | InterruptedException | KeeperException e) {
             e.printStackTrace();
         }
     }
@@ -65,13 +61,10 @@ public class DistributedLock implements Lock, Watcher {
         try {
             if (this.tryLock()) {
                 System.out.println("Thread " + Thread.currentThread().getId() + " " + myZnode + " get lock true");
-                return;
             } else {
                 waitForLock(waitNode, sessionTimeout);//等待锁
             }
-        } catch (KeeperException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
+        } catch (KeeperException | InterruptedException e) {
             e.printStackTrace();
         }
     }
@@ -93,7 +86,7 @@ public class DistributedLock implements Lock, Watcher {
             //取出所有子节点
             List<String> subNodes = zk.getChildren(root, false);
             //取出所有lockName的锁
-            List<String> lockObjNodes = new ArrayList<String>();
+            List<String> lockObjNodes = new ArrayList<>();
             for (String node : subNodes) {
                 String _node = node.split(splitStr)[0];
                 if (_node.equals(lockName)) {
@@ -110,9 +103,7 @@ public class DistributedLock implements Lock, Watcher {
             //如果不是最小的节点，找到比自己小1的节点
             String subMyZnode = myZnode.substring(myZnode.lastIndexOf("/") + 1);
             waitNode = lockObjNodes.get(Collections.binarySearch(lockObjNodes, subMyZnode) - 1);//找到前一个子节点
-        } catch (KeeperException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
+        } catch (KeeperException | InterruptedException e) {
             e.printStackTrace();
         }
         return false;
@@ -150,9 +141,7 @@ public class DistributedLock implements Lock, Watcher {
             zk.delete(myZnode, -1);
             myZnode = null;
             zk.close();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (KeeperException e) {
+        } catch (InterruptedException | KeeperException e) {
             e.printStackTrace();
         }
     }
