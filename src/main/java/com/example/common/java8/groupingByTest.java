@@ -40,8 +40,7 @@ public class groupingByTest {
 
         System.out.println(finalMap);
         //数据统计
-        BeanData beanData = new BeanData();
-        List<SimpleDTO> beans = beanData.getBeanDataList();
+        List<SimpleDTO> beans = BeanData.getBeanDataList();
         Map<Integer, Long> countMap = beans
                 .stream().collect(
                         Collectors.groupingBy(SimpleDTO::getId, Collectors.counting()));
