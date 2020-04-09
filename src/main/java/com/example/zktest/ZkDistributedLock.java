@@ -120,7 +120,7 @@ public class ZkDistributedLock implements Lock, Watcher {
             if (lockName.contains(splitStr)) {
                 throw new RuntimeException("lockName can not contains \\u000B");
             }
-            //创建临时顺序子节点
+            //创建临时顺序子节点，避免出现死锁，以及在前一个锁失效时，并发尝试加锁
             myZnode = zk.create(root + "/" + lockName + splitStr, new byte[0], ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL_SEQUENTIAL);
             System.out.println(myZnode + " is created ");
             //取出所有子节点
