@@ -24,7 +24,7 @@ public class QuickSortDemo {
         int i, j, target;
         if (low > hight) {
             return;
-        }
+        } 
         i = low;
         j = hight;
         target = a[i];

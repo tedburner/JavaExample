@@ -4,7 +4,6 @@ import com.alibaba.excel.context.AnalysisContext;
 import com.alibaba.excel.event.AnalysisEventListener;
 import com.example.utils.DateFormatUtils;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -28,7 +27,7 @@ public class ExcelListener extends AnalysisEventListener<MoneyManagerDTO> {
         time = DateFormatUtils.DateToString(date, "yyyy-MM-dd");
         //金额转为正数
         String amount = moneyManagerDTO.getCost();
-        if (amount.startsWith("-")){
+        if (amount.startsWith("-")) {
             amount = amount.replace("-", "");
         }
         if (Objects.equals(moneyManagerDTO.getCostType(), "支出")) {
