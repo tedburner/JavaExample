@@ -30,7 +30,14 @@ public class BeanData {
                 new SimpleDTO(3, "二代"), new SimpleDTO(3, "路痴"), new SimpleDTO(3, "路痴"),
                 new SimpleDTO(4, "赛克"), new SimpleDTO(4, "二代"), new SimpleDTO(4, "路痴")
         );
+        return listDTOS;
+    }
 
+    public static List<SimpleDTO> getDataList() {
+        List<SimpleDTO> listDTOS = Arrays.asList(
+                new SimpleDTO(1, "孙博"), new SimpleDTO(2, "孙博"), new SimpleDTO(3, "孙博2"),
+                new SimpleDTO(3, "孙博1"), new SimpleDTO(3, "孙博3")
+        );
         return listDTOS;
     }
 }

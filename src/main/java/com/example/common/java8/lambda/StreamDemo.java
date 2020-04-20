@@ -1,6 +1,7 @@
 package com.example.common.java8.lambda;
 
 
+import com.alibaba.fastjson.JSON;
 import com.example.common.java8.BeanData;
 import com.example.domain.bean.SimpleDTO;
 import org.junit.Assert;
@@ -28,13 +29,14 @@ public class StreamDemo {
 
 
         //对象的正序排列后，又倒序了
-        List<SimpleDTO> beans = BeanData.getBeanDataList();
+        List<SimpleDTO> beans = BeanData.getDataList();
+        System.out.println("排序前：" + JSON.toJSONString(beans));
         List<SimpleDTO> list1 = beans
                 .stream()
                 .sorted(Comparator.comparing(SimpleDTO::getId).reversed()
-                        .thenComparing(x -> x.getName()))
+                        .thenComparing(SimpleDTO::getName))
                 .collect(Collectors.toList());
-        System.out.println(list1);
+        System.out.println("排序后：" + JSON.toJSONString(list1));
 
         Long count = list.stream().count();
         System.out.println("统计计数： " + count);
