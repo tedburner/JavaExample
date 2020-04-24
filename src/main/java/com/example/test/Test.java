@@ -1,6 +1,7 @@
 package com.example.test;
 
 import com.example.domain.bean.SimpleDTO;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.ByteArrayOutputStream;
@@ -121,6 +122,10 @@ public class Test {
         Integer a = 100;//new Integer(100);
         Integer b = 100;//new Integer(100);
         System.out.println(a == b);
+
+        System.out.println(System.nanoTime());
+
+        System.out.println(DigestUtils.md5Hex("360732199310062621"));
 
     }
 
