@@ -36,8 +36,7 @@ public class ForkJoinTest {
             long left = start;
             long right = end;
 
-            // 终止条件：如果当前处理的范围小于等于阈值(threshold)，
-            //                    那么就直接通过循环执行累加操作
+            // 终止条件：如果当前处理的范围小于等于阈值(threshold)，那么就直接通过循环执行累加操作
             if (right - left <= (int) threshold) {
                 long result = 0;
                 for (long i = left; i < right; ++i) {
