@@ -21,14 +21,24 @@ public class ShapeMaker {
         square = new Square();
     }
 
-    public void drawCircle(){
+    /**
+     * 画圆
+     */
+    public void drawCircle() {
         circle.draw();
     }
 
-    public void drawRectangle(){
+    /**
+     * 画长方形
+     */
+    public void drawRectangle() {
         rectangle.draw();
     }
-    public void drawSquare(){
+
+    /**
+     * 画正方形
+     */
+    public void drawSquare() {
         square.draw();
     }
 }

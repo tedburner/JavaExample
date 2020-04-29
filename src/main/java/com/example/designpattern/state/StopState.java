@@ -13,7 +13,7 @@ public class StopState implements State {
         context.setState(this);
     }
 
-    public String toString(){
+    public String toString() {
         return "Stop State";
     }
 }

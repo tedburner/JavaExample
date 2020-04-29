@@ -6,7 +6,7 @@ package com.example.designpattern.observer;
  * @Description: 观察者模式
  * 通过订阅者来通知那些方法需要改变。
  */
-public class Test {
+public class ObserverTest {
 
     public static void main(String[] args) {
 

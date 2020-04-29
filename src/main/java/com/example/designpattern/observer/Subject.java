@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class Subject {
 
-    private List<Observer> observers = new ArrayList<>();
+    private final List<Observer> observers = new ArrayList<>();
     private int state;
 
     public int getState() {
@@ -22,10 +22,18 @@ public class Subject {
         notifyAllObservers();
     }
 
+    /**
+     * 存储订阅对象
+     *
+     * @param observer
+     */
     public void attach(Observer observer) {
         observers.add(observer);
     }
 
+    /**
+     * 通知所有观察者
+     */
     public void notifyAllObservers() {
         for (Observer observer : observers) {
             observer.update();

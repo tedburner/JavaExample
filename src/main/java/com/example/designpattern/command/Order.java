@@ -6,5 +6,6 @@ package com.example.designpattern.command;
  * @Description:
  */
 public interface Order {
+
     void execute();
 }
