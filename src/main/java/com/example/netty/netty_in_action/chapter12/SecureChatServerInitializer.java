@@ -1,6 +1,5 @@
 package com.example.netty.netty_in_action.chapter12;
 
-import afu.org.checkerframework.checker.oigj.qual.O;
 import io.netty.channel.Channel;
 import io.netty.channel.group.ChannelGroup;
 import io.netty.handler.ssl.SslContext;
