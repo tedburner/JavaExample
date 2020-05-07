@@ -33,17 +33,23 @@ public class MapTest {
 //
 //        System.out.println(total);'
 
-        System.out.println(tableSizeFor(10000));
+        System.out.println(tableSizeFor(65538));
 
     }
 
     static final int tableSizeFor(int cap) {
         int n = cap - 1;
+        System.out.println(Integer.toBinaryString(n));
         n |= n >>> 1;
+        System.out.println(Integer.toBinaryString(n));
         n |= n >>> 2;
+        System.out.println(Integer.toBinaryString(n));
         n |= n >>> 4;
+        System.out.println(Integer.toBinaryString(n));
         n |= n >>> 8;
+        System.out.println(Integer.toBinaryString(n));
         n |= n >>> 16;
+        System.out.println(Integer.toBinaryString(n));
         return (n < 0) ? 1 : (n >= MAXIMUM_CAPACITY) ? MAXIMUM_CAPACITY : n + 1;
     }
 }
