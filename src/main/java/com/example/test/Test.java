@@ -127,6 +127,9 @@ public class Test {
 
         System.out.println(DigestUtils.md5Hex("360732199310062621"));
 
+        String password = "8911515ecc3dbd785ed85c9415dcbe27" + "10000009";
+        System.out.printf("加密密码："+DigestUtils.sha256Hex(password));
+
     }
 
     private static void print(Integer num) {

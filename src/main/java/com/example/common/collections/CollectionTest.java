@@ -9,21 +9,36 @@ import java.util.*;
 public class CollectionTest {
 
     public static void main(String[] args) {
-        //Set
-        Set<String> set = new HashSet<>();
-        set.add("abc");
-        set.add("bcd");
-        set.add("cde");
-        set.add("abc");//自动去重
-
-        for (Iterator it = set.iterator(); it.hasNext(); ) {
-            System.out.println(it.next().toString());
+        int num = 30000;
+        List<String> list1 = new ArrayList<>();
+        List<String> list2 = new ArrayList<>();
+        for (int i = 0; i < num; i++) {
+            list1.add("test" + i);
+            list2.add("test" + i * 3);
         }
-        //System.out.println(set.hashCode());
-        List<String> list = new ArrayList<>();
+        long start1 = System.currentTimeMillis();
+        list1.retainAll(list2);
+        System.out.printf("ArrayList: %d ms\n", (System.currentTimeMillis() - start1));
 
-        List<String> list1 = new LinkedList<>();
+        List<String> list3 = new LinkedList<>();
+        List<String> list4 = new LinkedList<>();
+        for (int i = 0; i < num; i++) {
+            list3.add("test" + i);
+            list4.add("test" + i * 3);
+        }
+        long start2 = System.currentTimeMillis();
+        list3.retainAll(list4);
+        System.out.printf("LinkedList: %d ms\n", (System.currentTimeMillis() - start2));
 
+        Set<String> set1 = new HashSet<>();
+        Set<String> set2 = new HashSet<>();
+        for (int i = 0; i < num; i++) {
+            set1.add("test" + i);
+            set2.add("test" + i * 3);
+        }
+        long start3 = System.currentTimeMillis();
+        list3.retainAll(list4);
+        System.out.printf("Set: %d ms\n", (System.currentTimeMillis() - start3));
 
     }
 }
