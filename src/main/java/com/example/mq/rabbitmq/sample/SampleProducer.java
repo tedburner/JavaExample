@@ -1,6 +1,6 @@
 package com.example.mq.rabbitmq.sample;
 
-import com.example.mq.rabbitmq.RabbitMqConstant;
+import com.example.constant.RabbitMqConstant;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;

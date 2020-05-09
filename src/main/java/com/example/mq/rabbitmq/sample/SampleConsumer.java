@@ -1,6 +1,6 @@
 package com.example.mq.rabbitmq.sample;
 
-import com.example.mq.rabbitmq.RabbitMqConstant;
+import com.example.constant.RabbitMqConstant;
 import com.rabbitmq.client.*;
 
 import java.io.IOException;
