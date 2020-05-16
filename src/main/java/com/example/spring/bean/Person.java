@@ -12,6 +12,7 @@ public class Person {
 
     private int id;
     private String name;
+    private Integer age;
 
     public Person() {
         System.out.println("构造函数被调用");
