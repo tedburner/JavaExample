@@ -3,7 +3,7 @@ package com.example.rpc.test;
 import com.example.rpc.framework.RpcFramework;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-14 15:14
  * @description: 引用服务
  */

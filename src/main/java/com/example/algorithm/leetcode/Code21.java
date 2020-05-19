@@ -1,7 +1,7 @@
 package com.example.algorithm.leetcode;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-07-29 23:03
  * @description: 合并两个有序链表
  */

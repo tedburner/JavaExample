@@ -11,7 +11,7 @@ import io.netty.handler.ssl.SslHandler;
 import javax.net.ssl.SSLEngine;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-21 23:04
  * @description: 使用https，在http之前使用SSL加密
  */

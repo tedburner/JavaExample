@@ -14,7 +14,7 @@ import io.netty.handler.codec.http.websocketx.WebSocketFrame;
 import java.util.List;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-19 13:43
  * @description: 编解码器
  */

@@ -1,7 +1,7 @@
 package com.example.algorithm.leetcode;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-08-08 22:12
  * @description: 最大子序和  动态规划
  */

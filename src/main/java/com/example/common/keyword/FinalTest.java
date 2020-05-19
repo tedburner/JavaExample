@@ -3,7 +3,7 @@ package com.example.common.keyword;
 import com.example.domain.bean.SimpleDTO;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-17 10:11
  * @description: final 修饰类，不可被继承；
  * final修饰方法，不可被重写；
@@ -17,15 +17,15 @@ import com.example.domain.bean.SimpleDTO;
 public class FinalTest {
 
     public static void main(String[] args) {
-        String a = "Arthas2";
-        final String b = "Arthas";
-        String d = "Arthas";
+        String a = "lingjun.jlj2";
+        final String b = "lingjun.jlj";
+        String d = "lingjun.jlj";
         String c = b + 2;
         String e = d + 2;
         System.out.println(a == c);
         System.out.println(a == e);
 
-        final SimpleDTO simpleDTO = new SimpleDTO(1, "Arthas");
+        final SimpleDTO simpleDTO = new SimpleDTO(1, "lingjun.jlj");
         //simpleDTO = new SimpleDTO();
         simpleDTO.setName("Jack");
         System.out.println(simpleDTO);

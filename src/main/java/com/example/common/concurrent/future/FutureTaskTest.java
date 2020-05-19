@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-30 13:07
  * @description:
  */

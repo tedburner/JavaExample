@@ -8,7 +8,7 @@ import io.netty.handler.codec.http.HttpContentCompressor;
 import io.netty.handler.codec.http.HttpServerCodec;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-21 22:55
  * @description: HTTP压缩
  */

@@ -4,7 +4,7 @@ import com.example.serializable.hessian.HessianTest;
 import com.example.serializable.kryo.KryoTest;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-14 16:17
  * @description:
  */

@@ -10,7 +10,7 @@ import io.netty.handler.codec.string.StringEncoder;
 import java.util.Date;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-10 17:59
  * @description:
  */

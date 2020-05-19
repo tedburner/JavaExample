@@ -3,7 +3,7 @@ package com.example.test.enums;
 import lombok.Getter;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-06-07 23:30
  * @description:
  */

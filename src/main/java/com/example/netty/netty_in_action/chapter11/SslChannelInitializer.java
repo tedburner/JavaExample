@@ -8,7 +8,7 @@ import io.netty.handler.ssl.SslHandler;
 import javax.net.ssl.SSLEngine;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-20 23:10
  * @description: 添加SSL/TLS支持
  */

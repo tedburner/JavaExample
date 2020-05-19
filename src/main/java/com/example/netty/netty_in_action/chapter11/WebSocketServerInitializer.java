@@ -11,7 +11,7 @@ import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
 import io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-22 23:07
  * @description:
  */

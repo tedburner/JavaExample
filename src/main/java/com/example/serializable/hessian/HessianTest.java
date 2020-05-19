@@ -8,7 +8,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-14 16:08
  * @description: hessian 序列化
  */

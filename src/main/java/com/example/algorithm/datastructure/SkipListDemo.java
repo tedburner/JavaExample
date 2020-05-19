@@ -1,7 +1,7 @@
 package com.example.algorithm.datastructure;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-02-13 13:59
  * @description: 跳表
  */

@@ -13,7 +13,7 @@ import java.io.File;
 import java.io.FileInputStream;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-23 22:27
  * @description: 使用FileRegion传输文件
  */

@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Stack;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-07-27 23:18
  * @description: 有效的括号，使用栈来计算
  */

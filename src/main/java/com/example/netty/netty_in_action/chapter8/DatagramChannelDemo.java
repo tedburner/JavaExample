@@ -12,7 +12,7 @@ import io.netty.channel.socket.oio.OioDatagramChannel;
 import java.net.InetSocketAddress;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-12 22:54
  * @description: 无连接协议：不需要connect()方法，只需要调用bind()方法
  */

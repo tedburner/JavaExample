@@ -6,7 +6,7 @@ import lombok.Data;
 import static com.example.netty.juejin_study.part8.protocol.command.Command.LOGIN_RESPONSE;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-11 15:15
  * @description:
  */

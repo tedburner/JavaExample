@@ -2,7 +2,7 @@ package com.example.common.concurrent.ThreadLocal;
 
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-02-26 18:16
  * @description:
  */

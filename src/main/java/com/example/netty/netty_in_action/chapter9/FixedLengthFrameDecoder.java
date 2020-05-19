@@ -7,7 +7,7 @@ import io.netty.handler.codec.ByteToMessageDecoder;
 import java.util.List;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-13 23:19
  * @description:
  */

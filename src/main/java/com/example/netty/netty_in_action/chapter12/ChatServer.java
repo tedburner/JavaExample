@@ -14,7 +14,7 @@ import io.netty.util.concurrent.ImmediateEventExecutor;
 import java.net.InetSocketAddress;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-29 23:27
  * @description: 引导服务器
  */

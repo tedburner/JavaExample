@@ -3,7 +3,7 @@ package com.example.algorithm.leetcode;
 import java.util.Objects;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-07-27 22:48
  * @description: 最长公共前缀
  */

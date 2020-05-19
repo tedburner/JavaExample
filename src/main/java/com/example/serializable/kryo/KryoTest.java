@@ -8,7 +8,7 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-14 16:09
  * @description: kryo 序列化
  */

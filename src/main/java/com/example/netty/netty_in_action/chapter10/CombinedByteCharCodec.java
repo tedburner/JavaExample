@@ -3,7 +3,7 @@ package com.example.netty.netty_in_action.chapter10;
 import io.netty.channel.CombinedChannelDuplexHandler;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-19 17:03
  * @description: 编解码器
  */

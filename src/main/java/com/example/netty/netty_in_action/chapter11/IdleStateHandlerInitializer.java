@@ -14,7 +14,7 @@ import io.netty.util.CharsetUtil;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-22 23:15
  * @description: 发送心跳
  */

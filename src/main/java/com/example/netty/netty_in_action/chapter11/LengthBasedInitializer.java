@@ -9,7 +9,7 @@ import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-23 22:24
  * @description:
  */

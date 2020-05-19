@@ -7,7 +7,7 @@ import io.netty.handler.codec.MessageToMessageEncoder;
 import java.util.List;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-14 22:23
  * @description:
  */

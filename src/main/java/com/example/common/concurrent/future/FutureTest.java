@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-28 13:24
  * @description: Future 通过它们可以在任务执行完毕之后得到任务执行结果
  */

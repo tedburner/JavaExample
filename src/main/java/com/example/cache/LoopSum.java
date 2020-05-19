@@ -1,7 +1,7 @@
 package com.example.cache;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-29 18:03
  * @description: ⼀个从0-9的封闭环，即是0-1-2-3-4-5-6-7-8-9-0, 可以正向⾛，
  * 也可以逆向⾛; 请问⾛n步回到0有⼏种不同的⾛法（譬如n 为2, 0-1-0, 0-9-0共有两种⾛法）

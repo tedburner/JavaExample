@@ -3,7 +3,7 @@ package com.example.netty.juejin_study.part8.serialize;
 import com.example.netty.juejin_study.part8.serialize.impl.JSONSerializer;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-11 13:57
  * @description:
  */

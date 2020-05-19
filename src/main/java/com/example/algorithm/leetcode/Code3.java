@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-03-16 20:17
  * @description: 无重复字符的最长子串
  */

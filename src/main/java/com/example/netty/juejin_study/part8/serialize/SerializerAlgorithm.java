@@ -1,7 +1,7 @@
 package com.example.netty.juejin_study.part8.serialize;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-11 13:57
  * @description:
  */

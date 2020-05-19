@@ -14,7 +14,7 @@ import java.io.File;
 import java.io.FileInputStream;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-23 22:33
  * @description: 使用ChunkedStream传输文件
  */

@@ -4,7 +4,7 @@ package io.netty.channel;
 import io.netty.util.concurrent.EventExecutor;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-04-22 23:02
  * @description:
  */

@@ -8,7 +8,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-10 17:43
  * @description:
  */

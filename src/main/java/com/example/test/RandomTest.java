@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-04-29 22:59
  * @description:
  */

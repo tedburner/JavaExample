@@ -8,7 +8,7 @@ import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.HttpServerCodec;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-21 22:47
  * @description: 聚合Http 消息
  */

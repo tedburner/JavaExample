@@ -9,7 +9,7 @@ import io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler;
 import io.netty.handler.stream.ChunkedWriteHandler;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-29 22:39
  * @description: 初始化ChannelPipeline
  */

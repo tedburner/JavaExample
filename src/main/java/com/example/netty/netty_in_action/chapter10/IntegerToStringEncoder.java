@@ -6,7 +6,7 @@ import io.netty.handler.codec.MessageToMessageEncoder;
 import java.util.List;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-19 13:24
  * @description: 编码器蒋每个出站Integer 的String 表示添加到List
  */

@@ -9,7 +9,7 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-08 22:48
  * @description: 使用定时线程池
  */

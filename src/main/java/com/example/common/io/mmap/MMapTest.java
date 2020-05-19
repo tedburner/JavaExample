@@ -7,7 +7,7 @@ import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-18 16:47
  * @description: 零拷贝 mmap 测试类
  */

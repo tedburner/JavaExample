@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-10 16:48
  * @description:
  */

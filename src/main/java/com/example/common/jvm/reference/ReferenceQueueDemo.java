@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-02-16 16:14
  * @description: 引用队列
  */

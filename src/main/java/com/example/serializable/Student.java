@@ -3,7 +3,7 @@ package com.example.serializable;
 import java.io.Serializable;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-14 16:11
  * @description:
  */

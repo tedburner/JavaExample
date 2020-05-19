@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-03-22 13:45
  * @description: CompletableFuture 测试类
  */

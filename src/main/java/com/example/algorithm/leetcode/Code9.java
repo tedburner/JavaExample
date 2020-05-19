@@ -3,7 +3,7 @@ package com.example.algorithm.leetcode;
 import java.util.Objects;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-07-26 21:58
  * @description: 回文数的判断
  */

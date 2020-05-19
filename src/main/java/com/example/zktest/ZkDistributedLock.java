@@ -18,7 +18,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-03-05 10:57
  * @description: zookeeper实现分布式锁
  */

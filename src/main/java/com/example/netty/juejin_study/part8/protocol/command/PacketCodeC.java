@@ -12,7 +12,7 @@ import java.util.Map;
 import static com.example.netty.juejin_study.part8.protocol.command.Command.LOGIN_REQUEST;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-11 14:13
  * @description: 编码 封装成二进制
  */

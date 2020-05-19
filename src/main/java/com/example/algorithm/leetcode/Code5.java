@@ -1,7 +1,7 @@
 package com.example.algorithm.leetcode;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-08-09 20:20
  * @description: 最长回文子串
  * https://www.jianshu.com/p/a7741619dd58

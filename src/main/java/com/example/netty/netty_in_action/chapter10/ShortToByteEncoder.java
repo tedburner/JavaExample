@@ -5,7 +5,7 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-19 13:22
  * @description: 编码器, Short -> ByteBuf
  */

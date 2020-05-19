@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.UUID;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-10 17:43
  * @description:
  */

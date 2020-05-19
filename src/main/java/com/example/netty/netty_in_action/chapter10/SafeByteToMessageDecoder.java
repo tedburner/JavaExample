@@ -8,7 +8,7 @@ import io.netty.handler.codec.TooLongFrameException;
 import java.util.List;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-19 13:15
  * @description: 安全使用解码器，如果太长，抛出异常
  */

@@ -1,7 +1,7 @@
 package com.example.algorithm.leetcode;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019/8/28 23:13
  * @description: 实现 strStr()
  */

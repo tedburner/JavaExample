@@ -8,7 +8,7 @@ import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.LineBasedFrameDecoder;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-23 21:13
  * @description: 处理由行尾符分隔符的帧
  */

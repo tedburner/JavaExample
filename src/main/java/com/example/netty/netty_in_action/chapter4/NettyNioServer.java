@@ -17,7 +17,7 @@ import java.net.InetSocketAddress;
 import java.nio.charset.Charset;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-04-21 16:11
  * @description: 使用Netty的异步网络处理
  */

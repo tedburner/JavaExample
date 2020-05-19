@@ -7,7 +7,7 @@ import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
 import io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-29 22:33
  * @description: 处理文本帧
  */

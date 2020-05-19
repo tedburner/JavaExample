@@ -11,7 +11,7 @@ import io.netty.handler.codec.protobuf.ProtobufEncoder;
 import io.netty.handler.codec.protobuf.ProtobufVarint32FrameDecoder;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-23 22:38
  * @description:
  */

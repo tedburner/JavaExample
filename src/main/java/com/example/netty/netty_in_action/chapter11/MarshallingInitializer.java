@@ -13,7 +13,7 @@ import io.netty.handler.codec.marshalling.UnmarshallerProvider;
 import java.io.Serializable;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-23 22:37
  * @description: 使用 JBoss Marshalling 进行序列化
  */

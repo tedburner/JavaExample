@@ -15,7 +15,7 @@ import java.util.Random;
 
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-04-22 22:59
  * @description: ByteBuf 事例
  */

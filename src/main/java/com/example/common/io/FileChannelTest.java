@@ -7,7 +7,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-22 10:22
  * @description: FileChannel 读写 堆内内存
  */

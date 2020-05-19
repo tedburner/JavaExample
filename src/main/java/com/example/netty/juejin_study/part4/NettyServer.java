@@ -5,7 +5,7 @@ import io.netty.util.concurrent.Future;
 import io.netty.util.concurrent.GenericFutureListener;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-11 09:45
  * @description:
  */

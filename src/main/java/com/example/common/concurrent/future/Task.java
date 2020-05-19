@@ -3,7 +3,7 @@ package com.example.common.concurrent.future;
 import java.util.concurrent.Callable;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-28 13:25
  * @description:
  */

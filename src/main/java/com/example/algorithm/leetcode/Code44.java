@@ -1,7 +1,7 @@
 package com.example.algorithm.leetcode;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019/9/4 23:13
  * @description: 通配符匹配
  */

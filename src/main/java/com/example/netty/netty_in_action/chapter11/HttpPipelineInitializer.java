@@ -7,7 +7,7 @@ import io.netty.handler.codec.http.HttpRequestEncoder;
 import io.netty.handler.codec.http.HttpResponseDecoder;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-21 22:32
  * @description:
  */

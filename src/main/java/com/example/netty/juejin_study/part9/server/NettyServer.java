@@ -10,7 +10,7 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 import java.util.Date;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-10 17:43
  * @description: netty 服务端
  */

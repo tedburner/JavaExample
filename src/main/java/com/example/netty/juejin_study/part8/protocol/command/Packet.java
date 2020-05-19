@@ -3,7 +3,7 @@ package com.example.netty.juejin_study.part8.protocol.command;
 import lombok.Data;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-11 12:01
  * @description:
  */

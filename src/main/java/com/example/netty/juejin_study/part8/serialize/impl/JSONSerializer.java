@@ -5,7 +5,7 @@ import com.example.netty.juejin_study.part8.serialize.Serializer;
 import com.example.netty.juejin_study.part8.serialize.SerializerAlgorithm;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-11 13:58
  * @description:
  */

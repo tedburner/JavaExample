@@ -1,7 +1,7 @@
 package com.example.algorithm.datastructure.link;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019/9/14 18:11
  * @description: 链表
  */

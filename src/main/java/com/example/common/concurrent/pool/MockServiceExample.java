@@ -6,7 +6,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-01-09 10:55
  * @description:
  */

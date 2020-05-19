@@ -7,7 +7,7 @@ import io.netty.handler.codec.ReplayingDecoder;
 import java.util.List;
 
 /**
- * @author: Arthas
+ * @author: lingjun.jlj
  * @date: 2019-05-19 13:03
  * @description: ReplayingDecoder 解码器
  */
