@@ -16,10 +16,11 @@ public class Code6 {
             return s;
         }
         int len = s.length();
+        int index = 0;
         Character[][] dp = new Character[len][4];
         for (int k = 0; k < numRows; k++) {
             for (int i = 0; i < len; i++) {
-
+                char ch = s.charAt(index);
             }
         }
         return "";

@@ -26,7 +26,7 @@ public class ThreadLocalTest {
         final ThreadLocalTest threadLocalTest = new ThreadLocalTest();
 
         new Thread(() -> {
-            List<String> params = new ArrayList<>(3);
+            List<String> params = new ArrayList<>(4);
             params.add("蒋先森");
             params.add("康发明");
             params.add("张三");
