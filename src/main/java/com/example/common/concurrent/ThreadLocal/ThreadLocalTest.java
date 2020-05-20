@@ -19,7 +19,7 @@ public class ThreadLocalTest {
 
     public void getThreadLocal() {
         System.out.println(Thread.currentThread().getName());
-        threadLocal.get().forEach(name -> System.out.println(name));
+        threadLocal.get().forEach(System.out::println);
     }
 
     public static void main(String[] args) {
