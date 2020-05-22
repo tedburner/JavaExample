@@ -8,4 +8,6 @@
         <property name="id" value="10"/>
         <property name="name" value="大刀王五"/>
     </bean>
+
+    <bean id="demoBeanPostProcessor" class="com.example.spring.bean.DemoBeanPostProcessor"/>
 </beans>

@@ -19,6 +19,7 @@ public class Person {
     }
 
     public Person(int id, String name) {
+        System.out.println("对bean设置属性值");
         this.id = id;
         this.name = name;
     }
