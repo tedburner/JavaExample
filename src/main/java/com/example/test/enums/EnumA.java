@@ -23,4 +23,6 @@ public enum  EnumA {
         this.eb = eb;
         this.code = code;
     }
+
+
 }
