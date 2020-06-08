@@ -16,5 +16,8 @@ public class StringTest {
         changeValue(str);
         System.out.println(str);
 
+        String account = " 嘉荫信用社03 ";
+        System.out.println("trim"+account.trim()+"trim");
+
     }
 }
