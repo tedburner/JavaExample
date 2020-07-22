@@ -7,63 +7,39 @@ package com.example.common.concurrent.lock.syn;
  */
 public class SynchronizedThis {
 
-    public void m1() {
+    public void method(String arg) {
         synchronized (this) {
-            System.out.println("m1方法获得锁");
+            System.out.println(arg + "获得锁");
             try {
                 Thread.sleep(1200);
+                System.out.println(arg + "正在处理事情");
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            System.out.println("m1方法释放锁");
+            System.out.println(arg + "释放锁");
         }
     }
 
-    public void m2() {
-        synchronized (this) {
-            System.out.println("m2方法获得锁");
-            try {
-                Thread.sleep(1200);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            System.out.println("m2方法释放锁");
-
-        }
-    }
-
-    static class Task1 implements Runnable {
+    static class Task implements Runnable {
 
         private SynchronizedThis synchronizedThis;
+        private String arg;
 
-        public Task1(SynchronizedThis synchronizedThis) {
+        public Task(SynchronizedThis synchronizedThis, String arg) {
             this.synchronizedThis = synchronizedThis;
+            this.arg = arg;
         }
 
         @Override
         public void run() {
-            synchronizedThis.m1();
-        }
-    }
-
-    static class Task2 implements Runnable {
-
-        private SynchronizedThis synchronizedThis;
-
-        public Task2(SynchronizedThis synchronizedThis) {
-            this.synchronizedThis = synchronizedThis;
-        }
-
-        @Override
-        public void run() {
-            synchronizedThis.m2();
+            synchronizedThis.method(arg);
         }
     }
 
     public static void main(String[] args) throws InterruptedException {
         SynchronizedThis syn = new SynchronizedThis();
-        new Thread(new Task1(syn)).start();
-        new Thread(new Task2(syn)).start();
+        new Thread(new Task(syn, "A")).start();
+        new Thread(new Task(syn, "B")).start();
 
         // 主线程阻塞，防止jvm提早退出
         Thread.sleep(15000);

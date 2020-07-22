@@ -7,46 +7,39 @@ package com.example.common.concurrent.lock.syn;
  */
 public class SynchronizedStaticMethod {
 
-    public synchronized static void m1() {
-        System.out.println("m1方法获得锁");
+    public synchronized static void method(String arg) {
+        System.out.println(arg + "获得锁");
         try {
             Thread.sleep(1200);
+            System.out.println(arg + "正在处理事情");
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("m1方法释放锁");
+        System.out.println(arg + "释放锁");
     }
 
-    public synchronized static void m2() {
-        System.out.println("m2方法获得锁");
-        try {
-            Thread.sleep(1200);
-        } catch (Exception e) {
-            e.printStackTrace();
+
+    static class Task implements Runnable {
+
+        private String arg;
+
+        public Task(String arg) {
+            this.arg = arg;
         }
-        System.out.println("m2方法释放锁");
-    }
-
-    static class Task1 implements Runnable {
 
         @Override
         public void run() {
-            m1();
+            method(arg);
         }
     }
 
-    static class Task2 implements Runnable {
-
-        @Override
-        public void run() {
-            m2();
-        }
-    }
 
     public static void main(String[] args) throws InterruptedException {
-        new Thread(new Task1()).start();
-        new Thread(new Task2()).start();
+        SynchronizedStaticMethod syn = new SynchronizedStaticMethod();
+        new Thread(new Task("A")).start();
+        new Thread(new Task("B")).start();
 
-        Thread.sleep(15000);
+        // 主线程阻塞，防止jvm提早退出
+        Thread.sleep(150000);
     }
 }

@@ -125,10 +125,13 @@ public class Test {
 
         System.out.println(System.nanoTime());
 
-        System.out.println("密码："+DigestUtils.md5Hex("130425199502258124"));
+        System.out.println(DigestUtils.md5Hex("123456"));
+        System.out.println(DigestUtils.md5Hex("ab123456"));
+        System.out.println("密码：" + DigestUtils.md5Hex(DigestUtils.md5Hex("admin@123456") + "1000"));
+        System.out.println("密码：" + DigestUtils.md5Hex("4860ce23464e697ebf0e5f8f554b2fbb" + "1000"));
 
         String password = "70f43a87461999eba84700437ad50ca7" + "1";
-        System.out.printf("加密密码："+DigestUtils.sha256Hex(password));
+        System.out.printf("加密密码：" + DigestUtils.sha256Hex(password));
 
     }
 
