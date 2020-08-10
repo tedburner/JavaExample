@@ -11,9 +11,9 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 import java.util.Date;
 
 /**
- * @author chao.yu
- * chao.yu@dianping.com
- * @date 2018/08/04 06:21.
+ * @author: lingjun.jlj
+ * @date: 2019-01-10 17:43
+ * @description: netty 服务端
  */
 public class ServerHandler extends ChannelInboundHandlerAdapter {
 
