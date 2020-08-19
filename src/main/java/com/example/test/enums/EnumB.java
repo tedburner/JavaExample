@@ -1,13 +1,10 @@
 package com.example.test.enums;
 
-import lombok.Getter;
-
 /**
  * @author: lingjun.jlj
  * @date: 2019-06-07 23:30
  * @description:
  */
-@Getter
 public enum EnumB {
 
     B1("B1", EnumA.A1, "2001"),
@@ -23,5 +20,17 @@ public enum EnumB {
         this.name = name;
         this.ea = ea;
         this.code = code;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public EnumA getEa() {
+        return ea;
+    }
+
+    public String getCode() {
+        return code;
     }
 }

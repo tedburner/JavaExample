@@ -8,7 +8,6 @@ import lombok.Data;
  * @date: 2020/1/12 11:10
  * @description: 网友有钱
  */
-@Data
 public class YouQianDTO {
 
     @ExcelProperty(value = "账号")
@@ -29,4 +28,63 @@ public class YouQianDTO {
     @ExcelProperty(value = "备注")
     private String content;
 
+    public String getAccount() {
+        return account;
+    }
+
+    public void setAccount(String account) {
+        this.account = account;
+    }
+
+    public String getAmount() {
+        return amount;
+    }
+
+    public void setAmount(String amount) {
+        this.amount = amount;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getMoneyType() {
+        return moneyType;
+    }
+
+    public void setMoneyType(String moneyType) {
+        this.moneyType = moneyType;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    @Override
+    public String toString() {
+        return "YouQianDTO{" +
+                "account='" + account + '\'' +
+                ", amount='" + amount + '\'' +
+                ", time='" + time + '\'' +
+                ", type='" + type + '\'' +
+                ", moneyType='" + moneyType + '\'' +
+                ", content='" + content + '\'' +
+                '}';
+    }
 }

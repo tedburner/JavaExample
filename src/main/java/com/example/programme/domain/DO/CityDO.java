@@ -9,7 +9,6 @@ import java.io.Serializable;
  * @date: 2018/10/15 14:31
  * @description:
  */
-@Data
 public class CityDO implements Serializable {
 
     private static final long serialVersionUID = -1L;
@@ -76,6 +75,4 @@ public class CityDO implements Serializable {
             return cityDO;
         }
     }
-
-
 }

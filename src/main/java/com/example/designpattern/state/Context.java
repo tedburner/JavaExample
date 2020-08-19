@@ -7,7 +7,6 @@ import lombok.Data;
  * @Date: 2018/7/20 11:48
  * @Description:
  */
-@Data
 public class Context {
 
     private State state;
@@ -16,4 +15,18 @@ public class Context {
         state = null;
     }
 
+    public State getState() {
+        return state;
+    }
+
+    public void setState(State state) {
+        this.state = state;
+    }
+
+    @Override
+    public String toString() {
+        return "Context{" +
+                "state=" + state +
+                '}';
+    }
 }

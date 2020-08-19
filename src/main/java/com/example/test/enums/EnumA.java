@@ -7,7 +7,6 @@ import lombok.Getter;
  * @date: 2019-06-07 23:30
  * @description:
  */
-@Getter
 public enum  EnumA {
 
     A1("A1",EnumB.B1, "1001"),
@@ -24,5 +23,15 @@ public enum  EnumA {
         this.code = code;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public EnumB getEb() {
+        return eb;
+    }
+
+    public String getCode() {
+        return code;
+    }
 }
