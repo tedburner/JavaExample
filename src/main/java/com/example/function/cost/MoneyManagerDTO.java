@@ -1,7 +1,6 @@
 package com.example.function.cost;
 
 import com.alibaba.excel.annotation.ExcelProperty;
-import lombok.Data;
 
 /**
  * @author: lingjun.jlj

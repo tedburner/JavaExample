@@ -1,7 +1,5 @@
 package com.example.common;
 
-import lombok.extern.slf4j.Slf4j;
-
 /**
  * @author: lingjun.jlj
  * @date: 2019/6/28 10:24

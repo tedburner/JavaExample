@@ -1,7 +1,5 @@
 package com.example.designpattern.state;
 
-import lombok.Data;
-
 /**
  * @author: lingjun.jlj
  * @Date: 2018/7/20 11:48

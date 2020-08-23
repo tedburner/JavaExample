@@ -1,17 +1,16 @@
 package com.example.test.enums;
 
-import lombok.Getter;
-
 /**
  * @author: lingjun.jlj
  * @date: 2019-06-07 23:30
  * @description:
  */
-public enum  EnumA {
+public enum EnumA {
 
-    A1("A1",EnumB.B1, "1001"),
+    A1("A1", EnumB.B1, "1001"),
 
-    A2("A2",EnumB.B2,"1002"),;
+    A2("A2", EnumB.B2, "1002"),
+    ;
 
     private String name;
     private EnumB eb;

@@ -1,7 +1,5 @@
 package com.example.netty.juejin_study.part8.protocol.command;
 
-import lombok.Data;
-
 import static com.example.netty.juejin_study.part8.protocol.command.Command.LOGIN_REQUEST;
 
 /**

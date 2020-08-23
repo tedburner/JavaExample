@@ -1,7 +1,5 @@
 package com.example.programme.domain;
 
-import lombok.Data;
-
 import java.util.Date;
 
 /**

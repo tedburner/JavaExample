@@ -1,7 +1,5 @@
 package com.example.programme.domain.DO;
 
-import lombok.Data;
-
 import java.io.Serializable;
 
 /**

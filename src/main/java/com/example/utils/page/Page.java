@@ -1,7 +1,5 @@
 package com.example.utils.page;
 
-import lombok.Data;
-
 import java.util.List;
 
 /**
