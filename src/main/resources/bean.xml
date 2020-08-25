@@ -4,9 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="person" class="com.example.spring.bean.Person" init-method="init">
+    <bean id="person" class="com.example.spring.bean.Person" init-method="init" destroy-method="destroyMethod">
         <property name="id" value="10"/>
         <property name="name" value="大刀王五"/>
+        <property name="age" value="25"/>
     </bean>
 
     <bean id="demoBeanPostProcessor" class="com.example.spring.bean.DemoBeanPostProcessor"/>
