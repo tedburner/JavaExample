@@ -7,7 +7,7 @@ package com.example.test;
  */
 public class AlternatePrintingNotifyAndWait {
 
-    private static Object monitor = new Object();
+    private static final Object monitor = new Object();
     private static int i = 0;
 
     public static void main(String[] args) {
