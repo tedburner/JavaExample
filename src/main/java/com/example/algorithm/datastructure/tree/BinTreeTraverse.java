@@ -158,10 +158,7 @@ public class BinTreeTraverse {
             }
             lists.add(tree.data);
         }
-
         return lists;
-
-
     }
 
     public static void main(String[] args) {
@@ -180,5 +177,15 @@ public class BinTreeTraverse {
 
         System.out.println("后序遍历：");
         postOrderTraverse(root);
+
+        System.out.println();
+
+        System.out.println("广度优先");
+        List<Integer> breathList = BreadthSearch(root);
+        System.out.println(breathList);
+
+        System.out.println("深度优先");
+        List<Integer> depthList = DepthSearch(root);
+        System.out.println(depthList);
     }
 }
