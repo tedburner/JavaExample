@@ -14,10 +14,10 @@ public class BeanData {
 
     public static List<SimpleDTO> getBeanData() {
         List<SimpleDTO> listDTOS = new ArrayList<>();
-        for (int i=0;i<20;i++){
+        for (int i = 0; i < 20; i++) {
             SimpleDTO dto = new SimpleDTO();
             dto.setId(i);
-            dto.setName("孙博"+i);
+            dto.setName("孙博" + i);
             listDTOS.add(dto);
         }
         return listDTOS;
