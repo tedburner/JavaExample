@@ -6,7 +6,12 @@ import com.example.common.java8.BeanData;
 import com.example.domain.bean.SimpleDTO;
 import org.junit.Assert;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
