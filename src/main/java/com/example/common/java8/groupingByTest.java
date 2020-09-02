@@ -86,7 +86,6 @@ public class groupingByTest {
 
     }
 
-
     private static String fetchGroupKey(SimpleDTO dto) {
         return dto.getId() + "_" + dto.getName();
     }

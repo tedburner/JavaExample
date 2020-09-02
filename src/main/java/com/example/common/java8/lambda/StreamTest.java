@@ -27,14 +27,14 @@ public class StreamTest {
 
         List<SimpleDTO> testList = list;
 
-        Long stattTime = System.currentTimeMillis();
+        Long startTime = System.currentTimeMillis();
         List<String> list1 = list.stream()
                 .filter(x -> x.getId() > 1000)
                 .map(SimpleDTO::getName)
                 .collect(Collectors.toList());
         Long endTime = System.currentTimeMillis();
 
-        System.out.println("stream 耗时：" + (endTime - stattTime) + "ms");
+        System.out.println("stream 耗时：" + (endTime - startTime) + "ms");
 
         List<String> list2 = testList.parallelStream()
                 .filter(x -> x.getId() > 1000)
