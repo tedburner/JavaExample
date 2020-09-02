@@ -45,8 +45,8 @@ public class ZkDistributedLock implements Lock, Watcher {
      * 计数器
      */
     private CountDownLatch latch;
-    private CountDownLatch connectedSignal = new CountDownLatch(1);
-    private int sessionTimeout = 30000;
+    private final CountDownLatch connectedSignal = new CountDownLatch(1);
+    private final int sessionTimeout = 30000;
 
     /**
      * 创建分布式锁,使用前请确认config配置的zookeeper服务可用
@@ -86,7 +86,7 @@ public class ZkDistributedLock implements Lock, Watcher {
             Stat stat = zk.exists(root, false);
             if (stat == null) {
                 // 创建根节点
-                zk.create(root, new byte[0], ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+                zk.create(root, new byte[0], ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL_SEQUENTIAL);
             }
         } catch (IOException | InterruptedException | KeeperException e) {
             e.printStackTrace();
@@ -195,7 +195,9 @@ public class ZkDistributedLock implements Lock, Watcher {
     }
 
     /**
-     * zookeeper节点的监视器
+     * zookeeper节点 Watcher 监视
+     *
+     * @param watchedEvent
      */
     @Override
     public void process(WatchedEvent watchedEvent) {
