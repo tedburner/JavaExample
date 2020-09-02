@@ -14,15 +14,7 @@ public class Code6 {
         System.out.println(convert("AB", 1));
     }
 
-    /**
-     * 字形变换，通过设置flag标志位，来表示Z字形的跳转位置
-     *
-     * @param s       指定字符串
-     * @param numRows Z字形行数
-     * @return
-     */
-    public static String convert(String s, int numRows) {
-    /*
+/*
     0       4       8
     1   3   5   7   9
     2       6       10
@@ -32,6 +24,15 @@ public class Code6 {
     2   4       8   10      14
     3           9           15
  */
+
+    /**
+     * 字形变换，通过设置flag标志位，来表示Z字形的跳转位置
+     *
+     * @param s       指定字符串
+     * @param numRows Z字形行数
+     * @return
+     */
+    public static String convert(String s, int numRows) {
         if (numRows < 2) {
             return s;
         }

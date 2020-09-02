@@ -12,7 +12,6 @@ public class Code7 {
 
     }
 
-
     public static int reverse(int x) {
 
         int y = 0;
