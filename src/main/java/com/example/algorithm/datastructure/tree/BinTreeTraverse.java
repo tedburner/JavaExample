@@ -109,6 +109,10 @@ public class BinTreeTraverse {
     /**
      * 广度优先
      * 对每一层节点依次访问，访问完一层进入下一层，而且每个节点只能访问一次。
+     * 利用Queue先进先出的特性
+     *
+     * @param root 根节点
+     * @return
      */
     public static List<Integer> BreadthSearch(Node root) {
         List<Integer> lists = new ArrayList<>();
@@ -137,6 +141,10 @@ public class BinTreeTraverse {
     /**
      * 深度优先
      * 是对每一个可能的分支路径深入到不能再深入为止，而且每个节点只能访问一次。
+     * 利用Stack 后进先出的特性，遍历整棵树
+     *
+     * @param root 根节点
+     * @return
      */
     public static List<Integer> DepthSearch(Node root) {
         List<Integer> lists = new ArrayList<>();
