@@ -28,7 +28,6 @@ public class ZkTest implements Runnable {
                     Thread.sleep(5);
                     inventory--;
                 }
-
                 System.out.println(inventory);
             }
         } catch (InterruptedException e) {
