@@ -1,11 +1,11 @@
-package com.example.test;
+package com.example.ali;
 
 /**
  * @author: lingjun.jlj
  * @date: 2020/8/26 21:26
  * @description: 线程交替打印奇偶数
  */
-public class AlternatePrintingNotifyAndWait {
+public class TwoThreadPrint {
 
     private static final Object monitor = new Object();
     private static int i = 0;

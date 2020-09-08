@@ -32,7 +32,7 @@ public class SkipListDemo {
         node.data = value;
         node.maxLevel = level;
         Node update[] = new Node[level];
-        for (int i = level; i >= 0; i--) {
+        for (int i = level - 1; i >= 0; i--) {
             while (p.forwards[i] != null && p.forwards[i].data < value) {
                 p = p.forwards[i];
             }
@@ -56,7 +56,8 @@ public class SkipListDemo {
         }
         if (p.forwards[0] != null && p.forwards[0].data == value) {
             for (int i = levelCount - 1; i >= 0; i--) {
-                if (deleteNode[i] != null && deleteNode[i].forwards[i].data == value) {
+                if (deleteNode[i] != null && deleteNode[i].forwards != null &&
+                        deleteNode[i].forwards[i].data == value) {
                     deleteNode[i].forwards[i] = deleteNode[i].forwards[i].forwards[i];
                 }
             }
