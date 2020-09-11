@@ -1,4 +1,4 @@
-package com.example.ali;
+package com.example.algorithm.ali;
 
 /**
  * @author: lingjun.jlj
@@ -59,5 +59,7 @@ public class TwoThreadPrint {
             }
         }).start();
     }
+
+
 
 }
