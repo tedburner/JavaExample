@@ -14,7 +14,7 @@ public class Code88 {
         int index1 = 0, index2 = 0, index = 0;
         while (index1 < m && index2 < n) {
             nums1[index++] = copy_array[index1] < nums2[index2] ? copy_array[index1++] : nums2[index2++];
-//            if (copy_array[index1] < nums2[index2]) {
+//            if (copy_array[index1] < nums2[ index2]) {
 //                nums1[index] = copy_array[index1];
 //                index1++;
 //            } else {
