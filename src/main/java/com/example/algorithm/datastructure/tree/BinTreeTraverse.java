@@ -59,7 +59,7 @@ public class BinTreeTraverse {
     }
 
     /**
-     * 先序遍历
+     * 先序遍历——递归
      * <p>
      * 先序遍历先从二叉树的根开始，然后到左子树，再到右子树
      *
@@ -75,7 +75,32 @@ public class BinTreeTraverse {
     }
 
     /**
-     * 中序遍历
+     * 先序遍历——非递归
+     * <p>
+     * 先序遍历先从二叉树的根开始，然后到左子树，再到右子树
+     *
+     * @param root 遍历的节点
+     */
+    public static void preOrderTraverseByStack(Node root) {
+        if (root == null) {
+            return;
+        }
+        Stack<Node> stack = new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()) {
+            Node node = stack.pop();
+            System.out.print(node.data + " ");
+            if (node.right != null) {
+                stack.push(node.right);
+            }
+            if (node.left != null) {
+                stack.push(node.left);
+            }
+        }
+    }
+
+    /**
+     * 中序遍历——递归
      * <p>
      * 中序遍历先从左子树开始，然后到根，再到右子树
      *
@@ -91,19 +116,68 @@ public class BinTreeTraverse {
     }
 
     /**
-     * 后序遍历
+     * 中序遍历——非递归
+     * <p>
+     * 中序遍历先从左子树开始，然后到根，再到右子树
+     *
+     * @param root 遍历的节点
+     */
+    public static void inOrderTraverseByStack(Node root) {
+        Stack<Node> stack = new Stack<>();
+        Node node = root;
+        while (node != null || !stack.isEmpty()) {
+            //将左子树全部放进Stack
+            while (node != null) {
+                stack.push(node);
+                node = node.left;
+            }
+            node = stack.pop();
+            System.out.print(node.data + " ");
+            node = node.right;
+        }
+    }
+
+    /**
+     * 后序遍历——递归
      * <p>
      * 后序遍历先从左子树开始，然后到右子树，再到根
      *
      * @param node 遍历的节点
      */
-    public static void postOrderTraverse(Node node) {
+    public static void afterOrderTraverse(Node node) {
         if (node == null) {
             return;
         }
-        postOrderTraverse(node.left);
-        postOrderTraverse(node.right);
+        afterOrderTraverse(node.left);
+        afterOrderTraverse(node.right);
         System.out.print(node.data + " ");
+    }
+
+    /**
+     * 后序遍历——非递归
+     * <p>
+     * 后序遍历先从左子树开始，然后到右子树，再到根
+     *
+     * @param root 遍历的节点
+     */
+    public static void afterOrderTraverseByStack(Node root) {
+        Stack<Node> stack = new Stack<>();
+        Stack<Node> stack1 = new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()) {
+            Node node = stack.pop();
+            if (node.left != null) {
+                stack.push(node.left);
+            }
+            if (node.right != null) {
+                stack.push(node.right);
+            }
+            stack1.push(node);
+        }
+        while (!stack1.isEmpty()) {
+            Node node = stack1.pop();
+            System.out.print(node.data + " ");
+        }
     }
 
     /**
@@ -170,22 +244,40 @@ public class BinTreeTraverse {
     }
 
     public static void main(String[] args) {
-        BinTreeTraverse binTree = new BinTreeTraverse();
-        binTree.createBinTree();
-        // nodeList中第0个索引处的值即为根节点
-        Node root = nodeList.get(0);
+//        BinTreeTraverse binTree = new BinTreeTraverse();
+//        binTree.createBinTree();
+//        // nodeList中第0个索引处的值即为根节点
+//        Node root = nodeList.get(0);
+        Node root = new Node(1);
+        root.left = new Node(2);
+        root.left.left = new Node(4);
+        root.left.right = new Node(5);
+        root.right = new Node(3);
+        root.right.left = new Node(6);
+        root.right.right = new Node(7);
 
-        System.out.println("先序遍历：");
+        System.out.println("先序遍历——递归：");
         preOrderTraverse(root);
         System.out.println();
 
-        System.out.println("中序遍历：");
+        System.out.println("先序遍历——非递归：");
+        preOrderTraverseByStack(root);
+        System.out.println();
+
+        System.out.println("中序遍历——递归：");
         inOrderTraverse(root);
         System.out.println();
 
-        System.out.println("后序遍历：");
-        postOrderTraverse(root);
+        System.out.println("中序遍历——非递归：");
+        inOrderTraverseByStack(root);
+        System.out.println();
 
+        System.out.println("后序遍历——递归：");
+        afterOrderTraverse(root);
+        System.out.println();
+
+        System.out.println("后序遍历——非递归：");
+        afterOrderTraverseByStack(root);
         System.out.println();
 
         System.out.println("广度优先");

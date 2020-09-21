@@ -24,7 +24,7 @@ public class QuickSortDemo {
         int i, j, target;
         if (low > hight) {
             return;
-        } 
+        }
         i = low;
         j = hight;
         target = a[i];
@@ -53,6 +53,4 @@ public class QuickSortDemo {
         // 对高子表进行递归排序
         sort(a, i + 1, hight);
     }
-
-
 }
