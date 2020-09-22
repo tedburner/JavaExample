@@ -1,4 +1,4 @@
-package com.example.algorithm.ali;
+package com.example.algorithm.mianshi;
 
 import java.util.LinkedList;
 
@@ -15,39 +15,21 @@ import java.util.LinkedList;
  * <p>
  * 观众可以看到桌子上牌的从上往下是：A 2 3 4 5 6 7 8 9 10 J K
  */
-public class Card {
+public class CardMove {
 
     public static void main(String[] args) {
         String[] desktop = new String[]{"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "K"};
         LinkedList<String> hand = new LinkedList<>();
-        int length = desktop.length;
-        //将手上的牌，从底部往上移除，放到手上的牌顶部，并将手上底部的牌移除到手上顶部
-        for (int i = 0; i < length; i++) {
+        //从桌子的顶部开始，在手上有牌的情况下，先把底部的牌放到顶部，然后从桌子上顶部拿起一张牌放到手牌的顶部
+        for (String s : desktop) {
             //手上有牌，移除底部加入到顶部
-            if (hand.size() > 0) {
+            if (hand.size() > 1) {
                 String str = hand.removeLast();
                 hand.addFirst(str);
             }
             //将当前位置放到手上顶部
-            hand.addFirst(desktop[i]);
+            hand.addFirst(s);
         }
-        for (String str : hand) {
-            System.out.print(str + " ");
-        }
-    }
-
-    public static LinkedList<Integer> findCardLocation(int[] location) {
-        // 如果桌子上没牌
-        if (location.length == 0) {
-            return new LinkedList<>();
-        }
-        LinkedList<Integer> result = new LinkedList<>(); // 答案
-        for (int i = location.length - 1; i >= 0; i--) {
-            if (result.size() > 0) {
-                result.addFirst(result.removeLast());// 从牌底部拿一张到牌顶
-            }
-            result.addFirst(location[i]);
-        }
-        return result;
+        hand.forEach(input -> System.out.println(input + " "));
     }
 }

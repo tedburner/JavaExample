@@ -1,4 +1,4 @@
-package com.example.algorithm.ali;
+package com.example.algorithm.mianshi;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Condition;
