@@ -10,10 +10,6 @@ import java.util.List;
  */
 public class Code6 {
 
-    public static void main(String[] args) {
-        System.out.println(convert("AB", 1));
-    }
-
 /*
     0       4       8
     1   3   5   7   9
@@ -54,6 +50,11 @@ public class Code6 {
             ans.append(builder);
         }
         return ans.toString();
+    }
+
+    public static void main(String[] args) {
+        String s = "LEETCODEISHIRING";
+        System.out.println(convert(s, 3));
     }
 
 }
