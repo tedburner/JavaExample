@@ -1,8 +1,10 @@
 package com.example.algorithm.leetcode;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.Stack;
 
 /**
  * @author: lingjun.jlj
@@ -11,7 +13,7 @@ import java.util.Stack;
  */
 public class Code589 {
 
-    class Node {
+    static class Node {
         public int val;
         public List<Node> children;
 
@@ -34,7 +36,7 @@ public class Code589 {
      * @param root
      * @return
      */
-    public List<Integer> preorder(Node root) {
+    public List<Integer> preorder1(Node root) {
         List<Integer> list = new ArrayList<>();
         inorder(root, list);
         return list;
@@ -51,5 +53,45 @@ public class Code589 {
         for (Node node : root.children) {
             inorder(node, list);
         }
+    }
+
+
+    /**
+     * 使用stack来实现
+     *
+     * @param root
+     * @return
+     */
+    public List<Integer> preorder(Node root) {
+        List<Integer> list = new ArrayList<>();
+        if (root == null) {
+            return list;
+        }
+        LinkedList<Node> stack = new LinkedList<>();
+        stack.add(root);
+        while (!stack.isEmpty()) {
+            Node node = stack.pollLast();
+            list.add(node.val);
+            if (node.children != null) {
+                //将子节点反转，使得右子树先入队，然后从右往左，一次入队
+                Collections.reverse(node.children);
+                for (Node item : node.children) {
+                    stack.add(item);
+                }
+            }
+        }
+        return list;
+    }
+
+    public static void main(String[] args) {
+        Node root = new Node(1, new ArrayList<>());
+        Node node2 = new Node(2);
+        Node node3 = new Node(2);
+        Node node6 = new Node(6);
+        List<Node> _children = Arrays.asList(node2, node3, node6);
+        root.children.add(new Node(3, _children));
+        root.children.add(new Node(2));
+        root.children.add(new Node(4));
+        System.out.println(new Code589().preorder(root));
     }
 }
