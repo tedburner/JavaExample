@@ -7,17 +7,21 @@ package com.example.test;
  */
 public class StringTest {
 
-    public static void changeValue(String str) {
-        str = str + "5";
-    }
-
     public static void main(String[] args) {
-        String str = "1234";
-        changeValue(str);
-        System.out.println(str);
+        int number = 1000000;
+        long tim1 = System.currentTimeMillis();
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < number; i++) {
+            builder.append(i);
+        }
+        long tim2 = System.currentTimeMillis();
+        System.out.println("StringBuilder 耗时:" + (tim2 - tim1) + " ms");
 
-        String account = " 嘉荫信用社03 ";
-        System.out.println("trim"+account.trim()+"trim");
-
+        StringBuffer buffer = new StringBuffer();
+        for (int i = 0; i < number; i++) {
+            buffer.append(i);
+        }
+        long tim3 = System.currentTimeMillis();
+        System.out.println("StringBuffer 耗时:" + (tim3 - tim2) + " ms");
     }
 }
