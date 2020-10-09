@@ -35,6 +35,9 @@ public class MapTest {
 
         System.out.println(tableSizeFor(65538));
 
+        System.out.println(map.put("A", "1"));
+        System.out.println(map.put("A", "2"));
+
     }
 
     static final int tableSizeFor(int cap) {
