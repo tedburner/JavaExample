@@ -49,14 +49,14 @@ public class RoundRobinLoadBalance {
         }
     }
 
-    private ConcurrentMap<String, ConcurrentMap<String, WeightedRoundRobin>> methodWeightMap = new ConcurrentHashMap<>();
-    private AtomicBoolean updateLock = new AtomicBoolean();
+    private final ConcurrentMap<String, ConcurrentMap<String, WeightedRoundRobin>> methodWeightMap = new ConcurrentHashMap<>();
+    private final AtomicBoolean updateLock = new AtomicBoolean();
 
     public Invoker doSelect(List<Invoker> invokers) {
         String key = invokers.get(0).getMethodKey();
         ConcurrentMap<String, WeightedRoundRobin> map = methodWeightMap.get(key);
         if (map == null) {
-            methodWeightMap.putIfAbsent(key, new ConcurrentHashMap<String, WeightedRoundRobin>());
+            methodWeightMap.putIfAbsent(key, new ConcurrentHashMap<>());
             map = methodWeightMap.get(key);
         }
         int totalWeight = 0;
@@ -94,8 +94,7 @@ public class RoundRobinLoadBalance {
         if (!updateLock.get() && invokers.size() != map.size()) {
             if (updateLock.compareAndSet(false, true)) {
                 try {
-                    ConcurrentMap<String, WeightedRoundRobin> newMap = new ConcurrentHashMap<>();
-                    newMap.putAll(map);
+                    ConcurrentMap<String, WeightedRoundRobin> newMap = new ConcurrentHashMap<>(map);
                     Iterator<Map.Entry<String, WeightedRoundRobin>> it = newMap.entrySet().iterator();
                     while (it.hasNext()) {
                         Map.Entry<String, WeightedRoundRobin> item = it.next();

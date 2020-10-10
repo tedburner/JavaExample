@@ -1,9 +1,12 @@
 package com.example.domain.bean;
 
+import lombok.Data;
+
 /**
  * @author lingjun.jlj
  * @date 2017-12-08
  **/
+@Data
 public class SimpleDTO {
     private Integer id;
     private String name;
@@ -21,38 +24,5 @@ public class SimpleDTO {
         this.id = id;
         this.name = name;
         this.content = content;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    @Override
-    public String toString() {
-        return "SimpleDTO{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", content='" + content + '\'' +
-                '}';
     }
 }

@@ -50,8 +50,6 @@ public class ExcelListener extends AnalysisEventListener<MoneyManagerDTO> {
             dto.setTime(time);
             inList.add(dto);
         }
-
-
     }
 
     @Override
