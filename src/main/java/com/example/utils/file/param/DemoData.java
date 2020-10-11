@@ -10,7 +10,6 @@ import java.util.Date;
  * @date: 2019/9/2 10:31
  * @description:
  */
-@Data
 public class DemoData {
 
     @ExcelProperty("字符串标题")

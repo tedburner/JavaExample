@@ -2,7 +2,7 @@ package com.example.designpattern.observer;
 
 /**
  * @author lingjun.jlj
- * @data 2018/5/10
+ * @date: 2018/5/10
  * @Description: 二进制输出
  */
 public class BinaryObserver extends Observer {

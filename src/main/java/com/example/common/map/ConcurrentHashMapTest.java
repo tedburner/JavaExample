@@ -12,7 +12,7 @@ import java.util.stream.LongStream;
 
 /**
  * @author lingjun.jlj
- * @data 2018/5/1
+ * @date: 2018/5/1
  * @Description: ConcurrentHashMap 只保证
  */
 public class ConcurrentHashMapTest {

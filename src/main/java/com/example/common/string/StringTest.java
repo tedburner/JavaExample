@@ -2,7 +2,7 @@ package com.example.common.string;
 
 /**
  * @author lingjun.jlj
- * @data 2018/3/12
+ * @date: 2018/3/12
  * @description: String、StringBuilder、StringBuffer 性能比较
  */
 public class StringTest {

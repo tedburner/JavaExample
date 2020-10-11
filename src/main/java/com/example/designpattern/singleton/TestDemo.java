@@ -2,7 +2,7 @@ package com.example.designpattern.singleton;
 
 /**
  * @author lingjun.jlj
- * @data 2018/5/18
+ * @date: 2018/5/18
  * @Description: 检查只是加synchronized，并不能保证单例的执行。
  * 1、线程A和线程B同时调用getInstance()方法，
  *    他们同时判断java==null，得出的结果都是为null，所以进入了if代码块了

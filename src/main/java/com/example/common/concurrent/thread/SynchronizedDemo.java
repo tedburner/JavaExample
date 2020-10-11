@@ -2,7 +2,7 @@ package com.example.common.concurrent.thread;
 
 /**
  * @author lingjun.jlj
- * @data 2018/5/1
+ * @date: 2018/5/1
  * @Description:
  */
 public class SynchronizedDemo implements Runnable {

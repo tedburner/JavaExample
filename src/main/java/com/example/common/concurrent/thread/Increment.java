@@ -2,7 +2,7 @@ package com.example.common.concurrent.thread;
 
 /**
  * @author lingjun.jlj
- * @data 2018/5/8
+ * @date: 2018/5/8
  * @Description: 原子性操作就是一个或某几个操作只能在一个线程执行完之后，
  * 另一个线程才能开始执行该操作，也就是说这些操作是不可分割的，线程不能在这些操作上交替执行
  */

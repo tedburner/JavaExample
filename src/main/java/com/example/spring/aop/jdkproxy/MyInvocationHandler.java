@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 
 /**
  * @author lingjun.jlj
- * @data 2018/5/10
+ * @date: 2018/5/10
  * @Description:
  */
 public class MyInvocationHandler implements InvocationHandler {

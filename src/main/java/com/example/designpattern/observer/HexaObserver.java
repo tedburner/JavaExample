@@ -2,7 +2,7 @@ package com.example.designpattern.observer;
 
 /**
  * @author lingjun.jlj
- * @data 2018/5/10
+ * @date: 2018/5/10
  * @Description: 字符串输出
  */
 public class HexaObserver extends Observer {

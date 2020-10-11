@@ -2,7 +2,7 @@ package com.example.common.interfaces;
 
 /**
  * @author lingjun.jlj
- * @data 2018/3/22
+ * @date: 2018/3/22
  */
 public class InterfaceService implements interfaceTest {
 

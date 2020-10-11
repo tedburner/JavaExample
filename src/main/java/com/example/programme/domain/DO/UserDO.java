@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 
 /**
  * @author lingjun.jlj
- * @data 2018/4/2
+ * @date: 2018/4/2
  */
 public class UserDO {
     private Long id;

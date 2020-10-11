@@ -5,7 +5,7 @@ import com.example.spring.aop.service.impl.PersonSpring;
 
 /**
  * @author lingjun.jlj
- * @data 2018/5/10
+ * @date: 2018/5/10
  * @Description:
  */
 public class CGlibTest {

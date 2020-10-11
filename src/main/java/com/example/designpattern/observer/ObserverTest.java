@@ -2,7 +2,7 @@ package com.example.designpattern.observer;
 
 /**
  * @author lingjun.jlj
- * @data 2018/5/10
+ * @date: 2018/5/10
  * @Description: 观察者模式
  * 通过订阅者来通知那些方法需要改变。
  */

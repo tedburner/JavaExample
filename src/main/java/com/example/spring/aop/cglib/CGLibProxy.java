@@ -7,7 +7,7 @@ import java.lang.reflect.Method;
 
 /**
  * @author lingjun.jlj
- * @data 2018/5/9
+ * @date: 2018/5/9
  * @Description:
  */
 public class CGLibProxy implements MethodInterceptor {

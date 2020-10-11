@@ -4,7 +4,7 @@ import java.util.UUID;
 
 /**
  * @author lingjun.jlj
- * @data 2018/4/14
+ * @date: 2018/4/14
  */
 public class UUIDTool {
 

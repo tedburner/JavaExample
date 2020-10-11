@@ -2,7 +2,7 @@ package com.example.common.concurrent.thread;
 
 /**
  * @author lingjun.jlj
- * @data 2018/5/8
+ * @date: 2018/5/8
  * @Description:
  */
 public class ThreadTest extends Thread{

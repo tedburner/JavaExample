@@ -17,6 +17,6 @@ public interface BeanConverter {
 
     BeanConverter INSTANCE = Mappers.getMapper(BeanConverter.class);
 
-    @Mappings(@Mapping(source = "name", target = "username"))
+    //@Mappings(@Mapping(source = "name", target = "username"))
     UserDTO oldToNew(SimpleDTO old);
 }

@@ -17,6 +17,7 @@
         <spring.version>5.2.8.RELEASE</spring.version>
         <aspectj.version>1.9.4</aspectj.version>
         <jave.version>2.5.0</jave.version>
+        <lombok.version>1.18.14</lombok.version>
         <jmh.version>1.21</jmh.version>
         <mysql.version>8.0.21</mysql.version>
         <druid.version>1.1.23</druid.version>
@@ -191,7 +192,8 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.12</version>
+            <version>${lombok.version}</version>
+            <optional>true</optional>
         </dependency>
 
         <!--redis-->

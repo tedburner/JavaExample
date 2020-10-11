@@ -6,7 +6,7 @@ import java.security.NoSuchAlgorithmException;
 
 /**
  * @author lingjun.jlj
- * @data 2018/4/14
+ * @date: 2018/4/14
  */
 public class Sha256 {
 

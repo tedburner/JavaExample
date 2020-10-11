@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author lingjun.jlj
- * @data 2018/5/9
+ * @date: 2018/5/9
  * @Description: Future和Callable基本是成对出现的，Callable负责产生结果
  * 通过Future和Callable来获取线程池中任务的返回结果
  */

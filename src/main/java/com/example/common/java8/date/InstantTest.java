@@ -5,7 +5,7 @@ import java.time.Instant;
 
 /**
  * @author lingjun.jlj
- * @data 2018/5/14
+ * @date: 2018/5/14
  * @Description: Instant 代替 Date
  */
 public class InstantTest {

@@ -8,7 +8,7 @@ import java.lang.reflect.Proxy;
 
 /**
  * @author lingjun.jlj
- * @data 2018/5/10
+ * @date: 2018/5/10
  * @Description:
  */
 public class JDKTest {

@@ -6,7 +6,7 @@ import com.example.spring.aop.service.impl.PersonSpring;
 
 /**
  * @author lingjun.jlj
- * @data 2018/5/9
+ * @date: 2018/5/9
  * @Description:
  */
 public class PersonProxyFactory {

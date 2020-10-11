@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * @author lingjun.jlj
- * @data 2018/4/24
+ * @date: 2018/4/24
  * @Description: ThreadLocal 例子
  */
 public class ThreadLocalTest {
