@@ -43,14 +43,16 @@ public class StreamDemo {
                 .collect(Collectors.toList());
         System.out.println("排序后：" + JSON.toJSONString(list1));
 
-        Long count = list.stream().count();
+        System.out.println("====================== Stream count ==================================");
+        long count = list.stream().count();
         System.out.println("统计计数： " + count);
 
-        System.out.println("============聚合ID==============");
+        System.out.println("============ Stream map ==============");
         List<Integer> idList = beans.stream()
                 .map(SimpleDTO::getId)
                 .collect(Collectors.toList());
 
+        System.out.println("============ Stream filter ==============");
         String[][] data = new String[][]{{"a", "b"}, {"c", "d"}, {"e", "f"}};
         Stream<String[]> temp = Arrays.stream(data);
         Stream<String[]> tempStream = temp.filter(x -> "a".equals(x.toString()));
@@ -83,5 +85,20 @@ public class StreamDemo {
                 .collect(Collectors.joining(",", "[", "]"));
         System.out.println("字符串拼接后结果：" + result);
 
+        System.out.println("====================== Stream allMatch ==================================");
+        List<Integer> array = Arrays.asList(1, 1, 1, 1, 2);
+        boolean allMatch = array.stream()
+                .allMatch(input -> Objects.equals(input, 1));
+        System.out.println("集合中所有数据是否都等于1：" + allMatch);
+
+        System.out.println("====================== Stream anyMatch ==================================");
+        boolean anyMatch = BeanData.getDataList().stream()
+                .anyMatch(input -> Objects.equals(input.getId(), 1));
+        System.out.println("集合中是否含有id为1的数据：" + anyMatch);
+
+        System.out.println("====================== Stream noneMatch ==================================");
+        boolean noneMatch = BeanData.getDataList().stream()
+                .noneMatch(input -> Objects.equals(input.getId(), 4));
+        System.out.println("集合中是否数据id都不为4：" + noneMatch);
     }
 }
