@@ -26,9 +26,6 @@ public class Code35 {
                 return i;
             }
         }
-        if (nums[length - 1] < target) {
-            return length;
-        }
         return length;
     }
 
