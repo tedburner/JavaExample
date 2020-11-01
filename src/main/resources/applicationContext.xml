@@ -84,4 +84,25 @@
         <property name="propagationBehaviorName" value="PROPAGATION_REQUIRED"/>
         <!-- <property name="timeout" value="30"/> -->
     </bean>
+
+    <bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+        <!--核心线程数-->
+        <property name="corePoolSize" value="5"/>
+        <!--最大线程个数-->
+        <property name="maxPoolSize" value="10"/>
+        <!--超过核心线程数个数的线程空闲多久被回收-->
+        <property name="keepAliveSeconds" value="60"/>
+        <!--缓存队列大小-->
+        <property name="queueCapacity" value="20"/>
+        <!--拒绝策略-->
+        <property name="rejectedExecutionHandler">
+            <bean class="java.util.concurrent.ThreadPoolExecutor.CallerRunsPolicy"/>
+        </property>
+        <!--等待任务完成后才关闭线程-->
+        <property name="waitForTasksToCompleteOnShutdown" value="true"/>
+    </bean>
+
+    <bean id="asyncExecutorExample" class="com.example.spring.async.AsyncExecutorExample">
+        <property name="taskExecutor" ref="taskExecutor"/>
+    </bean>
 </beans>
