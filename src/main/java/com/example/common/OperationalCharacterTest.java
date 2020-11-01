@@ -1,7 +1,7 @@
 package com.example.common;
 
 /**
- * @author: Lucifer
+ * @author: lingjun.jlj
  * @date: 2018-11-28 16:33
  * @description: 运算符
  */

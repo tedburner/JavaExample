@@ -9,7 +9,7 @@ import java.util.Vector;
 public class VectorTest {
 
     public static void main(String[] args) {
-        Vector vector =  new Vector(10,10);
+        Vector vector = new Vector(10, 10);
         vector.add("a");
         vector.add("b");
         vector.add("c");

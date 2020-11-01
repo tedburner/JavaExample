@@ -3,7 +3,7 @@ package com.example.common.concurrent.lock;
 import java.util.concurrent.CyclicBarrier;
 
 /**
- * @author: Lucifer
+ * @author: lingjun.jlj
  * @date: 2018/10/24 14:18
  * @description:
  */

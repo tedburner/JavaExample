@@ -13,10 +13,10 @@ public class CompareTest {
     public static void main(String[] args) throws InterruptedException {
         List<CompareDTO> list = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            CompareDTO dto= new CompareDTO();
+            CompareDTO dto = new CompareDTO();
             Thread.sleep(100);
             dto.setId(System.currentTimeMillis());
-            dto.setName("test"+i);
+            dto.setName("test" + i);
             list.add(dto);
         }
         list.sort((CompareDTO o1, CompareDTO o2) -> o2.getId().compareTo(o1.getId()));

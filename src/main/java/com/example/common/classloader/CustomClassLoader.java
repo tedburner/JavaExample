@@ -3,7 +3,7 @@ package com.example.common.classloader;
 import java.io.FileNotFoundException;
 
 /**
- * @author: Lucifer
+ * @author: lingjun.jlj
  * @date: 2018-12-04 22:23
  * @description: 自定义类加载器
  */

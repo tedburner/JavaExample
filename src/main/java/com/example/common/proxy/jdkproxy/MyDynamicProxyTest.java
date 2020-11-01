@@ -1,8 +1,8 @@
 package com.example.common.proxy.jdkproxy;
 
+import com.example.common.proxy.jdkproxy.invoke.MyInvocationHandler;
 import com.example.common.proxy.service.Hello;
 import com.example.common.proxy.service.impl.HelloImpl;
-import com.example.common.proxy.jdkproxy.invoke.MyInvocationHandler;
 
 import java.lang.reflect.Proxy;
 

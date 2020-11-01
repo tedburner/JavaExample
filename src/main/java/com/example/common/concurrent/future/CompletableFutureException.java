@@ -28,6 +28,4 @@ public class CompletableFutureException {
         System.out.println(f.join());
 
     }
-
-
 }

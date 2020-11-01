@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
  */
 public class AtomicIntegerFieldUpdaterDemo {
 
-    class DemoData {
+    static class DemoData {
         public volatile int value1 = 1;
         volatile int value2 = 2;
         protected volatile int value3 = 3;

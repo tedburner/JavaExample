@@ -19,7 +19,7 @@ public class IOClient {
                 Socket socket = new Socket("127.0.0.1", 8000);
                 while (true) {
                     try {
-                        socket.getOutputStream().write(( sdf.format(new Date())+ ":Hello World").getBytes());
+                        socket.getOutputStream().write((sdf.format(new Date()) + ":Hello World").getBytes());
                         Thread.sleep(2000);
 
                     } catch (Exception e) {

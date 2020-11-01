@@ -1,7 +1,7 @@
 package com.example.test.lock;
 
 /**
- * @author: Lucifer
+ * @author: lingjun.jlj
  * @date: 2018/11/18 14:39
  * @description: 死锁实例
  */

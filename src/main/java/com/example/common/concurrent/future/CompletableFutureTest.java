@@ -8,7 +8,24 @@ import java.util.concurrent.Future;
 /**
  * @author: lingjun.jlj
  * @date: 2019-03-22 13:45
- * @description: CompletableFuture 测试类
+ * @description: CompletableFuture 是一个可以通过编程方式显示地设置计算结果和状态以便让任务结束的Future，并且其可以作为一个
+ * CompletionStage，当它计算完成时可以触发一个函数或者行为；当多个线程企图调用同一个 CompletableFuture 的 complete、cancel 方式
+ * 时只有一个线程会成功。
+ * <p>
+ * runAsync:基于runAsync 实现无返回值的异步计算
+ * <p>
+ * supplyAsync:基于supplyAsync 实现有返回值的异步计算
+ * <p>
+ * thenRun:基于thenRun实现异步任务A，执行完毕后，激活异步任务B执行，这种激活的异步任务B是拿不到任务A的执行结果的。
+ * <p>
+ * 可以使用 thenRunAsync(Runnable action, Executor executor)来指定设置的回调事件使用自定义线程池来执行
+ * <p>
+ * thenAccept:基于thenAccept实现任务A，执行完毕后，激活异步任务B执行，在这种激活方式下，异步任务B是可以拿到任务A的执行结果的
+ * <p>
+ * thenApply:基于thenApply实现异步任务A，执行完毕后，激活异步任务B执行。在这种激活方式下，异步任务B是可以拿到任务A的执行结果，并且
+ * 可以获取到异步任务B的执行结果
+ * <p>
+ * whenComplete:基于whenComplete设置回调函数，当异步任务执行完毕后，进行回调，不会阻塞调用线程
  */
 public class CompletableFutureTest {
 

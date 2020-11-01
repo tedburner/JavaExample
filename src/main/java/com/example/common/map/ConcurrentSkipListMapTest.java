@@ -13,7 +13,7 @@ public class ConcurrentSkipListMapTest {
 
     public static void main(String[] args) {
         Map<String, String> map = new ConcurrentSkipListMap();
-        map.put("1","a");
+        map.put("1", "a");
 
 
         for (Map.Entry<String, String> entry : map.entrySet()) {

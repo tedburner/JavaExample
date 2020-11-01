@@ -20,17 +20,15 @@ public class FutureTest {
 
         try {
             Thread.sleep(1000);
-        } catch (InterruptedException e1) {
-            e1.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
 
         System.out.println("主线程在执行任务");
 
         try {
             System.out.println("task运行结果" + result.get());
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
+        } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
 

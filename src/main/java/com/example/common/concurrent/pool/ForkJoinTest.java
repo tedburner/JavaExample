@@ -7,8 +7,9 @@ import java.util.concurrent.RecursiveTask;
 /**
  * @author: lingjun.jlj
  * @date: 2019/6/25 11:28
- * @version：1.0
- * @description:
+ * @description: ForkJoinPool 本身也是一种 ExecutorService，它使用了工作窃取算法来提升性能。其内部每个工作线程都关联自己
+ * 的内存队列，正常情况下每个线程从自己队列里面获取任务并执行，当本身队列没有任务时，当前线程会去其他线程关联的队列里面获取任务来
+ * 执行。
  */
 public class ForkJoinTest {
 
@@ -21,9 +22,9 @@ public class ForkJoinTest {
         /**
          * 任务的构造函数
          *
-         * @param start         任务处理范围的起始点（包含）
-         * @param end           任务处理范围的结束点（不包含）
-         * @param threshold     任务拆分的阈值
+         * @param start     任务处理范围的起始点（包含）
+         * @param end       任务处理范围的结束点（不包含）
+         * @param threshold 任务拆分的阈值
          */
         public AccumulateTask(long start, long end, long threshold) {
             this.start = start;
@@ -65,11 +66,11 @@ public class ForkJoinTest {
         }
     }
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         long startTime = System.currentTimeMillis();
 
         //创建总任务，范围从1到2亿，阀值为10的7次方，所以最终会有10个任务进行for循环累加
-        AccumulateTask forkJoinTask = new AccumulateTask(1, (int) 2e8+1, (long) 1e7);
+        AccumulateTask forkJoinTask = new AccumulateTask(1, (int) 2e8 + 1, (long) 1e7);
         //使用一个新的ForkJoinPool任务池来运行ForkJoin任务
         new ForkJoinPool().submit(forkJoinTask);
 
@@ -78,6 +79,6 @@ public class ForkJoinTest {
 
         // 计算程序耗时并打印
         long endTime = System.currentTimeMillis();
-        System.out.println(String.format("总耗时：%.2fs", (endTime - startTime) / 1e3));
+        System.out.printf("总耗时：%.2fs%n", (endTime - startTime) / 1e3);
     }
 }

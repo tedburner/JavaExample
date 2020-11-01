@@ -2,7 +2,6 @@ package com.example.common.concurrent.future;
 
 import java.util.concurrent.CompletionService;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorCompletionService;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -37,7 +36,7 @@ public class CompletionServiceTest {
             Thread.sleep(1000);
             return 100;
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
         return 0;
     }
@@ -47,7 +46,7 @@ public class CompletionServiceTest {
             Thread.sleep(500);
             return 50;
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
         return 0;
     }
@@ -57,7 +56,7 @@ public class CompletionServiceTest {
             Thread.sleep(2000);
             return 200;
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
         return 0;
     }

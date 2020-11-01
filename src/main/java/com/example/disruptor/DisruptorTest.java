@@ -8,7 +8,7 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author: Lucifer
+ * @author: lingjun.jlj
  * @date: 2018-12-18 16:53
  * @description: Disruptor 高性能队列
  * blog: https://tech.meituan.com/disruptor.html

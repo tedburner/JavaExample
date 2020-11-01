@@ -1,7 +1,7 @@
 package com.example.common.proxy.staticproxy;
 
 /**
- * @author: Lucifer
+ * @author: lingjun.jlj
  * @date: 2018-12-14 09:59
  * @description: 静态代理具体实现类
  */

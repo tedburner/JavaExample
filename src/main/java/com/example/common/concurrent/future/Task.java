@@ -5,7 +5,7 @@ import java.util.concurrent.Callable;
 /**
  * @author: lingjun.jlj
  * @date: 2019-01-28 13:25
- * @description:
+ * @description: 通过 Callable 实现创建线程
  */
 public class Task implements Callable<Integer> {
 

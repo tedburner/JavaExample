@@ -1,8 +1,8 @@
 package com.example.common.proxy.jdkproxy;
 
+import com.example.common.proxy.jdkproxy.invoke.CalculatorInvocationHandler;
 import com.example.common.proxy.service.CalculatorService;
 import com.example.common.proxy.service.impl.CalculatorServiceImpl;
-import com.example.common.proxy.jdkproxy.invoke.CalculatorInvocationHandler;
 
 /**
  * @author: lingjun.jlj

@@ -3,7 +3,7 @@ package com.example.common.concurrent.atomic;
 import java.util.concurrent.atomic.LongAdder;
 
 /**
- * @author: Lucifer
+ * @author: lingjun.jlj
  * @date: 2018/11/21 14:05
  * @description:
  */

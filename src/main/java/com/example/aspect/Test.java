@@ -4,13 +4,11 @@ import com.example.aspect.annotation.ConsAnnotation;
 import com.example.aspect.annotation.Fields;
 
 import java.beans.IntrospectionException;
-import java.beans.PropertyDescriptor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
 import java.util.stream.Collectors;
 
 /**
@@ -59,4 +57,4 @@ public class Test {
         Object resultValue = method.invoke(user, new Object[]{});
         System.out.println(resultValue);
     }
-    }
+}

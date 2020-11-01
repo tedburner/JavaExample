@@ -1,7 +1,7 @@
 package com.example.utils;
 
 /**
- * @author: Lucifer
+ * @author: lingjun.jlj
  * @date: 2018-12-19 17:08
  * @description:
  */

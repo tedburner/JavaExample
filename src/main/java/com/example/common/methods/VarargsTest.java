@@ -1,7 +1,7 @@
 package com.example.common.methods;
 
 /**
- * @author: Lucifer
+ * @author: lingjun.jlj
  * @date: 2018/11/19 15:00
  * @description:
  */

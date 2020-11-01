@@ -5,7 +5,7 @@ import com.google.common.hash.Funnels;
 import org.junit.Assert;
 
 /**
- * @author: Lucifer
+ * @author: lingjun.jlj
  * @date: 2018-11-27 09:49
  * @description: -Xms64m -Xmx64m -XX:+PrintHeapAtGC
  */

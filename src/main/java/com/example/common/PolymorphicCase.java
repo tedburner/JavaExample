@@ -1,7 +1,7 @@
 package com.example.common;
 
 /**
- * @author: Lucifer
+ * @author: lingjun.jlj
  * @date: 2018-12-14 11:25
  * @description: 多态例子
  */

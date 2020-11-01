@@ -14,17 +14,9 @@ public class HashMapTest {
 
         final HashMap<String, String> map = new HashMap<>(2);
 
-        Thread t = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                for (int i = 0; i < 10000; i++) {
-                    new Thread(new Runnable() {
-                        @Override
-                        public void run() {
-                            map.put(UUID.randomUUID().toString(), "");
-                        }
-                    }, "jlj" + i).start();
-                }
+        Thread t = new Thread(() -> {
+            for (int i = 0; i < 10000; i++) {
+                new Thread(() -> map.put(UUID.randomUUID().toString(), ""), "jlj" + i).start();
             }
         }, "jlj");
     }

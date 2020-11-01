@@ -36,9 +36,7 @@ public class FutureTaskTest {
 
         try {
             System.out.println("task运行结果" + futureTask.get());
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
+        } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
 

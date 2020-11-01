@@ -1,7 +1,7 @@
 package com.example.common.string;
 
 /**
- * @author: Lucifer
+ * @author: lingjun.jlj
  * @date: 2018/11/14 13:57
  * @description: String 对象 demo
  * 关于 String s = new String("abc"); 创建了几个对象的问题？
