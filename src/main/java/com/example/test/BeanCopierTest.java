@@ -3,11 +3,7 @@ package com.example.test;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.bean.copier.CopyOptions;
 import com.example.domain.bean.SimpleDTO;
-import com.example.domain.bean.UserDTO;
-import com.example.utils.BeanConverter;
 import org.springframework.cglib.beans.BeanCopier;
-
-import java.nio.file.CopyOption;
 
 /**
  * @author: lingjun.jlj
@@ -30,13 +26,5 @@ public class BeanCopierTest {
         //copier.copy(old, copy, null);
         BeanUtil.copyProperties(old, copy, CopyOptions.create().setIgnoreNullValue(true));
         System.out.println(copy);
-
-        SimpleDTO mapStruct = new SimpleDTO();
-        mapStruct.setId(1);
-        mapStruct.setName("张三");
-        mapStruct.setContent("ABCD");
-        UserDTO user = BeanConverter.INSTANCE.oldToNew(mapStruct);
-        System.out.println("mapstruct: " + user);
-
     }
 }
