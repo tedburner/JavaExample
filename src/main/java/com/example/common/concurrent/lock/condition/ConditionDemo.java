@@ -33,14 +33,14 @@ public class ConditionDemo {
         System.out.println(String.format("【put】 i = %d 获取锁！！！！", i));
         try {
             while (Objects.equals(capacity, queue.size())) {
-                System.out.println(String.format("【put】插入 %d 时队列满，执行put.await！队列值：【%s】", i,
-                        JSON.toJSONString(queue.toArray())));
+                System.out.printf("【put】插入 %d 时队列满，执行put.await！队列值：【%s】%n", i,
+                        JSON.toJSONString(queue.toArray()));
 
                 put.await();
             }
 
             queue.put(i);
-            System.out.println(String.format("【put】插入 %d 到队列", i));
+            System.out.printf("【put】插入 %d 到队列%n", i);
             i++;
 
             // 读操作唤醒
@@ -49,7 +49,7 @@ public class ConditionDemo {
         } catch (Exception e) {
 
         } finally {
-            System.out.println(String.format("【put】i=%d 释放锁!!!", i - 1));
+            System.out.printf("【put】i=%d 释放锁!!!%n", i - 1);
             lock.unlock();
         }
     }
@@ -68,13 +68,13 @@ public class ConditionDemo {
                 take.await();
             }
             data = (int) queue.take();
-            System.out.println(String.format("【take】从队列读取值 %d ,队列值：【%s】", data, JSON.toJSONString(queue.toArray())));
+            System.out.printf("【take】从队列读取值 %d ,队列值：【%s】%n", data, JSON.toJSONString(queue.toArray()));
 
             // 写操作唤醒
             put.signal();
         } catch (Exception e) {
         } finally {
-            System.out.println(String.format("【take】i=%d 释放锁!!!", data));
+            System.out.printf("【take】i=%d 释放锁!!!%n", data);
             lock.unlock();
         }
     }

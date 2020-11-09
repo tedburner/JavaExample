@@ -1,6 +1,5 @@
 package com.example.algorithm.leetcode;
 
-import scala.Int;
 
 import java.util.ArrayList;
 import java.util.List;
