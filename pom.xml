@@ -30,7 +30,7 @@
         <reactive.version>1.0.3</reactive.version>
         <netty.version>4.1.51.Final</netty.version>
         <fastjson.version>1.2.74</fastjson.version>
-        <redisson.version>3.13.6</redisson.version>
+        <redisson.version>3.14.0</redisson.version>
         <easyexcel.version>2.2.6</easyexcel.version>
         <disruptor.version>3.4.2</disruptor.version>
         <httpclient.version>4.5.13</httpclient.version>

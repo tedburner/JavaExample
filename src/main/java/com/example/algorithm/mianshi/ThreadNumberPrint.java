@@ -10,14 +10,14 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class ThreadNumberPrint implements Runnable {
 
-    private static AtomicInteger value = new AtomicInteger(0);
-    private static int totalNumber = 100;
-    private static int n = 100;
-    private static CountDownLatch latch = new CountDownLatch(n);
+    private static final AtomicInteger value = new AtomicInteger(0);
+    private static final int n = 100;
+    private static final CountDownLatch latch = new CountDownLatch(n);
 
     @Override
     public void run() {
         try {
+            int totalNumber = 100;
             while (value.get() < totalNumber) {
                 synchronized (value) {
                     String threadName = Thread.currentThread().getName();
