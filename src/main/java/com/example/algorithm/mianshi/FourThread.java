@@ -17,8 +17,8 @@ public class FourThread implements Runnable {
     private static final Condition condition = lock.newCondition();
     private static final AtomicInteger currentCount = new AtomicInteger(0);
 
-    private int flag;
-    private PrintFunction printFunction;
+    private final int flag;
+    private final PrintFunction printFunction;
 
     public FourThread(int flag, PrintFunction printFunction) {
         this.flag = flag;
