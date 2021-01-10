@@ -1,6 +1,6 @@
 package com.example.test;
 
-import com.example.programme.Query;
+import com.example.programme.domain.Query;
 
 /**
  * @author: lingjun.jlj

@@ -3,7 +3,7 @@ package com.example.algorithm.leetcode;
 /**
  * @author: lingjun.jlj
  * @date: 2019/9/2 10:46
- * @description: 字符串转换整数 (atoi)
+ * @description: 字符串转换整数
  */
 public class Code8 {
 
