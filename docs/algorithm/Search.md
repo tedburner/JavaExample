@@ -6,7 +6,7 @@
 ### 折半查找
 对有序序列进行二分查找
 
-[二分查找源码地址](/src/main/java/com/example/algorithm/datastructure/search/BinarySearch.java)
+[二分查找源码地址](/com/example/algorithm/data_structure/search/BinarySearch.java)
 
 ### 插值查找
 
