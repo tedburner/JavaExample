@@ -73,4 +73,14 @@ public class CityDO implements Serializable {
             return cityDO;
         }
     }
+
+    @Override
+    public String toString() {
+        return "CityDO{" +
+                "id=" + id +
+                ", provinceId=" + provinceId +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }
