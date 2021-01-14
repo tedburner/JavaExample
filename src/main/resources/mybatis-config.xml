@@ -23,9 +23,9 @@
 
     <mappers>
         <mapper resource="com/example/programme/persist/UserMapper.xml"/>
-        <mapper url=""/>
-        <mapper class=""/>
-        <package name=""/>
+<!--        <mapper url=""/>-->
+<!--        <mapper class=""/>-->
+<!--        <package name=""/>-->
     </mappers>
 
 </configuration>
