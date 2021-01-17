@@ -30,7 +30,9 @@ public class LoopSum {
             }
         }
         while (k != 0) {
-            if ((k & 1) == 1) res = f(res, A);
+            if ((k & 1) == 1) {
+                res = f(res, A);
+            }
             k >>= 1;
             A = f(A, A);
         }
