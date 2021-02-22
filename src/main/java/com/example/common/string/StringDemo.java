@@ -12,6 +12,10 @@ public class StringDemo {
 
     public static void main(String[] args) {
         //String s = new String("abc");
+
+        // 这里下面的 new String 创建了一个，abc 是从常量池中获取的
         String s1 = "abc";
+        String s = new String("abc");
+        System.out.println(s == s1);
     }
 }
