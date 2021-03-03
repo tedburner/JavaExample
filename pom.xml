@@ -29,7 +29,6 @@
         <hessian.version>4.0.63</hessian.version>
         <reactive.version>1.0.3</reactive.version>
         <netty.version>4.1.51.Final</netty.version>
-        <fastjson.version>1.2.74</fastjson.version>
         <redisson.version>3.14.0</redisson.version>
         <easyexcel.version>2.2.6</easyexcel.version>
         <disruptor.version>3.4.2</disruptor.version>
@@ -39,7 +38,9 @@
         <commons.lang3.version>3.11</commons.lang3.version>
         <mybatis.spring.version>2.0.5</mybatis.spring.version>
         <rabbitmq.client.version>5.9.0</rabbitmq.client.version>
+        <alibaba.fastjson.version>1.2.75</alibaba.fastjson.version>
         <commons.collections4.version>4.4</commons.collections4.version>
+        <alibaba.transmittable.version>2.12.1</alibaba.transmittable.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
@@ -146,7 +147,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>${fastjson.version}</version>
+            <version>${alibaba.fastjson.version}</version>
         </dependency>
 
         <dependency>
@@ -159,6 +160,12 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>${commons.lang3.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>transmittable-thread-local</artifactId>
+            <version>${alibaba.transmittable.version}</version>
         </dependency>
 
         <!-- aspectj -->
