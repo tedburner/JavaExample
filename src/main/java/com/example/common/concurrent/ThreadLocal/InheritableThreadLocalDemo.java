@@ -17,7 +17,7 @@ public class InheritableThreadLocalDemo {
 
         new Thread(() -> {
             System.out.println("Parent ThreadLocal value is " + tl.get());
-            System.out.println("Parent ThreadLocal value is " + itl.get());
+            System.out.println("Parent InheritableThreadLocal value is " + itl.get());
         }).start();
     }
 }
