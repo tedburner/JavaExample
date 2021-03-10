@@ -20,6 +20,5 @@ public class StopThread implements Runnable {
         thread.start();
         Thread.sleep(5);
         thread.interrupt();
-        Thread.sleep(1000);
     }
 }
