@@ -131,7 +131,9 @@ public class Test {
         System.out.println("密码：" + DigestUtils.md5Hex("4860ce23464e697ebf0e5f8f554b2fbb" + "1000"));
 
         String password = "70f43a87461999eba84700437ad50ca7" + "1";
-        System.out.printf("加密密码：" + DigestUtils.sha256Hex(password));
+        System.out.println("加密密码：" + DigestUtils.sha256Hex(password));
+
+        System.out.println("毫秒时间戳:"+System.nanoTime()+"92012326399170196");
 
     }
 
