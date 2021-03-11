@@ -1,4 +1,4 @@
-package com.example.test;
+package com.example.test.io;
 
 import java.io.FilterInputStream;
 import java.io.IOException;
