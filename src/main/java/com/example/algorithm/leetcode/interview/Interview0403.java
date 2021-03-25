@@ -11,7 +11,7 @@ import java.util.Queue;
  * @description: 面试题 04.03. 特定深度节点链表
  * <href = https://leetcode-cn.com/problems/list-of-depth-lcci//>
  */
-public class Code0403 {
+public class Interview0403 {
 
     public static class TreeNode {
         int val;
@@ -74,7 +74,7 @@ public class Code0403 {
         root.left.right = new TreeNode(5);
         root.right.right = new TreeNode(7);
         root.left.left.left = new TreeNode(8);
-        ListNode[] array = new Code0403().listOfDepth(root);
+        ListNode[] array = new Interview0403().listOfDepth(root);
         System.out.println(array);
     }
 }

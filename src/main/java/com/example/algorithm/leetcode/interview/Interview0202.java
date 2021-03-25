@@ -10,7 +10,7 @@ package com.example.algorithm.leetcode.interview;
  * 思路2：快慢指针，快指针先走K步，然后快慢指针一起遍历，当快指针遍历到末尾的时候，慢指针的位置就是我们需要的位置。
  * 快慢指针实现逻辑{@link com.example.algorithm.leetcode.offer.Offer22}
  */
-public class Code0202 {
+public class Interview0202 {
     static class ListNode {
         int val;
         ListNode next;
