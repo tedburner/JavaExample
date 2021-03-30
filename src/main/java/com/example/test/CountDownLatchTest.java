@@ -1,9 +1,6 @@
 package com.example.test;
 
-import com.example.algorithm.mianshi.ThreeThreadPrint;
-
 import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @author: lingjun.jlj

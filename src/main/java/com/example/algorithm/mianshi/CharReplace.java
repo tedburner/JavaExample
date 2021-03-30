@@ -1,9 +1,13 @@
 package com.example.algorithm.mianshi;
 
+import java.util.Arrays;
+import java.util.Stack;
+
 /**
  * @author: lingjun.jlj
  * @date: 2020/12/9 10:53
- * @description: 字母消消乐
+ * @description: 阿里面试——字母消消乐
+ * 利用堆栈实现
  */
 public class CharReplace {
 
@@ -13,29 +17,28 @@ public class CharReplace {
     }
 
     public static String eliminateStr(String str) {
-        if (str.length() <= 1) {
+        if (str.length() < 2) {
             return str;
         }
-        boolean flag = false;
-        StringBuilder builder = new StringBuilder();
-        for (int i = 1; i < str.length(); i++) {
-            //标记当前字符的位置
-            int m = i;
-            char last = str.charAt(i - 1);
-            char now = str.charAt(i);
-            int num = Math.abs(now - last);
-            if (num != ('a' - 'A')) {
-                builder.append(last);
-                if (i == (str.length() - 1)) {
-                    builder.append(now);
-                }
+        Stack<Character> stack = new Stack<>();
+        for (int i = 0; i < str.length(); i++) {
+            Character ch = str.charAt(i);
+            if (stack.isEmpty()) {
+                stack.push(ch);
             } else {
-                flag = true;
+                int top = stack.peek();
+                if (top == ch) {
+                    stack.pop();
+                } else {
+                    stack.push(ch);
+                }
             }
         }
-        if (!flag) {
-            return str;
+        char[] ans = new char[stack.size()];
+        int num = stack.size() - 1;
+        while (!stack.isEmpty()) {
+            ans[num--] = stack.pop();
         }
-        return eliminateStr(builder.toString());
+        return Arrays.toString(ans);
     }
 }
