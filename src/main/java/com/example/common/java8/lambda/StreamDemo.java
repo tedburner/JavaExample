@@ -4,7 +4,7 @@ package com.example.common.java8.lambda;
 import com.alibaba.fastjson.JSON;
 import com.example.common.java8.BeanData;
 import com.example.domain.bean.SimpleDTO;
-import org.junit.Assert;
+import org.springframework.util.Assert;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -76,8 +76,7 @@ public class StreamDemo {
         List<Integer> together = Stream.of(a, b)
                 .flatMap(Collection::stream)
                 .collect(Collectors.toList());
-
-        Assert.assertEquals(together, Arrays.asList(1, 2, 3, 4));
+        together.forEach(System.out::println);
 
         System.out.println("====================== 字符串 ==================================");
         List<String> languages = Arrays.asList("Scala", "Python", "Java", "Go", "C", "C++");
