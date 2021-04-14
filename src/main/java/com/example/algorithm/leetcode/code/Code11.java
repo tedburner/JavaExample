@@ -8,11 +8,38 @@ package com.example.algorithm.leetcode.code;
 public class Code11 {
 
     public static void main(String[] args) {
-        int[] height = new int[]{1, 8, 6, 2, 5, 4, 8, 3, 2};
+        int[] height = new int[]{1, 2, 1};
         System.out.println(maxArea(height));
     }
 
+    /**
+     * 超时
+     *
+     * @date:2020-4-14
+     */
     public static int maxArea(int[] height) {
+        int area = 0; // 面积
+        int high; //高
+        int i = 0, j = height.length - 1;
+        while (i < j) {
+            high = Math.min(height[i], height[j]);
+            area = Math.max(area, (j - i) * high);
+            // 比较柱高，如果低位比高位低，则低位往高位靠近
+            if (height[i] < height[j]) {
+                i++;
+            } else {
+                j--;
+            }
+        }
+        return area;
+    }
+
+    /**
+     * 第一版代码
+     *
+     * @date:2019-8-31
+     */
+    public static int maxAreaV1(int[] height) {
         if (height == null || height.length == 0) {
             return 0;
         }
