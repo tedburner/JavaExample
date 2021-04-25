@@ -9,29 +9,62 @@ import java.util.Arrays;
  */
 public class Code88 {
 
+
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
-        int[] copy_array = Arrays.copyOf(nums1, m);
-        int index1 = 0, index2 = 0, index = 0;
-        while (index1 < m && index2 < n) {
-            nums1[index++] = copy_array[index1] < nums2[index2] ? copy_array[index1++] : nums2[index2++];
-//            if (copy_array[index1] < nums2[ index2]) {
-//                nums1[index] = copy_array[index1];
-//                index1++;
-//            } else {
-//                nums1[index] = nums2[index2];
-//                index2++;
-//            }
-//            index++;
+        if (m == 0) {
+            nums1 = nums2;
+            return;
         }
-        //跳出循环，表明有一个数组，循环结束了，这时候另外一个数据还没遍历结束，则，直接将剩下的拷贝到过去
-        if (index1 < m) System.arraycopy(copy_array, index1, nums1, index1 + index2, m + n - index1 - index2);
-        if (index2 < n) System.arraycopy(nums2, index2, nums1, index1 + index2, m + n - index1 - index2);
+        if (n == 0) {
+            return;
+        }
+        int k = m + n;
+        int i = 0, j = 0;
+        while (i < m && j < n) {
+
+        }
+
+    }
+
+    /**
+     * 双指针，新增一个临时数组，作为合并后的数组
+     */
+    public static void merge2(int[] nums1, int m, int[] nums2, int n) {
+        int k = m + n;
+        int[] temp = new int[k];
+        int p1 = 0, p2 = 0;
+        int cur;
+        while (p1 < m || p2 < n) {
+            if (p1 == m) {
+                cur = nums2[p2++];
+            } else if (p2 == n) {
+                cur = nums1[p1++];
+            } else if (nums1[p1] < nums2[p2]) {
+                cur = nums1[p1++];
+            } else {
+                cur = nums2[p2++];
+            }
+            temp[p1 + p2 - 1] = cur;
+        }
+        for (int i = 0; i < k; i++) {
+            nums1[i] = temp[i];
+        }
+    }
+
+    /**
+     * 直接合并后，在排序
+     */
+    public static void merge1(int[] nums1, int m, int[] nums2, int n) {
+        for (int i = 0; i < n; i++) {
+            nums1[m + i] = nums2[i];
+        }
+        Arrays.sort(nums1);
     }
 
     public static void main(String[] args) {
         int[] num1 = new int[]{1, 2, 3, 0, 0, 0};
         int[] num2 = new int[]{2, 5, 6};
-        merge(num1, 3, num2, 3);
-        System.out.println(num1);
+        merge2(num1, 3, num2, 3);
+        System.out.println(Arrays.toString(num1));
     }
 }
