@@ -98,10 +98,21 @@ public class DateFormatUtils {
      *
      * @param localDateTime
      * @param patter
+     * @return
      */
     public static String LocalDateTimeToString(LocalDateTime localDateTime, String patter) {
         DateTimeFormatter df = DateTimeFormatter.ofPattern(patter);
         return df.format(localDateTime);
+    }
+
+    /**
+     * 格式化当前时间
+     *
+     * @return
+     */
+    public static String getCurrentTime() {
+        DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        return df.format(LocalDateTime.now());
     }
 
     /**
@@ -110,8 +121,8 @@ public class DateFormatUtils {
      * @param obj
      */
     public static LocalDateTime StringToLocalDateTime(String obj) {
-        DateTimeFormatter DATEFORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        LocalDateTime localDateTime = LocalDateTime.parse(obj, DATEFORMATTER);
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        LocalDateTime localDateTime = LocalDateTime.parse(obj, dtf);
         return localDateTime;
     }
 
