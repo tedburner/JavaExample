@@ -12,11 +12,11 @@ import java.util.Objects;
 public class Test {
 
     public static void main(String[] args) throws Exception {
-        List<String> list = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            list.add(" " + i);
+        int status = 1;
+        if (!(Objects.equals(status, 1) || Objects.equals(status, 2))) {
+            System.out.println("111111");
+            return;
         }
-        long size = list.size();
-        System.out.println(Objects.equals(size, 10L));
+        System.out.println("22222");
     }
 }
