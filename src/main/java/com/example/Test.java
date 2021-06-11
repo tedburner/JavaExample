@@ -1,8 +1,10 @@
 package com.example;
 
-import java.util.ArrayList;
+import com.example.common.java8.BeanData;
+import com.example.domain.bean.SimpleDTO;
+
+import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
 
 /**
  * @author: lingjun.jlj
@@ -12,11 +14,8 @@ import java.util.Objects;
 public class Test {
 
     public static void main(String[] args) throws Exception {
-        int status = 1;
-        if (!(Objects.equals(status, 1) || Objects.equals(status, 2))) {
-            System.out.println("111111");
-            return;
-        }
-        System.out.println("22222");
+        List<SimpleDTO> list = BeanData.getBeanData();
+        Collections.shuffle(list);
+        list.forEach(System.out::println);
     }
 }

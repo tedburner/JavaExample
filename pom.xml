@@ -17,7 +17,7 @@
         <jedis.version>3.5.2</jedis.version>
         <zip4j.version>2.7.0</zip4j.version>
         <mysql.version>8.0.25</mysql.version>
-        <druid.version>	1.2.6</druid.version>
+        <druid.version>1.2.6</druid.version>
         <spring.version>5.3.7</spring.version>
         <hutool.version>5.6.6</hutool.version>
         <rxjava.version>2.2.21</rxjava.version>
@@ -27,6 +27,7 @@
         <curator.version>5.1.0</curator.version>
         <logback.version>1.2.3</logback.version>
         <mybatis.version>3.5.7</mybatis.version>
+        <jackson.version>2.12.3</jackson.version>
         <ibm.etc.version>0.0.18</ibm.etc.version>
         <hessian.version>4.0.65</hessian.version>
         <reactive.version>1.0.3</reactive.version>
@@ -379,6 +380,22 @@
             <groupId>net.lingala.zip4j</groupId>
             <artifactId>zip4j</artifactId>
             <version>2.7.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>${jackson.version}</version>
         </dependency>
     </dependencies>
 
