@@ -6,12 +6,7 @@ import com.example.common.java8.BeanData;
 import com.example.domain.bean.SimpleDTO;
 import org.springframework.util.Assert;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -61,6 +56,34 @@ public class StreamDemo {
                 .parallel() //使用并行流
                 .map(Integer::valueOf)
                 .collect(Collectors.toList());
+
+
+        // 根据value 倒叙
+        Map<String, SimpleDTO> sampleMap = BeanData.getDataList()
+                .stream().collect(Collectors.toMap(SimpleDTO::getName, m->m));
+        Map<String, SimpleDTO> newMap = sampleMap.entrySet().stream()
+                .sorted(Map.Entry.comparingByValue((o1, o2) -> {
+                    if (o1.getAge() > o2.getAge()) {
+                        return -1;
+                    }
+                    if (o1.getAge() < o2.getAge()) {
+                        return 1;
+                    }
+                    return 0;
+                })).collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        Map.Entry::getValue,
+                        (o1, o2) -> o1,
+                        LinkedHashMap::new));
+        System.out.println(newMap);
+        // map 根据key正序排列
+        Map<String, SimpleDTO> keyMap = sampleMap.entrySet().stream()
+                .sorted(Map.Entry.comparingByKey()).collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        Map.Entry::getValue,
+                        (o1, o2) -> o1,
+                        LinkedHashMap::new));
+        System.out.println(keyMap);
 
         System.out.println("====================== reduce ==================================");
         Optional<Integer> sum = values.stream()

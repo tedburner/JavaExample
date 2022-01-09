@@ -9,6 +9,7 @@ import lombok.Data;
 @Data
 public class SimpleDTO {
     private Integer id;
+    private Integer age;
     private String name;
     private String content;
 
@@ -17,6 +18,12 @@ public class SimpleDTO {
 
     public SimpleDTO(Integer id, String name) {
         this.id = id;
+        this.name = name;
+    }
+
+    public SimpleDTO(Integer id, Integer age, String name) {
+        this.id = id;
+        this.age = age;
         this.name = name;
     }
 

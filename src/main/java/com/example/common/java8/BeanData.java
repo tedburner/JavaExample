@@ -35,8 +35,8 @@ public class BeanData {
 
     public static List<SimpleDTO> getDataList() {
         List<SimpleDTO> listDTOS = Arrays.asList(
-                new SimpleDTO(1, "孙博"), new SimpleDTO(2, "孙博"), new SimpleDTO(3, "孙博2"),
-                new SimpleDTO(3, "孙博1"), new SimpleDTO(3, "孙博3")
+                new SimpleDTO(1, 10,"孙博"), new SimpleDTO(2, 9,"孙博"), new SimpleDTO(3, 15,"孙博2"),
+                new SimpleDTO(3, 25,"孙博1"), new SimpleDTO(3, 14,"孙博3")
         );
         return listDTOS;
     }
