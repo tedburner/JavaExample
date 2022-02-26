@@ -26,7 +26,8 @@ public class NettyServer {
 
         serverBootstrap
                 .group(boss, worker)
-                .channel(NioServerSocketChannel.class) //IO模型选择 NIO
+                //IO模型选择 NIO
+                .channel(NioServerSocketChannel.class)
                 .childHandler(new ChannelInitializer<NioSocketChannel>() {
                     protected void initChannel(NioSocketChannel channel) {
                         channel.pipeline().addLast(new StringDecoder());
