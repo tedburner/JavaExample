@@ -1,10 +1,9 @@
 package com.example.common.java8.lambda;
 
 
-import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson2.JSON;
 import com.example.common.java8.BeanData;
 import com.example.domain.bean.SimpleDTO;
-import org.springframework.util.Assert;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -60,7 +59,7 @@ public class StreamDemo {
 
         // 根据value 倒叙
         Map<String, SimpleDTO> sampleMap = BeanData.getDataList()
-                .stream().collect(Collectors.toMap(SimpleDTO::getName, m->m));
+                .stream().collect(Collectors.toMap(SimpleDTO::getName, m -> m));
         Map<String, SimpleDTO> newMap = sampleMap.entrySet().stream()
                 .sorted(Map.Entry.comparingByValue((o1, o2) -> {
                     if (o1.getAge() > o2.getAge()) {
