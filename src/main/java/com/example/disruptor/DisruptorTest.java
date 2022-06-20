@@ -1,17 +1,20 @@
 package com.example.disruptor;
 
-import com.lmax.disruptor.*;
+import com.lmax.disruptor.BlockingWaitStrategy;
+import com.lmax.disruptor.EventFactory;
+import com.lmax.disruptor.EventHandler;
+import com.lmax.disruptor.RingBuffer;
 import com.lmax.disruptor.dsl.Disruptor;
 import com.lmax.disruptor.dsl.ProducerType;
 
 import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.TimeUnit;
 
 /**
- * @author: lingjun.jlj
- * @date: 2018-12-18 16:53
- * @description: Disruptor 高性能队列
+ * Disruptor 高性能队列
  * blog: https://tech.meituan.com/disruptor.html
+ *
+ * @author lingjun.jlj
+ * @date 2018-12-18 16:53
  */
 public class DisruptorTest {
 
@@ -19,9 +22,11 @@ public class DisruptorTest {
         //队列中的元素
         class Element {
             private int value;
+
             public int getValue() {
                 return value;
             }
+
             public void setValue(int value) {
                 this.value = value;
             }

@@ -1,10 +1,9 @@
 package com.example.constant;
 
 /**
- * @author: lingjun.jlj
- * @date: 2019/7/15 16:28
- * @version：1.0.0
- * @description:
+ * @author lingjun.jlj
+ * @date 2019/7/15 16:28
+ * @version 1.0.0
  */
 public class SystemConstants {
 

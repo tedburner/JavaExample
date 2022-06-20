@@ -8,9 +8,10 @@ import javassist.CtNewMethod;
 import java.lang.reflect.Method;
 
 /**
- * @author: lingjun.jlj
- * @date: 2020/4/6 22:15
- * @description: javassist 测试用例
+ * javassist 测试用例
+ *
+ * @author lingjun.jlj
+ * @date 2020/4/6 22:15
  */
 public class JavassistDemo {
 

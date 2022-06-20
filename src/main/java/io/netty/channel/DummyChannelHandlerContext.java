@@ -4,9 +4,8 @@ package io.netty.channel;
 import io.netty.util.concurrent.EventExecutor;
 
 /**
- * @author: lingjun.jlj
- * @date: 2019-04-22 23:02
- * @description:
+ * @author lingjun.jlj
+ * @date 2019-04-22 23:02
  */
 @Deprecated
 public class DummyChannelHandlerContext extends AbstractChannelHandlerContext {

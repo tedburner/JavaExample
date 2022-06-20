@@ -3,9 +3,8 @@ package com.example.domain.dto;
 import lombok.Data;
 
 /**
- * @author: lingjun.jlj
- * @date: 2018/9/18 14:31
- * @description:
+ * @author lingjun.jlj
+ * @date 2018/9/18 14:31
  */
 @Data
 public class UserDTO {

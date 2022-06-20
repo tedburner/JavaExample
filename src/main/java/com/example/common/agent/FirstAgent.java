@@ -9,9 +9,10 @@ import java.lang.instrument.IllegalClassFormatException;
 import java.security.ProtectionDomain;
 
 /**
- * @author: lingjun.jlj
- * @date: 2019-02-26 16:44
- * @description: javassist 测试
+ * javassist 测试
+ *
+ * @author lingjun.jlj
+ * @date 2019-02-26 16:44
  */
 public class FirstAgent implements ClassFileTransformer {
 

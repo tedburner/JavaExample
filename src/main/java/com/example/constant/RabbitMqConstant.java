@@ -1,9 +1,8 @@
 package com.example.constant;
 
 /**
- * @author: lingjun.jlj
- * @date: 2019/8/29 15:01
- * @description:
+ * @author lingjun.jlj
+ * @date 2019/8/29 15:01
  */
 public class RabbitMqConstant {
 
