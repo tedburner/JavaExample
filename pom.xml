@@ -19,7 +19,7 @@
         <zip4j.version>2.10.0</zip4j.version>
         <guava.version>31.1-jre</guava.version>
         <spring.version>5.3.20</spring.version>
-        <hutool.version>5.8.2</hutool.version>
+        <hutool.version>5.8.4</hutool.version>
         <rxjava.version>2.2.21</rxjava.version>
         <aspectj.version>1.9.9.1</aspectj.version>
         <lombok.version>1.18.24</lombok.version>
@@ -42,7 +42,7 @@
         <commons.lang3.version>3.12.0</commons.lang3.version>
         <mybatis.spring.version>2.0.6</mybatis.spring.version>
         <rabbitmq.client.version>5.11.0</rabbitmq.client.version>
-        <alibaba.fastjson.version>2.0.7</alibaba.fastjson.version>
+        <alibaba.fastjson.version>2.0.8</alibaba.fastjson.version>
         <commons.collections4.version>4.4</commons.collections4.version>
         <alibaba.transmittable.version>2.12.6</alibaba.transmittable.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -111,6 +111,12 @@
             <groupId>com.alibaba.fastjson2</groupId>
             <artifactId>fastjson2</artifactId>
             <version>${alibaba.fastjson.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.83</version>
         </dependency>
 
         <dependency>
