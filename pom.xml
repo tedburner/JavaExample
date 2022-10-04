@@ -32,7 +32,7 @@
         <hessian.version>4.0.66</hessian.version>
         <reactive.version>1.0.3</reactive.version>
         <netty.version>4.1.51.Final</netty.version>
-        <protobuf.version>3.21.1</protobuf.version>
+        <protobuf.version>3.21.7</protobuf.version>
         <redisson.version>3.17.3</redisson.version>
         <easyexcel.version>3.1.1</easyexcel.version>
         <disruptor.version>3.4.4</disruptor.version>
