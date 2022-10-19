@@ -27,7 +27,7 @@
         <curator.version>5.2.1</curator.version>
         <logback.version>1.2.11</logback.version>
         <mybatis.version>3.5.7</mybatis.version>
-        <jackson.version>2.13.3</jackson.version>
+        <jackson.version>2.13.4.1</jackson.version>
         <ibm.etc.version>0.0.18</ibm.etc.version>
         <hessian.version>4.0.66</hessian.version>
         <reactive.version>1.0.3</reactive.version>
