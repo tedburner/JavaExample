@@ -10,29 +10,25 @@
     <packaging>jar</packaging>
 
     <properties>
-        <gson.version>2.9.0</gson.version>
-        <java.version>1.8</java.version>
-        <jmh.version>1.35</jmh.version>
         <junit.version>4.13.2</junit.version>
-        <akka.version>2.6.13</akka.version>
+        <gson.version>2.13.0</gson.version>
+        <java.version>17</java.version>
+        <jmh.version>1.37</jmh.version>
         <jedis.version>3.5.2</jedis.version>
         <zip4j.version>2.10.0</zip4j.version>
-        <guava.version>31.1-jre</guava.version>
+        <guava.version>33.4.8-jre</guava.version>
         <spring.version>5.3.20</spring.version>
-        <hutool.version>5.8.4</hutool.version>
-        <rxjava.version>2.2.21</rxjava.version>
-        <aspectj.version>1.9.9.1</aspectj.version>
-        <lombok.version>1.18.24</lombok.version>
-        <reactor.version>3.4.0</reactor.version>
+        <hutool.version>5.8.37</hutool.version>
+        <aspectj.version>1.9.24</aspectj.version>
+        <lombok.version>1.18.38</lombok.version>
         <curator.version>5.2.1</curator.version>
         <logback.version>1.2.11</logback.version>
         <mybatis.version>3.5.7</mybatis.version>
-        <jackson.version>2.13.3</jackson.version>
+        <jackson.version>2.18.3</jackson.version>
         <ibm.etc.version>0.0.18</ibm.etc.version>
         <hessian.version>4.0.66</hessian.version>
-        <reactive.version>1.0.3</reactive.version>
         <netty.version>4.1.51.Final</netty.version>
-        <protobuf.version>3.21.1</protobuf.version>
+        <protobuf.version>4.30.2</protobuf.version>
         <redisson.version>3.17.3</redisson.version>
         <easyexcel.version>3.1.1</easyexcel.version>
         <disruptor.version>3.4.4</disruptor.version>
@@ -42,9 +38,9 @@
         <commons.lang3.version>3.12.0</commons.lang3.version>
         <mybatis.spring.version>2.0.6</mybatis.spring.version>
         <rabbitmq.client.version>5.11.0</rabbitmq.client.version>
-        <alibaba.fastjson.version>2.0.8</alibaba.fastjson.version>
+        <alibaba.fastjson.version>2.0.57</alibaba.fastjson.version>
         <commons.collections4.version>4.4</commons.collections4.version>
-        <alibaba.transmittable.version>2.12.6</alibaba.transmittable.version>
+        <alibaba.transmittable.version>2.14.5</alibaba.transmittable.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
@@ -98,25 +94,11 @@
             <version>${junit.version}</version>
         </dependency>
 
-        <!-- 1.日志 -->
-        <!-- 实现slf4j接口并整合 -->
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>${logback.version}</version>
-        </dependency>
-
         <!-- 工具类 -->
         <dependency>
             <groupId>com.alibaba.fastjson2</groupId>
             <artifactId>fastjson2</artifactId>
             <version>${alibaba.fastjson.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.83</version>
         </dependency>
 
         <dependency>

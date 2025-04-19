@@ -1,7 +1,7 @@
 package com.example.guava.courrent;
 
 import com.google.common.util.concurrent.FutureCallback;
-import org.checkerframework.checker.nullness.qual.Nullable;
+import org.jspecify.annotations.Nullable;
 
 /**
  * @author: lingjun.jlj

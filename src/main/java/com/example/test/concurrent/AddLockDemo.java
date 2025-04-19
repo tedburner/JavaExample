@@ -1,7 +1,5 @@
 package com.example.test.concurrent;
 
-import org.checkerframework.checker.units.qual.A;
-
 /**
  * @author: lingjun.jlj
  * @date: 2020/7/30 16:03

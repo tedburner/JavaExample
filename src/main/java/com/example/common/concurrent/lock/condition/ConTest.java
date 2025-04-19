@@ -1,7 +1,5 @@
 package com.example.common.concurrent.lock.condition;
 
-import org.checkerframework.checker.units.qual.C;
-
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
